@@ -4,7 +4,7 @@ import styles from "./Nutrition.module.css";
 
 export const Nutrition = () => {
     return (
-        <div className={styles.nutrition}>
+        <div className={`${styles.nutrition} adaptive-section`}>
             <h2 className="title-section">Nutrition</h2>
             <p>
                 The table below shows nutritional values per serving without the

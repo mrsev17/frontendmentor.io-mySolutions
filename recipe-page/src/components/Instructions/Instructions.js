@@ -4,7 +4,7 @@ import styles from "./Instructions.module.css";
 
 export const Instructions = () => {
     return (
-        <div className={styles.instructions}>
+        <div className={`${styles.instructions} adaptive-section`}>
             <h2 className="title-section">Instructions</h2>
             <ol>
                 {instructionsData.map((item, i) => {

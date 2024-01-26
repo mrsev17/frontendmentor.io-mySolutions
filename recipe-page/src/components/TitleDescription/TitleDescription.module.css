@@ -13,3 +13,9 @@
     line-height: 150%;
     color: var(--wenge-brown);
 }
+
+@media (max-width: 567px) {
+    .titleDescription > h1 {
+        font-size: 36px;
+    }
+}

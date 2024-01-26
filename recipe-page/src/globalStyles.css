@@ -5,6 +5,8 @@
     --wenge-brown: #5f564d;
     --brandy-red: #854632;
     --dark-charcoal: #312e2c;
+    --light-pink: #f5eef2;
+    --white-coffee: #e3ddd7;
     --size-second-title: 28px;
 }
 
@@ -14,4 +16,10 @@
     font-family: var(--young-font);
     line-height: 100%;
     margin-bottom: 24px;
+}
+
+@media (max-width: 567px) {
+    .adaptive-section {
+        padding: 40px 32px;
+    }
 }

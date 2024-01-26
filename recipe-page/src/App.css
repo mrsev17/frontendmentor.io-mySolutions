@@ -1,3 +1,5 @@
+@import "./globalStyles.css";
+
 .app {
     width: 100%;
     display: flex;
@@ -14,4 +16,19 @@
     flex-direction: column;
     align-items: flex-start;
     gap: 32px;
+}
+
+@media (max-width: 567px) {
+    .recipe-wrapper {
+        margin: 0;
+        padding: 0;
+        gap: 0;
+    }
+    .accent-line {
+        margin: 0 auto;
+        max-width: 312px;
+        width: 100%;
+        height: 1px;
+        background-color: var(--white-coffee);
+    }
 }

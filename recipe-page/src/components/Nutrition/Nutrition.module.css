@@ -6,10 +6,10 @@
     font-family: var(--outfit-font);
 }
 .nutrition > table {
-    padding: 24px 32px 0 32px;
     width: 100%;
 }
 .nutrition > table > tbody {
+    padding: 24px 32px 0 32px;
     display: flex;
     flex-direction: column;
     gap: 24px;
@@ -32,4 +32,33 @@
 .value {
     color: var(--brandy-red);
     font-weight: 700;
+}
+
+@media (max-width: 567px) {
+    .nutrition > p {
+        max-width: 95%;
+    }
+    .nutrition > table > tbody {
+        gap: 12px;
+    }
+    .nutrition > table > tbody > tr {
+        border-bottom: 1px solid var(--light-pink);
+        position: relative;
+        padding-bottom: 12px;
+    }
+    .nutrition > table > tbody > tr:after,
+    .nutrition > table > tbody > tr:before {
+        border-bottom: 1px solid var(--light-pink);
+        width: 100%;
+        content: "";
+        position: absolute;
+        top: 0;
+        height: 100%;
+    }
+    .nutrition > table > tbody > tr:after {
+        right: -32px;
+    }
+    .nutrition > table > tbody > tr:before {
+        left: -32px;
+    }
 }

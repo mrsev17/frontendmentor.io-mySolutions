@@ -4,7 +4,7 @@ import styles from "./Ingredients.module.css";
 
 export const Ingredients = () => {
     return (
-        <div className={styles.ingredients}>
+        <div className={`${styles.ingredients} adaptive-section`}>
             <h2 className="title-section">Ingredients</h2>
             <ul>
                 {ingredientsData.map((text, i) => {

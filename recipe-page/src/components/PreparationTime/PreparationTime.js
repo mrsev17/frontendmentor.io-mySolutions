@@ -1,9 +1,10 @@
 import { preparationTimeInfo } from "../../data/dataStorage";
+import "../../globalStyles.css";
 import styles from "./PreparationTime.module.css";
 
 export const PreparationTime = () => {
     return (
-        <div className={styles.preparationTime}>
+        <div className={`${styles.preparationTime} adaptive-section`}>
             <h2>Preparation time</h2>
             <ul>
                 {preparationTimeInfo.map((item, i) => {
