@@ -1,0 +1,40 @@
+@import "../../globalStyles.css";
+
+.preparationTime > h2 {
+    font-family: var(--outfit-font);
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 100%;
+    color: var(--dark-raspberry);
+    margin-bottom: 16px;
+}
+.preparationTime > ul {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    list-style-type: none;
+}
+.preparationTime > ul > li {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.preparationTime > ul > li::before {
+    content: "\2022";
+    color: var(--dark-raspberry);
+    font-size: 1.5em;
+    margin-right: 5px;
+}
+.preparationTime > ul > li > span > b {
+    font-family: var(--outfit-font);
+    font-weight: 700;
+    line-height: 150%;
+    color: var(--wenge-brown);
+    margin-right: 4px;
+}
+.preparationTime > ul > li > span {
+    font-family: var(--outfit-font);
+    font-weight: 400;
+    line-height: 150%;
+    color: var(--wenge-brown);
+}
