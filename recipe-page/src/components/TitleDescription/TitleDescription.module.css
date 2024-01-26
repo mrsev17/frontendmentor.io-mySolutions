@@ -5,9 +5,11 @@
     font-size: 40px;
     margin-bottom: 24px;
     line-height: 100%;
+    color: var(--dark-charcoal);
 }
 .titleDescription > p {
     font-family: var(--outfit-font);
     font-size: 16px;
     line-height: 150%;
+    color: var(--wenge-brown);
 }

@@ -1,0 +1,35 @@
+@import "../../globalStyles.css";
+
+.nutrition > p {
+    line-height: 150%;
+    color: var(--wenge-brown);
+    font-family: var(--outfit-font);
+}
+.nutrition > table {
+    padding: 24px 32px 0 32px;
+    width: 100%;
+}
+.nutrition > table > tbody {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.nutrition > table > tbody > tr {
+    display: flex;
+}
+.nutrition > table > tbody > tr > td {
+    max-width: 288px;
+    width: 100%;
+}
+.title,
+.value {
+    line-height: 150%;
+    font-family: var(--outfit-font);
+}
+.title {
+    color: var(--wenge-brown);
+}
+.value {
+    color: var(--brandy-red);
+    font-weight: 700;
+}

@@ -3,6 +3,8 @@ import {
     PreparationTime,
     TitleDescription,
     Ingredients,
+    Instructions,
+    Nutrition,
 } from "./components";
 import "./App.css";
 
@@ -10,18 +12,24 @@ function App() {
     return (
         <div className="app">
             <div className="recipe-wrapper">
-                <div className="main-image-container">
+                <section className="main-image-wrapper">
                     <MainImage />
-                </div>
-                <div className="title-description-wrapper">
+                </section>
+                <section className="title-description-wrapper">
                     <TitleDescription />
-                </div>
-                <div className="preparation-time">
+                </section>
+                <section className="preparation-time-wrapper">
                     <PreparationTime />
-                </div>
-                <div className="ingredients">
+                </section>
+                <section className="ingredients-wrapper">
                     <Ingredients />
-                </div>
+                </section>
+                <section className="instructions-wrapper">
+                    <Instructions />
+                </section>
+                <section className="nutrition-wrapper">
+                    <Nutrition />
+                </section>
             </div>
         </div>
     );

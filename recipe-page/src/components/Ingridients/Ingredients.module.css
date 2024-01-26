@@ -1,0 +1,21 @@
+@import "../../globalStyles.css";
+
+.ingredients > ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+.ingredients > ul > li {
+    font-family: var(--outfit-font);
+    color: var(--wenge-brown);
+    display: flex;
+    align-items: center;
+    line-height: 150%;
+}
+.ingredients > ul > li::before {
+    content: "\2022";
+    color: var(--dark-raspberry);
+    font-size: 1.5em;
+    margin-right: 16px;
+}

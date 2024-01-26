@@ -4,6 +4,7 @@
     justify-content: center;
 }
 .recipe-wrapper {
+    margin: 123px 0 123px 0;
     border-radius: 24px;
     padding: 40px;
     width: 100%;
@@ -12,8 +13,5 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 40px;
-}
-.preparation-time {
-    padding: 28px;
+    gap: 32px;
 }

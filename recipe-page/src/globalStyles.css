@@ -3,4 +3,15 @@
     --young-font: "Young Serif", serif;
     --dark-raspberry: #7a284e;
     --wenge-brown: #5f564d;
+    --brandy-red: #854632;
+    --dark-charcoal: #312e2c;
+    --size-second-title: 28px;
+}
+
+.title-section {
+    color: var(--brandy-red);
+    font-size: var(--size-second-title);
+    font-family: var(--young-font);
+    line-height: 100%;
+    margin-bottom: 24px;
 }

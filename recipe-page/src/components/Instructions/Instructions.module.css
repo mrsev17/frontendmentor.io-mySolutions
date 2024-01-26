@@ -1,0 +1,36 @@
+@import "../../globalStyles.css";
+
+.instructions > ol {
+    list-style: none;
+    counter-reset: my-counter;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.instructions > ol > li {
+    counter-increment: my-counter;
+    display: flex;
+    gap: 16px;
+}
+
+.instructions > ol > li:before {
+    content: counter(my-counter) ".";
+    margin-top: 2px;
+    font-family: var(--outfit-font);
+    font-weight: 700;
+    color: var(--brandy-red);
+}
+
+.instructions > ol > li > p {
+    line-height: 150%;
+    font-family: var(--outfit-font);
+    color: var(--wenge-brown);
+}
+
+.instructions > ol > li > p > span {
+    font-weight: 700;
+    margin-right: 4px;
+    font-family: var(--outfit-font);
+    color: var(--wenge-brown);
+}
