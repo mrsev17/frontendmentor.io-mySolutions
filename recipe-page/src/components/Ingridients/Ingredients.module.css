@@ -1,19 +1,28 @@
 @import "../../globalStyles.css";
 
-.ingredients > ul {
+.ingredients ul {
     list-style-type: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     gap: 4px;
 }
-.ingredients > ul > li {
+.ingredients li {
     font-family: var(--outfit-font);
     color: var(--wenge-brown);
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     line-height: 150%;
 }
-.ingredients > ul > li::before {
+.ingredients li::before {
     content: "\2022";
     color: var(--dark-raspberry);
     font-size: 1.5em;

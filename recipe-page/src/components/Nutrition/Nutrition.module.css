@@ -1,23 +1,30 @@
 @import "../../globalStyles.css";
 
-.nutrition > p {
+.nutrition p {
     line-height: 150%;
     color: var(--wenge-brown);
     font-family: var(--outfit-font);
 }
-.nutrition > table {
+.nutrition table {
     width: 100%;
 }
-.nutrition > table > tbody {
+.nutrition tbody {
     padding: 24px 32px 0 32px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     gap: 24px;
 }
-.nutrition > table > tbody > tr {
+.nutrition tr {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
-.nutrition > table > tbody > tr > td {
+.nutrition td {
     max-width: 288px;
     width: 100%;
 }
@@ -35,19 +42,19 @@
 }
 
 @media (max-width: 567px) {
-    .nutrition > p {
+    .nutrition p {
         max-width: 95%;
     }
-    .nutrition > table > tbody {
+    .nutrition tbody {
         gap: 12px;
     }
-    .nutrition > table > tbody > tr {
+    .nutrition tr {
         border-bottom: 1px solid var(--light-pink);
         position: relative;
         padding-bottom: 12px;
     }
-    .nutrition > table > tbody > tr:after,
-    .nutrition > table > tbody > tr:before {
+    .nutrition tr:after,
+    .nutrition tr:before {
         border-bottom: 1px solid var(--light-pink);
         width: 100%;
         content: "";
@@ -55,10 +62,10 @@
         top: 0;
         height: 100%;
     }
-    .nutrition > table > tbody > tr:after {
+    .nutrition tr:after {
         right: -32px;
     }
-    .nutrition > table > tbody > tr:before {
+    .nutrition tr:before {
         left: -32px;
     }
 }

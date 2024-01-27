@@ -6,7 +6,7 @@
     border-radius: 12px;
     width: 100%;
 }
-.preparationTime > h2 {
+.preparationTime h2 {
     font-family: var(--outfit-font);
     font-size: 20px;
     font-weight: 600;
@@ -14,31 +14,40 @@
     color: var(--dark-raspberry);
     margin-bottom: 16px;
 }
-.preparationTime > ul {
+.preparationTime ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     gap: 4px;
     list-style-type: none;
 }
-.preparationTime > ul > li {
+.preparationTime li {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     gap: 20px;
 }
-.preparationTime > ul > li::before {
+.preparationTime li::before {
     content: "\2022";
     color: var(--dark-raspberry);
     font-size: 1.5em;
     margin-right: 5px;
 }
-.preparationTime > ul > li > span > b {
+.preparationTime b {
     font-family: var(--outfit-font);
     font-weight: 700;
     line-height: 150%;
     color: var(--wenge-brown);
     margin-right: 4px;
 }
-.preparationTime > ul > li > span {
+.preparationTime span {
     font-family: var(--outfit-font);
     font-weight: 400;
     line-height: 150%;
@@ -52,7 +61,7 @@
         border-radius: 12px;
         width: auto;
     }
-    .preparationTime > ul > li > span {
+    .preparationTime span {
         max-width: 75%;
     }
 }
