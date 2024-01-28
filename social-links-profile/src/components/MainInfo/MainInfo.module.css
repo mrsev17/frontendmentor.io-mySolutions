@@ -1,0 +1,38 @@
+@import "../../globalStyles.css";
+
+.mainInfo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 24px;
+}
+.mainInfo img {
+    border-radius: 9999px;
+    height: 88px;
+    width: 88px;
+}
+.mainInfo h1 {
+    font-size: var(--title-size);
+    color: var(--white);
+    font-weight: 600;
+    line-height: 150%;
+    margin-bottom: 4px;
+}
+.mainInfo h2 {
+    font-size: var(--text-font-size);
+    color: var(--neon-green);
+    font-weight: 700;
+    line-height: 150%;
+}
+.mainInfo p {
+    font-size: var(--text-font-size);
+    color: var(--white);
+    line-height: 150%;
+}

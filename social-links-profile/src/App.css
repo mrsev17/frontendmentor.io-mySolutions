@@ -1,0 +1,27 @@
+@import "./globalStyles.css";
+
+.app {
+    text-align: center;
+}
+.profile-social-card {
+    background-color: var(--card-bg);
+    border-radius: var(--accent-border-radius);
+    width: 384px;
+    height: 100%;
+    max-width: 384px;
+    max-height: 611px;
+}
+.profile-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 40px;
+}
+@media (max-width: 567px) {
+    .profile-social-card {
+        width: 327px;
+    }
+    .profile-wrapper {
+        padding: 24px;
+    }
+}

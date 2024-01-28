@@ -1,0 +1,11 @@
+:root {
+    --main-font: "Inter", sans-serif;
+    --accent-border-radius: 12px;
+    --main-bg: #141414;
+    --card-bg: #1f1f1f;
+    --white: #ffffff;
+    --neon-green: #c4f82a;
+    --grey: #333333;
+    --title-size: 24px;
+    --text-font-size: 14px;
+}
