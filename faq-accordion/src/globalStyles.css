@@ -1,0 +1,17 @@
+:root {
+    --main-bg-image: url("./assets/background-pattern-desktop.svg");
+    --main-bg-color: #fff;
+    --dark-purple: #301534;
+    --pale-purple: #8b6990;
+    --accent-line: #f8eeff;
+    --hover-acc: #ad28eb;
+    --title-acc-size: 18px;
+    --title-acc-item: 16px;
+}
+
+@media (max-width: 375px) {
+    :root {
+        --main-bg-image: url("./assets/background-pattern-mobile.svg");
+        --title-acc-size: 16px;
+    }
+}

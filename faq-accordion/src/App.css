@@ -1,0 +1,23 @@
+@import "./globalStyles.css";
+
+.faq {
+    margin-top: 168px;
+    width: 600px;
+    padding: 40px;
+    height: 565px;
+    background-color: var(--main-bg-color);
+    border-radius: 16px;
+}
+@media (max-width: 567px) {
+    .faq {
+        width: auto;
+        height: auto;
+        margin: 40px 24px 24px 24px;
+        padding: 24px;
+    }
+}
+@media (max-width: 375px) {
+    .faq {
+        margin: 136px 24px 24px 24px;
+    }
+}

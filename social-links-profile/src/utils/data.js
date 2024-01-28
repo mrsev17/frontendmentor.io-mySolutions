@@ -4,7 +4,7 @@ export const userInfo = {
     avatar: avatar,
     fullName: "Jessica Randall",
     location: "London, United Kingdom",
-    sub: "Front-end developer and avid reader.",
+    sub: '"Front-end developer and avid reader."',
 };
 export const linksData = [
     "GitHub",
