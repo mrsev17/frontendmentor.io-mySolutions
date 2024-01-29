@@ -3,7 +3,12 @@ import plus from "../../assets/icon-plus.svg";
 import minus from "../../assets/icon-minus.svg";
 import styles from "./AccordionItem.module.css";
 
-export const AccordionItem = ({ title, content, demonstrateOpen }) => {
+export const AccordionItem = ({
+    title,
+    content,
+    demonstrateOpen,
+    lastItemOrNot,
+}) => {
     const [isActive, setIsActive] = useState(!demonstrateOpen ? false : true);
     return (
         <>
@@ -25,7 +30,7 @@ export const AccordionItem = ({ title, content, demonstrateOpen }) => {
                     </div>
                 )}
             </div>
-            <div className={styles.accentLine}></div>
+            {!lastItemOrNot && <div className={styles.accentLine}></div>}
         </>
     );
 };

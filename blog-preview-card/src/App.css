@@ -1,0 +1,26 @@
+@import "./globalStyles.css";
+
+.card-wrapper {
+    background-color: var(--bg-card);
+    -webkit-box-shadow: var(--accent-shadow);
+    box-shadow: var(--accent-shadow);
+    border: 1px solid #111;
+    border-radius: 20px;
+    padding: 24px;
+    max-width: 384px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 24px;
+}
+
+@media (max-width: 567px) {
+    .card-wrapper {
+        margin: 0 24px 0 24px;
+        max-width: 327px;
+    }
+}

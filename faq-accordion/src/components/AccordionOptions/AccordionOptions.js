@@ -9,6 +9,9 @@ export const AccordionOptions = () => {
                 return (
                     <AccordionItem
                         key={i}
+                        lastItemOrNot={
+                            i === accordionData.length - 1 ? true : false
+                        }
                         title={item.title}
                         content={item.content}
                         demonstrateOpen={i === 0 ? true : false}

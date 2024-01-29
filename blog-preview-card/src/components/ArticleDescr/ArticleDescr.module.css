@@ -1,0 +1,47 @@
+@import "../../globalStyles.css";
+
+.articleDescr {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 12px;
+}
+.articleArea {
+    background-color: var(--yellow-accent);
+    max-width: 82px;
+    padding: 4px 12px;
+    text-align: center;
+    border-radius: 4px;
+}
+.articleArea span {
+    font-weight: 800;
+    font-size: var(--sm-font-size);
+    line-height: var(--line-height);
+}
+.articlePublishedTime {
+    font-size: var(--sm-font-size);
+    font-weight: 500;
+    line-height: 150%;
+}
+.articleSubject {
+    font-size: var(--xl-font-size);
+    font-weight: 800;
+    line-height: 150%;
+    color: var(--first-text);
+    -webkit-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+}
+.articleSubject:hover {
+    color: var(--yellow-accent);
+}
+.articleText {
+    font-size: var(--md-font-size);
+    color: var(--second-text);
+    font-weight: 500;
+    line-height: 150%;
+}

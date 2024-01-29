@@ -1,0 +1,22 @@
+@import "../../globalStyles.css";
+
+.authorInfo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 12px;
+}
+
+.authorInfo img {
+    width: 32px;
+    height: 32px;
+}
+
+.authorInfo h2 {
+    line-height: var(--line-height);
+    font-weight: 800;
+    font-size: var(--sm-font-size);
+}

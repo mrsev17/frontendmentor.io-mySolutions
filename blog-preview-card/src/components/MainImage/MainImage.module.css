@@ -1,0 +1,12 @@
+.articleImage {
+    width: 336px;
+    max-height: 200px;
+    border-radius: 10px;
+}
+
+@media (max-width: 567px) {
+    .articleImage {
+        width: auto;
+        max-width: 279px;
+    }
+}
