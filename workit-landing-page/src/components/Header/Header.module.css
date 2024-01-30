@@ -2,5 +2,17 @@
 
 .header {
     background-color: var(--accent-purple);
-    height: 120px;
+    padding-top: 58px;
+    margin-bottom: 64px;
+}
+
+.header a {
+    font-size: var(--md-size);
+    line-height: 32px;
+    font-weight: 700;
+    border-bottom: 3px solid var(--accent-green);
+    transition: 0.5s ease-in-out;
+}
+.header a:hover {
+    color: var(--accent-green);
 }

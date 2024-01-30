@@ -1,0 +1,8 @@
+.header-banner {
+    background-color: #f8eeff;
+    background-image: url("./assets/dark-purple-bg.png");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 100% 85%;
+    height: 870px;
+}

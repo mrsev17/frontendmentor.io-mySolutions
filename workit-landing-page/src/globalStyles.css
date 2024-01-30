@@ -5,5 +5,23 @@
     --accent-green: #44ffa1;
     --accent-grey: #584d62;
     --ghost-white: #fcf8ff;
-    --bg-bellow-banner: #fcf8ff;
+    --bg-bellow-banner: #fff;
+    --md-size: 18px;
+    --main-title-size: 80px;
+}
+
+.container {
+    max-width: 1114px;
+    margin: 0 auto;
+}
+.d-flex {
+    display: flex;
+}
+
+.flex-aic {
+    align-items: center;
+}
+
+.flex-between {
+    justify-content: space-between;
 }

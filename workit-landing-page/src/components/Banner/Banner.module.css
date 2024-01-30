@@ -1,0 +1,42 @@
+@import "../../globalStyles.css";
+
+.banner h1 {
+    font-size: var(--main-title-size);
+    color: var(--bg-bellow-banner);
+    font-weight: 600;
+    line-height: 80px;
+    font-family: initial;
+    text-align: center;
+    max-width: 60%;
+    margin: 0 auto 38px;
+}
+
+.banner h1 > span {
+    text-decoration: underline;
+    text-decoration-color: var(--accent-green);
+    text-underline-offset: 10px;
+    text-decoration-thickness: 3px;
+}
+
+.banner a {
+    font-size: var(--md-size);
+    color: var(--dark-purple);
+    text-align: center;
+    margin: 0 auto 46px;
+    display: block;
+    font-weight: 700;
+    line-height: 32px;
+    background-color: var(--accent-green);
+    max-width: 162px;
+    height: 62px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.banner img {
+    margin: 0 auto;
+    max-width: 715px;
+    max-height: 427px;
+    display: block;
+}
