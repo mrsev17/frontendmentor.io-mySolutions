@@ -1,0 +1,6 @@
+@import "../../globalStyles.css";
+
+.header {
+    background-color: var(--accent-purple);
+    height: 120px;
+}
