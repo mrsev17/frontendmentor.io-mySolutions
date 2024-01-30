@@ -1,4 +1,4 @@
-import { Header, Banner } from "./components";
+import { Header, Banner, Advantages, Founder } from "./components";
 import "./App.css";
 
 function App() {
@@ -8,6 +8,10 @@ function App() {
                 <Header />
                 <Banner />
             </div>
+            <main>
+                <Advantages />
+                <Founder />
+            </main>
         </div>
     );
 }

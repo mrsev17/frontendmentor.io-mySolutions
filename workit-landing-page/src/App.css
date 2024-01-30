@@ -1,5 +1,7 @@
+@import "./globalStyles.css";
+
 .header-banner {
-    background-color: #f8eeff;
+    background-color: var(--ghost-white);
     background-image: url("./assets/dark-purple-bg.png");
     background-position: top;
     background-repeat: no-repeat;
