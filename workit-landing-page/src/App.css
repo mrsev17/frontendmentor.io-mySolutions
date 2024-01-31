@@ -8,3 +8,16 @@
     background-size: 100% 85%;
     height: 870px;
 }
+
+@media (max-width: 768px) {
+    .header-banner {
+        background-size: 110% 100%;
+        height: 540px;
+    }
+}
+
+@media (max-width: 567px) {
+    .header-banner {
+        background-size: 140% 88%;
+    }
+}

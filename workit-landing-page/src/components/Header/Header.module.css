@@ -6,13 +6,27 @@
     margin-bottom: 64px;
 }
 
+.header img {
+    width: 96px;
+    height: 24px;
+}
+
 .header a {
     font-size: var(--md-size);
     line-height: 32px;
     font-weight: 700;
     border-bottom: 3px solid var(--accent-green);
+    -webkit-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
     transition: 0.5s ease-in-out;
 }
 .header a:hover {
     color: var(--accent-green);
+}
+
+@media (max-width: 768px) {
+    .header {
+        padding-top: 37px;
+        margin-bottom: 68px;
+    }
 }

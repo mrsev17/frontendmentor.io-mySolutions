@@ -15,6 +15,7 @@
     width: 100%;
     max-width: var(--content-width);
     margin: 0 auto;
+    padding: 0 39px;
     position: relative;
 }
 
@@ -44,4 +45,26 @@
 
 .gap-footer {
     gap: 56px;
+}
+
+@media (max-width: 768px) {
+    :root {
+        --main-title-size: 60px;
+        --md-size: 16px;
+    }
+    .flex-md-col {
+        flex-direction: column !important;
+    }
+    .w-md-80 {
+        width: 80%;
+    }
+}
+
+@media (max-width: 567px) {
+    .container {
+        padding: 0 16px;
+    }
+    .w-md-80 {
+        width: 100%;
+    }
 }
