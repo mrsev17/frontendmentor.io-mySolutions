@@ -1,4 +1,4 @@
-import { Header, Banner, Advantages, Founder } from "./components";
+import { Header, Banner, Advantages, Founder, Footer } from "./components";
 import "./App.css";
 
 function App() {
@@ -12,6 +12,7 @@ function App() {
                 <Advantages />
                 <Founder />
             </main>
+            <Footer />
         </div>
     );
 }

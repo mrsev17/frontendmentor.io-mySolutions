@@ -1,0 +1,21 @@
+footer {
+    margin-bottom: 58px;
+}
+
+footer .container {
+    gap: 58px;
+}
+
+footer .companyLogo {
+    width: 96px;
+    height: 24px;
+}
+
+footer ul {
+    gap: 28px;
+}
+
+.networkIcon {
+    width: 20px;
+    height: 20px;
+}

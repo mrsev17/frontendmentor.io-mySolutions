@@ -1,4 +1,77 @@
-.founder img {
+@import "../../globalStyles.css";
+
+.founder {
+    margin-bottom: 62px;
+    max-width: var(--content-width);
+    margin: 0 auto 120px;
+}
+
+.founderPicture {
     width: 450px;
-    height: 452px;
+    height: 450px;
+    position: absolute;
+    z-index: -1;
+    top: 10px;
+    left: 20px;
+}
+
+.founder h3 {
+    font-weight: 600;
+    font-family: initial;
+    font-size: 56px;
+    line-height: 64px;
+    color: #fff;
+}
+
+.founder p {
+    font-family: var(--font-manrope);
+    color: #fff;
+    font-size: var(--md-size);
+    line-height: 32px;
+    max-width: 97%;
+}
+
+.founderInfo {
+    margin-top: 172px;
+    padding: 64px;
+    background-color: var(--accent-purple);
+    max-width: 730px;
+    gap: 24px;
+}
+
+.founder a {
+    font-size: var(--md-size);
+    color: var(--dark-purple);
+    text-align: center;
+    display: block;
+    font-weight: 700;
+    line-height: 32px;
+    background-color: var(--accent-green);
+    max-width: 190px;
+    width: 100%;
+    height: 62px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    transition: 0.6s ease-in-out;
+    border: 2px solid var(--dark-purple);
+}
+
+.founder a:hover {
+    border: 2px solid var(--accent-green);
+    color: var(--accent-green);
+    background-color: var(--dark-purple);
+}
+
+.circleWrapper {
+    position: relative;
+    width: 173px;
+}
+
+.circlesFigure {
+    position: absolute;
+    max-width: 280px;
+    max-height: 200px;
+    top: 0px;
+    left: -60px;
 }

@@ -8,11 +8,14 @@
     --bg-bellow-banner: #fff;
     --md-size: 18px;
     --main-title-size: 80px;
+    --content-width: 1114px;
 }
 
 .container {
-    max-width: 1114px;
+    width: 100%;
+    max-width: var(--content-width);
     margin: 0 auto;
+    position: relative;
 }
 
 .d-flex {
@@ -23,6 +26,22 @@
     align-items: center;
 }
 
+.flex-end {
+    justify-content: end;
+}
+
 .flex-between {
     justify-content: space-between;
+}
+
+.flex-center {
+    justify-content: center;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.gap-footer {
+    gap: 56px;
 }
