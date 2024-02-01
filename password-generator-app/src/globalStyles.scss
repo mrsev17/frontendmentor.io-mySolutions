@@ -1,0 +1,29 @@
+@font-face {
+    font-family: "JetBrains Mono";
+    src: url("./assets/fonts/static/JetBrainsMono-Bold.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "JetBrains Mono";
+    src: url("./assets/fonts/static/JetBrainsMono-BoldItalic.ttf")
+        format("truetype");
+    font-weight: bold;
+    font-style: italic;
+}
+
+// Variables SCSS
+
+$background-main: #24232c;
+$accent-grey: #817d92;
+$accent-white: #e6e5ea;
+$accent-dark-grey: #18171f;
+$accent-green: #a4ffaf;
+$accent-red: #f64a4a;
+$accent-orange: #fb7c58;
+$accent-yellow: #fb7c58;
+$main-font-family: "JetBrains Mono", sans-serif;
+$xl-text: 32px;
+$md-result: 24px;
+$sm-text: 18px;
