@@ -1,0 +1,17 @@
+@import "../../globalStyles.module.scss";
+
+.clipboard {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: $background-main;
+    padding: 19px 32px 19px 32px;
+    h2 {
+        font-size: $xl-text;
+        font-weight: $common-weight;
+        color: $accent-white;
+    }
+    button {
+        background-color: transparent;
+    }
+}

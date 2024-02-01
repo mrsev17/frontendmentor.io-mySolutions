@@ -1,0 +1,22 @@
+@import "./globalStyles.module.scss";
+
+.app {
+    height: 640px;
+    width: 540px;
+    h1 {
+        font-weight: 700;
+        color: $accent-grey;
+        font-size: $md-text;
+        text-align: center;
+        margin-bottom: 31px;
+    }
+    main {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        .passwordControl {
+            padding: 34px 32px 32px 32px;
+            background-color: $background-main;
+        }
+    }
+}
