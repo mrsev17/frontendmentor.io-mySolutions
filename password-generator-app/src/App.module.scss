@@ -19,4 +19,9 @@
             background-color: $background-main;
         }
     }
+    .checkBoxesWrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 23px;
+    }
 }
