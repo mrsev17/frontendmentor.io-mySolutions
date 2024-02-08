@@ -2,22 +2,30 @@ import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 // import { ActionReducerMapBuilder } from "@reduxjs/toolkit";
 // import { RootState } from "../store";
 
-interface Password {
-    result: string;
-    length: number;
+interface PasswordOptions {
     includeUppercaseLetters: boolean;
     includeLowerCaseLetters: boolean;
     includeNumbers: boolean;
     includeSymbols: boolean;
 }
 
+interface Password {
+    result: string;
+    length: number;
+    strength: number;
+    passwordOptions: PasswordOptions;
+}
+
 const initialState: Password = {
-    result: "P4$$w0rD g3n3r4t0r",
+    result: "P4$$w0rDg3n3r4t0r",
     length: 0,
-    includeUppercaseLetters: false,
-    includeLowerCaseLetters: false,
-    includeNumbers: false,
-    includeSymbols: false,
+    strength: 0,
+    passwordOptions: {
+        includeUppercaseLetters: false,
+        includeLowerCaseLetters: false,
+        includeNumbers: false,
+        includeSymbols: false,
+    },
 };
 
 const passwordSlice = createSlice({
@@ -29,17 +37,34 @@ const passwordSlice = createSlice({
         },
         setOptionsRegister(state, action: PayloadAction<string>) {
             if (action.payload === "Include Uppercase Letters") {
-                state.includeUppercaseLetters = !state.includeUppercaseLetters;
+                state.passwordOptions.includeUppercaseLetters =
+                    !state.passwordOptions.includeUppercaseLetters;
             }
             if (action.payload === "Include Lowercase Letters") {
-                state.includeLowerCaseLetters = !state.includeLowerCaseLetters;
+                state.passwordOptions.includeLowerCaseLetters =
+                    !state.passwordOptions.includeLowerCaseLetters;
             }
             if (action.payload === "Include Numbers") {
-                state.includeNumbers = !state.includeNumbers;
+                state.passwordOptions.includeNumbers =
+                    !state.passwordOptions.includeNumbers;
             }
             if (action.payload === "Include Symbols") {
-                state.includeSymbols = !state.includeSymbols;
+                state.passwordOptions.includeSymbols =
+                    !state.passwordOptions.includeSymbols;
             }
+            const calcStrength = (): number => {
+                let trueCount: number = 0;
+                for (const key in state.passwordOptions) {
+                    if (
+                        state.passwordOptions[key as keyof PasswordOptions] ===
+                        true
+                    ) {
+                        trueCount += 1;
+                    }
+                }
+                return (state.strength = trueCount);
+            };
+            calcStrength();
         },
     },
 });

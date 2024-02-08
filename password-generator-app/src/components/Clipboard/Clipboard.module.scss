@@ -1,5 +1,17 @@
 @import "../../globalStyles.module.scss";
 
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
 .clipboard {
     display: flex;
     align-items: center;
@@ -11,7 +23,24 @@
         font-weight: $common-weight;
         color: $accent-white;
     }
+    span {
+        display: block;
+        text-transform: uppercase;
+        font-size: $sm-text;
+        color: $accent-green;
+        font-family: $main-font-family;
+    }
     button {
         background-color: transparent;
+        display: flex;
+        align-items: center;
+        gap: 16px;
+    }
+    .visHide {
+        visibility: hidden;
+    }
+    .visShow {
+        visibility: visible;
+        animation: fadeIn 2s ease;
     }
 }

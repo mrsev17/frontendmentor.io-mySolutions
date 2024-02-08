@@ -7,19 +7,20 @@ interface CheckBoxProps {
 }
 
 export const CheckBox: React.FC<CheckBoxProps> = ({ label }) => {
-    const checkboxChecked = useAppSelector((state) => {
+    const checkboxChecked: boolean = useAppSelector((state) => {
         if (label === "Include Uppercase Letters") {
-            return state.password.includeUppercaseLetters;
+            return state.password.passwordOptions.includeUppercaseLetters;
         }
         if (label === "Include Lowercase Letters") {
-            return state.password.includeLowerCaseLetters;
+            return state.password.passwordOptions.includeLowerCaseLetters;
         }
         if (label === "Include Numbers") {
-            return state.password.includeNumbers;
+            return state.password.passwordOptions.includeNumbers;
         }
         if (label === "Include Symbols") {
-            return state.password.includeSymbols;
+            return state.password.passwordOptions.includeSymbols;
         }
+        return false;
     });
     const dispatch = useAppDispatch();
     return (

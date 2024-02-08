@@ -1,0 +1,9 @@
+.copyIcon {
+    cursor: pointer;
+    path {
+        transition: fill 1s ease;
+    }
+    &:hover path {
+        fill: white;
+    }
+}

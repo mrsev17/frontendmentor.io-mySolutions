@@ -1,4 +1,4 @@
-import { Clipboard, RangeSlider, CheckBox } from "components";
+import { Clipboard, RangeSlider, CheckBox, PasswordStrength } from "components";
 import globalStyles from "./globalStyles.module.scss";
 import styles from "./App.module.scss";
 
@@ -27,6 +27,7 @@ const App: React.FC = () => {
                                 return <CheckBox key={i} label={option} />;
                             })}
                         </div>
+                        <PasswordStrength />
                     </div>
                 </section>
             </main>
