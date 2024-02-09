@@ -2,6 +2,9 @@
 
 .rangeSlider {
     margin-bottom: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
     .rangeInfo {
         display: flex;
         align-items: center;
@@ -55,6 +58,75 @@
             border-radius: 50%;
             border: none;
             transition: 0.5s ease-in-out;
+        }
+    }
+}
+
+@media (max-width: 567px) {
+    .rangeSlider {
+        margin-bottom: 32px;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        .rangeInfo {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            h3 {
+                font-size: $sm-text;
+                font-weight: $common-weight;
+                color: $accent-white;
+            }
+            span {
+                display: block;
+                color: $accent-green;
+                font-weight: $common-weight;
+                font-size: $md-text;
+            }
+        }
+        .sliderWrapper {
+            position: relative;
+            width: 100%;
+
+            input {
+                width: 100%;
+                height: 8px;
+            }
+
+            input[type="range"] {
+                -webkit-appearance: none;
+                appearance: none;
+                width: 100%;
+                cursor: pointer;
+                outline: none;
+                border-radius: 0;
+                height: 8px;
+                background-color: $accent-green;
+            }
+
+            input[type="range"]::-webkit-slider-thumb {
+                -webkit-appearance: none;
+                appearance: none;
+                height: 28px;
+                width: 28px;
+                background-color: $accent-white;
+                border-radius: 50%;
+                border: none;
+                transition: 0.5s ease-in-out;
+            }
+            input[type="range"]::-moz-range-thumb {
+                height: 28px;
+                width: 28px;
+                background-color: $accent-white;
+                border-radius: 50%;
+                border: none;
+                transition: 0.5s ease-in-out;
+            }
+            input[type="range"]::-webkit-slider-thumb:active,
+            input[type="range"]::-moz-range-thumb:active {
+                background-color: $background-main;
+                border: 2px solid $accent-green;
+            }
         }
     }
 }

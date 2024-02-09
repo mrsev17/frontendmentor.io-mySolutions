@@ -1,0 +1,46 @@
+@import "../../globalStyles.module.scss";
+
+.generate {
+    width: 100%;
+    background-color: $accent-green;
+    border: 1px solid $accent-green;
+    padding: 21px 0 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 24px;
+    -webkit-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+    color: $background-main;
+    cursor: pointer;
+    span {
+        font-family: $main-font-family;
+        font-size: $sm-text;
+        text-transform: uppercase;
+        font-weight: 700;
+        line-height: 24px;
+    }
+    &:hover {
+        background-color: $background-main;
+        border: 1px solid $accent-green;
+        span {
+            color: $accent-green;
+        }
+        svg path {
+            fill: $accent-green;
+        }
+    }
+}
+
+@media (max-width: 567px) {
+    .generate {
+        padding: 12px 0 12px;
+    }
+}

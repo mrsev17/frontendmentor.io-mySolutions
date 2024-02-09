@@ -1,4 +1,10 @@
-import { Clipboard, RangeSlider, CheckBox, PasswordStrength } from "components";
+import {
+    Clipboard,
+    RangeSlider,
+    CheckBox,
+    PasswordStrength,
+    Generate,
+} from "components";
 import globalStyles from "./globalStyles.module.scss";
 import styles from "./App.module.scss";
 
@@ -28,6 +34,7 @@ const App: React.FC = () => {
                             })}
                         </div>
                         <PasswordStrength />
+                        <Generate />
                     </div>
                 </section>
             </main>

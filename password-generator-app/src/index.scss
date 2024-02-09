@@ -14,8 +14,6 @@
 body {
     margin: 0;
     font-family: $main-font-family;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
     background-color: $accent-dark-grey;
     height: 100vh;
     display: flex;

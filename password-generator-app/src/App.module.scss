@@ -1,7 +1,7 @@
 @import "./globalStyles.module.scss";
 
 .app {
-    height: 640px;
+    width: 100%;
     width: 540px;
     h1 {
         font-weight: 700;
@@ -24,5 +24,29 @@
         flex-direction: column;
         gap: 23px;
         margin-bottom: 32px;
+    }
+}
+
+@media (max-width: 567px) {
+    .app {
+        width: 400px;
+        margin: 0 auto;
+    }
+    main {
+        .passwordControl {
+            padding: 24px 24px 24px 24px !important;
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    .app {
+        width: 360px;
+        margin: 0 auto;
+    }
+    main {
+        .passwordControl {
+            padding: 24px 24px 24px 24px !important;
+        }
     }
 }

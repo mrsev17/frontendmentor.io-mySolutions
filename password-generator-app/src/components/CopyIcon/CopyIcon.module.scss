@@ -1,6 +1,8 @@
 .copyIcon {
     cursor: pointer;
     path {
+        -webkit-transition: fill 1s ease;
+        -o-transition: fill 1s ease;
         transition: fill 1s ease;
     }
     &:hover path {

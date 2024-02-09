@@ -2,18 +2,29 @@
 
 .checkboxWrapper {
     label {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
         gap: 24px;
     }
     input[type="checkbox"] {
         -webkit-appearance: none;
+        -moz-appearance: none;
         appearance: none;
         width: 20px;
         height: 20px;
         border: 2px solid $accent-white;
         outline: none;
         cursor: pointer;
+        -webkit-transition: 0.75s ease-in-out;
+        -o-transition: 0.75s ease-in-out;
+        transition: 0.75s ease-in-out;
+        &:hover {
+            border: 2px solid $accent-green;
+        }
         &:checked {
             background-color: $accent-green;
             border: 2px solid $accent-green;
@@ -32,5 +43,13 @@
         font-size: 18px;
         font-weight: 700;
         color: $accent-white;
+    }
+}
+
+@media (max-width: 400px) {
+    .checkboxWrapper {
+        span {
+            font-size: 16px;
+        }
     }
 }

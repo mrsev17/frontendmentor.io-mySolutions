@@ -22,7 +22,9 @@ export const Clipboard: React.FC = () => {
     };
     return (
         <div className={styles.clipboard}>
-            <h2>{textClipboard}</h2>
+            <h2 className={textClipboard ? styles.generated : styles.default}>
+                {textClipboard.length ? textClipboard : "P4$5W0rD!"}
+            </h2>
             <button onClick={handleCopyClick}>
                 <span className={visibility ? styles.visShow : styles.visHide}>
                     copied

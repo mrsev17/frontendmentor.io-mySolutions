@@ -1,6 +1,5 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
-// import { ActionReducerMapBuilder } from "@reduxjs/toolkit";
-// import { RootState } from "../store";
+import { generatePassword } from "utils/functions";
 
 interface PasswordOptions {
     includeUppercaseLetters: boolean;
@@ -66,8 +65,20 @@ const passwordSlice = createSlice({
             };
             calcStrength();
         },
+        setGeneratePassword(state) {
+            const options = {
+                useUpperCase: state.passwordOptions.includeUppercaseLetters,
+                useLowerCase: state.passwordOptions.includeLowerCaseLetters,
+                useNumbers: state.passwordOptions.includeNumbers,
+                useSymbols: state.passwordOptions.includeSymbols,
+                length: state.length,
+            };
+            const result = generatePassword(options);
+            state.result = result;
+        },
     },
 });
 
-export const { setLengthPassword, setOptionsRegister } = passwordSlice.actions;
+export const { setLengthPassword, setOptionsRegister, setGeneratePassword } =
+    passwordSlice.actions;
 export default passwordSlice.reducer;

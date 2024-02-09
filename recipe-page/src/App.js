@@ -6,6 +6,7 @@ import {
     Instructions,
     Nutrition,
 } from "./components";
+
 import "./globalStyles.css";
 import "./App.css";
 
