@@ -24,6 +24,15 @@
     }
 }
 
+@keyframes comeFade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
 .clipboard {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -46,6 +55,7 @@
         font-weight: $common-weight;
         color: $accent-white;
     }
+
     .default {
         color: $accent-grey;
         font-size: $xl-text;
@@ -80,7 +90,7 @@
 
 @media (max-width: 567px) {
     .clipboard {
-        padding: 19px 12px 19px 12px;
+        padding: 19px 24px 19px 24px;
         h2 {
             font-size: $sm-text;
             font-weight: $common-weight;
@@ -122,4 +132,8 @@
             animation: fadeIn 2s ease;
         }
     }
+}
+
+.comeFade {
+    animation: comeFade 1s ease;
 }

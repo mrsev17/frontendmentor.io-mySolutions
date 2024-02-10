@@ -2,10 +2,12 @@ import { CopyIcon } from "components/CopyIcon";
 import copy from "clipboard-copy";
 import styles from "./Clipboard.module.scss";
 import { useAppSelector } from "hook";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export const Clipboard: React.FC = () => {
+    const [fade, setFade] = useState<boolean>(false);
     const [visibility, setVisibility] = useState<boolean>(false);
+
     const textClipboard: string = useAppSelector(
         (state) => state.password.result
     );
@@ -20,9 +22,23 @@ export const Clipboard: React.FC = () => {
             console.error("Error copying to clipboard:", error);
         }
     };
+    useEffect(() => {
+        setFade(true);
+        setTimeout(() => {
+            setFade(false);
+        }, 1500);
+    }, [textClipboard]);
     return (
         <div className={styles.clipboard}>
-            <h2 className={textClipboard ? styles.generated : styles.default}>
+            <h2
+                className={
+                    textClipboard
+                        ? fade
+                            ? `${styles.generated} ${styles.comeFade}`
+                            : styles.generated
+                        : styles.default
+                }
+            >
                 {textClipboard.length ? textClipboard : "P4$5W0rD!"}
             </h2>
             <button onClick={handleCopyClick}>

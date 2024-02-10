@@ -16,6 +16,10 @@ export const RangeSlider: React.FC<CustomRangeSliderProps> = ({
 }) => {
     const dispatch = useAppDispatch();
     const length = useAppSelector((state) => state.password.length);
+    const calcBackgroundSlider: number = (length / max) * 100;
+    const controlBackgroundSlider = {
+        backgroundSize: `${calcBackgroundSlider}%`,
+    };
 
     const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
         const rangeSlider = Number(event.target.value);
@@ -29,6 +33,7 @@ export const RangeSlider: React.FC<CustomRangeSliderProps> = ({
             </div>
             <div className={styles.sliderWrapper}>
                 <input
+                    style={controlBackgroundSlider}
                     type="range"
                     min={min}
                     max={max}
