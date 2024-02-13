@@ -1,0 +1,17 @@
+@import "../../globalStyles.module.scss";
+
+.infoAboutStep {
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+    h2 {
+        font-size: $xl-text;
+        font-weight: $xl-weight;
+        line-height: 37px;
+    }
+    p {
+        font-size: $md-text;
+        line-height: 25px;
+        color: $accent-grey;
+    }
+}

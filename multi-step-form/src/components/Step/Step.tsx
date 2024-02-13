@@ -3,12 +3,19 @@ import s from "./Step.module.scss";
 interface StepProps {
     step: number;
     text: string;
+    active: boolean;
 }
 
-export const Step: React.FC<StepProps> = ({ step, text }) => {
+export const Step: React.FC<StepProps> = ({ step, text, active }) => {
     return (
         <div className={s.stepWidgetWrapper}>
-            <div className={s.stepWidgetStep}>
+            <div
+                className={
+                    active
+                        ? `${s.stepWidgetStep} ${s.stepWidgetStepActive}`
+                        : s.stepWidgetStep
+                }
+            >
                 <span>{step}</span>
             </div>
             <div className={s.stepWidgetInfo}>

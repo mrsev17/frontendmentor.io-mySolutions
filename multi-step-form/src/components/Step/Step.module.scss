@@ -5,17 +5,18 @@
     align-items: center;
     gap: 16px;
     .stepWidgetStep {
-        background-color: $accent-light-sky;
+        background-color: transparent;
+        border: 1px solid $accent-white;
         border-radius: 50%;
-        width: 33px;
-        height: 33px;
+        width: 32px;
+        height: 32px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         span {
             font-weight: $xl-weight;
-            color: $accent-dark;
+            color: $accent-white;
             font-size: $sm-text;
             line-height: 16px;
         }
@@ -37,5 +38,13 @@
             line-height: 16px;
             color: $accent-white;
         }
+    }
+}
+
+.stepWidgetStepActive {
+    background-color: $accent-light-sky !important;
+    border: 1px solid $accent-light-sky !important;
+    span {
+        color: $accent-dark !important;
     }
 }

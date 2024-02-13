@@ -41,6 +41,8 @@ $accent-light-sky: #bee2fd;
 $accent-orange: #ffaf7e;
 $accent-pink: #f9818e;
 $accent-red: #ee374a;
+$input-border: #d6d9e6;
+$hover-btn: #164a8a;
 
 .container {
     max-width: 940px;
@@ -49,4 +51,9 @@ $accent-red: #ee374a;
     padding: 16px;
     border-radius: 15px;
     background-color: $accent-white;
+}
+
+.d-flex {
+    display: flex;
+    gap: 100px;
 }

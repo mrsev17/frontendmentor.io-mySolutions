@@ -23,8 +23,15 @@ export const StepsWidget = () => {
     return (
         <div className={s.stepsWidget}>
             <div className={s.stepsWidgetWrapper}>
-                {widgetData.map((step) => {
-                    return <Step step={step.step} text={step.text} />;
+                {widgetData.map((step, i) => {
+                    return (
+                        <Step
+                            key={i}
+                            step={step.step}
+                            text={step.text}
+                            active={i === 0 ? true : false}
+                        />
+                    );
                 })}
             </div>
         </div>
