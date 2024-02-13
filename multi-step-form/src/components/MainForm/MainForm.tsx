@@ -1,22 +1,14 @@
-import { InfoAboutStep } from "components/InfoAboutStep";
 import s from "./MainForm.module.scss";
 import { FirstForm } from "components/FirstForm";
+import { SecondForm } from "components/SecondForm";
 import { useAppSelector } from "hooks";
 
 export const MainForm = () => {
-    const firstStep: boolean = useAppSelector(
-        (state) => state.multiStep.formOne.status
-    );
+    const getProgress = useAppSelector((state) => state.multiStep.progress);
     return (
         <div className={s.mainForm}>
-            {!firstStep ? (
-                <>
-                    <InfoAboutStep />
-                    <FirstForm />
-                </>
-            ) : (
-                ""
-            )}
+            {getProgress.first ? <FirstForm /> : ""}
+            {getProgress.second ? <SecondForm /> : ""}
         </div>
     );
 };

@@ -1,11 +1,5 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 
-interface FirstStep {
-    name: string;
-    mail: string;
-    phone: string;
-}
-
 interface MultiStepFormSlice {
     progress: {
         first: boolean;
@@ -17,7 +11,10 @@ interface MultiStepFormSlice {
         fullName: string;
         mail: string;
         phone: string;
-        status: boolean;
+    };
+    formTwo: {
+        plan: string;
+        option: string;
     };
 }
 
@@ -32,7 +29,10 @@ const initialState: MultiStepFormSlice = {
         fullName: "",
         mail: "",
         phone: "",
-        status: false,
+    },
+    formTwo: {
+        plan: "Arcade",
+        option: "Monthly",
     },
 };
 
@@ -40,16 +40,44 @@ const multiStepSlice = createSlice({
     name: "multiStep",
     initialState,
     reducers: {
-        setFirstStep(state, action: PayloadAction<FirstStep>) {
-            state.formOne.fullName = action.payload.name;
-            state.formOne.mail = action.payload.mail;
-            state.formOne.phone = action.payload.phone;
-            state.formOne.status = true;
+        setInputName(state, action: PayloadAction<string>) {
+            state.formOne.fullName = action.payload;
+        },
+        setInputMail(state, action: PayloadAction<string>) {
+            state.formOne.mail = action.payload;
+        },
+        setInputPhone(state, action: PayloadAction<string>) {
+            state.formOne.phone = action.payload;
+        },
+        setFirstStep(state) {
             state.progress.first = false;
             state.progress.second = true;
+        },
+        setSecondFormPlan(state, action: PayloadAction<string>) {
+            state.formTwo.plan = action.payload;
+        },
+        setBilling(state, action: PayloadAction<boolean>) {
+            if (!action.payload) {
+                state.formTwo.option = "Yearly";
+            }
+            if (action.payload) {
+                state.formTwo.option = "Monthly";
+            }
+        },
+        goBackFromSecondForm(state) {
+            state.progress.first = true;
+            state.progress.second = false;
         },
     },
 });
 
-export const { setFirstStep } = multiStepSlice.actions;
+export const {
+    setFirstStep,
+    setSecondFormPlan,
+    setBilling,
+    goBackFromSecondForm,
+    setInputName,
+    setInputMail,
+    setInputPhone,
+} = multiStepSlice.actions;
 export default multiStepSlice.reducer;

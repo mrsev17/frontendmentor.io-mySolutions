@@ -43,6 +43,7 @@ $accent-pink: #f9818e;
 $accent-red: #ee374a;
 $input-border: #d6d9e6;
 $hover-btn: #164a8a;
+$card-bg: #f8f9ff;
 
 .container {
     max-width: 940px;
@@ -67,5 +68,14 @@ $hover-btn: #164a8a;
     }
     100% {
         opacity: 0;
+    }
+}
+
+@keyframes fadeInForm {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
     }
 }

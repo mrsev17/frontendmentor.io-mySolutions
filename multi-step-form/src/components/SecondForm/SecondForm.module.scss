@@ -1,0 +1,158 @@
+@import "../../globalStyles.module.scss";
+
+.secondForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+    animation: fadeInForm 1s ease-in;
+    .infoAboutSecondStep {
+        display: flex;
+        flex-direction: column;
+        gap: 11px;
+        margin-bottom: 35px;
+        h2 {
+            font-size: $xl-text;
+            font-weight: $xl-weight;
+            line-height: 37px;
+        }
+        p {
+            font-size: $md-text;
+            line-height: 25px;
+            color: $accent-grey;
+        }
+    }
+    .options {
+        display: flex;
+        justify-content: space-between;
+        gap: 18px;
+        margin-bottom: 32px;
+        .card {
+            padding: 20px 16px 20px 16px;
+            width: 138px;
+            background-color: $accent-white;
+            display: flex;
+            flex-direction: column;
+            gap: 39px;
+            border-radius: 8px;
+            border: 1px solid $input-border;
+            transition: 0.5s ease-in;
+            img {
+                width: 40px;
+                height: 40px;
+            }
+            .cardSub {
+                display: flex;
+                flex-direction: column;
+                gap: 7px;
+                h4 {
+                    font-size: $md-text;
+                    font-weight: $md-weight;
+                    line-height: 18px;
+                    text-transform: capitalize;
+                }
+                span {
+                    color: $accent-grey;
+                    font-size: $sm-text;
+                    line-height: 16px;
+                }
+            }
+            &:hover {
+                box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+            }
+        }
+    }
+    .optionToggle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 24px;
+        background-color: $card-bg;
+        padding: 13px 0 19px 0;
+        border-radius: 8px;
+        .selectedBilling {
+            transition: 0.5s ease-in;
+            color: $accent-dark !important;
+        }
+        span {
+            display: block;
+            color: $accent-grey;
+            font-weight: $xl-weight;
+        }
+        .toggleSwitch {
+            position: relative;
+            display: inline-block;
+            width: 38px;
+            height: 20px;
+            input[type="checkbox"] {
+                display: none;
+            }
+            .switch {
+                position: absolute;
+                cursor: pointer;
+                background-color: $accent-dark;
+                border-radius: 10px;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                transition: background-color 0.4s ease;
+                &::before {
+                    position: absolute;
+                    content: "";
+                    left: 4px;
+                    top: 4px;
+                    width: 12px;
+                    height: 12px;
+                    background-color: $accent-white;
+                    border-radius: 10px;
+                    transition: transform 0.4s ease;
+                }
+            }
+            input[type="checkbox"]:checked + .switch::before {
+                transform: translateX(20px);
+                background-color: $accent-white;
+            }
+            input[type="checkbox"]:checked + .switch {
+                background-color: $accent-dark;
+            }
+        }
+    }
+    .nextStepBtn {
+        display: flex;
+        justify-content: space-between;
+        .next {
+            text-transform: capitalize;
+            background-color: $accent-dark;
+            color: $accent-white;
+            padding: 14px 25px 16px 24px;
+            border-radius: 8px;
+            font-weight: $md-weight;
+            transition: 1s ease-in-out;
+            cursor: pointer;
+            font-size: $md-text;
+            &:hover {
+                background-color: $hover-btn;
+            }
+        }
+        .previous {
+            margin: 14px 25px 16px 24px;
+            background-color: transparent;
+            font-weight: $md-weight;
+            line-height: 18px;
+            color: $accent-grey;
+            font-size: $md-text;
+            transition: 1s ease-in-out;
+            cursor: pointer;
+            &:hover {
+                color: $accent-dark;
+            }
+        }
+    }
+}
+
+.cardSelected {
+    border: 1px solid $accent-blue !important;
+    background-color: $card-bg !important;
+}
