@@ -1,0 +1,16 @@
+@import "../../globalStyles.module.scss";
+
+.stepsWidget {
+    height: 100%;
+    max-width: 274px;
+    min-height: 568px;
+    background: url("../../assets/images/bg-sidebar-desktop.svg");
+    background-repeat: no-repeat;
+    .stepsWidgetWrapper {
+        padding: 40px 32px 40px 32px;
+        display: flex;
+        // align-items: center;
+        flex-direction: column;
+        gap: 16px;
+    }
+}

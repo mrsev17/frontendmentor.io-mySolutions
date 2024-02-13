@@ -1,0 +1,52 @@
+@font-face {
+    font-family: "Ubuntu";
+    src: url("./assets/fonts/Ubuntu-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Ubuntu";
+    src: url("./assets/fonts/Ubuntu-Medium.ttf") format("truetype");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Ubuntu";
+    src: url("./assets/fonts/Ubuntu-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+// Variables SCSS
+
+$main-font-family: "Ubuntu", sans-serif;
+$sub-text: 12px;
+$sm-text: 14px;
+$md-text: 16px;
+$xl-text: 32px;
+$sm-weight: 400;
+$md-weight: 500;
+$xl-weight: 700;
+
+// Colors
+$main-bg: #eff5ff;
+$accent-dark: #022959;
+$accent-white: #ffffff;
+$accent-sky: #abc0ff;
+$accent-blue: #483eff;
+$accent-grey: #9699aa;
+$accent-light-sky: #bee2fd;
+$accent-orange: #ffaf7e;
+$accent-pink: #f9818e;
+$accent-red: #ee374a;
+
+.container {
+    max-width: 940px;
+    min-height: 600px;
+    width: 100%;
+    padding: 16px;
+    border-radius: 15px;
+    background-color: $accent-white;
+}

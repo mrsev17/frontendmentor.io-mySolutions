@@ -1,0 +1,41 @@
+@import "../../globalStyles.module.scss";
+
+.stepWidgetWrapper {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    .stepWidgetStep {
+        background-color: $accent-light-sky;
+        border-radius: 50%;
+        width: 33px;
+        height: 33px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        span {
+            font-weight: $xl-weight;
+            color: $accent-dark;
+            font-size: $sm-text;
+            line-height: 16px;
+        }
+    }
+    .stepWidgetInfo {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        .stepWidgetInfoStep {
+            font-size: $sub-text;
+            color: $accent-sky;
+            line-height: 14px;
+            text-transform: uppercase;
+        }
+        .stepWidgetInfoTitle {
+            text-transform: uppercase;
+            font-size: $sm-text;
+            font-weight: $xl-weight;
+            line-height: 16px;
+            color: $accent-white;
+        }
+    }
+}
