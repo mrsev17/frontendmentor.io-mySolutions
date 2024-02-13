@@ -1,7 +1,10 @@
 import { Step } from "components/Step/Step";
 import s from "./StepsWidget.module.scss";
+import { useAppSelector } from "../../hooks";
 
 export const StepsWidget = () => {
+    const getProgress = useAppSelector((state) => state.multiStep.progress);
+    const arrayFromProgress = Object.values(getProgress);
     const widgetData = [
         {
             step: 1,
@@ -29,7 +32,7 @@ export const StepsWidget = () => {
                             key={i}
                             step={step.step}
                             text={step.text}
-                            active={i === 0 ? true : false}
+                            active={arrayFromProgress[i] ? true : false}
                         />
                     );
                 })}

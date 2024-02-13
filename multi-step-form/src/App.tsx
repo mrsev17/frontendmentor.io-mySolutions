@@ -1,8 +1,7 @@
 // import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./globalStyles.module.scss";
 import s from "./App.module.scss";
-import { StepsWidget } from "components";
-import { MainForm } from "components/MainForm";
+import { StepsWidget, MainForm } from "components";
 
 const App: React.FC = () => {
     return (

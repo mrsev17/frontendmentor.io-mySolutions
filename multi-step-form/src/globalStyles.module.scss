@@ -57,3 +57,15 @@ $hover-btn: #164a8a;
     display: flex;
     gap: 100px;
 }
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}

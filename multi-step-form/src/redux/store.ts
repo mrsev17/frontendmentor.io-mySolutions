@@ -17,7 +17,7 @@ const rootReducer = combineReducers({
 });
 
 const persistConfig = {
-    key: "password-generator-app",
+    key: "multi-step-form",
     storage,
 };
 

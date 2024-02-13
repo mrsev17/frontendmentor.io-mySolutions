@@ -9,6 +9,14 @@
         display: flex;
         flex-direction: column;
         gap: 24px;
+        .firstFormLabel {
+            display: flex;
+            justify-content: space-between;
+            .firstFormCaution {
+                color: $accent-red;
+                animation: fadeIn 2.5s ease-in;
+            }
+        }
         label {
             display: flex;
             flex-direction: column;
@@ -20,11 +28,12 @@
                 text-transform: capitalize;
             }
             input {
+                color: $accent-dark;
                 outline: none;
                 border: 1px solid $input-border;
                 padding: 12px 16px 11px 16px;
                 border-radius: 8px;
-                transition: 1s ease-in-out;
+                transition: 0.4s ease-in-out;
                 &::placeholder {
                     font-weight: $md-weight;
                     line-height: 25px;
@@ -53,4 +62,8 @@
             }
         }
     }
+}
+
+.wrongInput {
+    border: 1px solid $accent-red !important;
 }
