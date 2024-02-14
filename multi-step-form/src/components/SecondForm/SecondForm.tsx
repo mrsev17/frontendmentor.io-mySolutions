@@ -1,13 +1,12 @@
 import { useState } from "react";
 import s from "./SecondForm.module.scss";
-import arcadeIcon from "../../assets/images/icon-arcade.svg";
-import advancedIcon from "../../assets/images/icon-advanced.svg";
-import proIcon from "../../assets/images/icon-pro.svg";
+import { planData } from "utils/data";
 import { useAppDispatch, useAppSelector } from "hooks";
 import {
     setSecondFormPlan,
     setBilling,
     goBackFromSecondForm,
+    setSecondStep,
 } from "../../redux/multiStepSlice/multiStepSlice";
 
 export const SecondForm = () => {
@@ -22,32 +21,6 @@ export const SecondForm = () => {
         setIsToggled(!isToggled);
         dispatch(setBilling(isToggled));
     };
-    const planData = [
-        {
-            option: "Arcade",
-            value: "$9/mo",
-            icon: arcadeIcon,
-            selected() {
-                return this.option === getPlan;
-            },
-        },
-        {
-            option: "Advanced",
-            value: "$12/mo",
-            icon: advancedIcon,
-            selected() {
-                return this.option === getPlan;
-            },
-        },
-        {
-            option: "Pro",
-            value: "$15/mo",
-            icon: proIcon,
-            selected() {
-                return this.option === getPlan;
-            },
-        },
-    ];
     return (
         <form className={s.secondForm}>
             <div>
@@ -57,7 +30,7 @@ export const SecondForm = () => {
                 </div>
 
                 <div className={s.options}>
-                    {planData.map((card, i) => {
+                    {planData(getPlan).map((card, i) => {
                         return (
                             <div
                                 key={i}
@@ -113,7 +86,11 @@ export const SecondForm = () => {
                 >
                     Go Back
                 </button>
-                <button className={s.next} type="button">
+                <button
+                    className={s.next}
+                    type="button"
+                    onClick={() => dispatch(setSecondStep())}
+                >
                     next step
                 </button>
             </div>

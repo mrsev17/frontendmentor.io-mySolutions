@@ -1,6 +1,5 @@
 import s from "./MainForm.module.scss";
-import { FirstForm } from "components/FirstForm";
-import { SecondForm } from "components/SecondForm";
+import { FirstForm, SecondForm, ThirdForm } from "components";
 import { useAppSelector } from "hooks";
 
 export const MainForm = () => {
@@ -9,6 +8,7 @@ export const MainForm = () => {
         <div className={s.mainForm}>
             {getProgress.first ? <FirstForm /> : ""}
             {getProgress.second ? <SecondForm /> : ""}
+            {getProgress.third ? <ThirdForm /> : ""}
         </div>
     );
 };

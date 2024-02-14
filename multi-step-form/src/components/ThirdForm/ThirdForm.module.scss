@@ -1,0 +1,102 @@
+@import "../../globalStyles.module.scss";
+
+.thirdForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+    animation: fadeInForm 1s ease-in;
+    .infoAboutThirdStep {
+        display: flex;
+        flex-direction: column;
+        gap: 11px;
+        margin-bottom: 35px;
+        h2 {
+            font-size: $xl-text;
+            font-weight: $xl-weight;
+            line-height: 37px;
+        }
+        p {
+            font-size: $md-text;
+            line-height: 25px;
+            color: $accent-grey;
+        }
+    }
+    .thirdFormWrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        li {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 112px;
+            padding: 16px 24px 16px 24px;
+            border: 1px solid $accent-grey;
+            border-radius: 8px;
+            transition: 0.3s ease-in;
+            .checkBoxSub {
+                display: flex;
+                align-items: center;
+                gap: 24px;
+                .infoService {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 7px;
+                    h3 {
+                        line-height: 18px;
+                        font-weight: $md-weight;
+                    }
+                    span {
+                        color: $accent-grey;
+                        font-size: $sm-text;
+                        line-height: 20px;
+                    }
+                }
+            }
+            span {
+                color: $accent-blue;
+                font-size: $sm-text;
+                line-height: 20px;
+            }
+        }
+    }
+    .nextStepBtn {
+        display: flex;
+        justify-content: space-between;
+        .next {
+            text-transform: capitalize;
+            background-color: $accent-dark;
+            color: $accent-white;
+            padding: 14px 25px 16px 24px;
+            border-radius: 8px;
+            font-weight: $md-weight;
+            transition: 1s ease-in-out;
+            cursor: pointer;
+            font-size: $md-text;
+            &:hover {
+                background-color: $hover-btn;
+            }
+        }
+        .previous {
+            margin: 14px 25px 16px 24px;
+            background-color: transparent;
+            font-weight: $md-weight;
+            line-height: 18px;
+            color: $accent-grey;
+            font-size: $md-text;
+            transition: 1s ease-in-out;
+            cursor: pointer;
+            &:hover {
+                color: $accent-dark;
+            }
+        }
+    }
+}
+
+.selectedService {
+    border-color: $accent-blue !important;
+    background-color: $card-bg !important;
+}

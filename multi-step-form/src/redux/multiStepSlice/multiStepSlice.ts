@@ -16,6 +16,20 @@ interface MultiStepFormSlice {
         plan: string;
         option: string;
     };
+    formThree: {
+        onlineService: {
+            status: boolean;
+            value: number;
+        };
+        largerStorage: {
+            status: boolean;
+            value: number;
+        };
+        customizableProfile: {
+            status: boolean;
+            value: number;
+        };
+    };
 }
 
 const initialState: MultiStepFormSlice = {
@@ -33,6 +47,20 @@ const initialState: MultiStepFormSlice = {
     formTwo: {
         plan: "Arcade",
         option: "Monthly",
+    },
+    formThree: {
+        onlineService: {
+            status: false,
+            value: 1,
+        },
+        largerStorage: {
+            status: false,
+            value: 2,
+        },
+        customizableProfile: {
+            status: false,
+            value: 2,
+        },
     },
 };
 
@@ -68,6 +96,33 @@ const multiStepSlice = createSlice({
             state.progress.first = true;
             state.progress.second = false;
         },
+        setSecondStep(state) {
+            state.progress.second = false;
+            state.progress.third = true;
+        },
+        // Third form
+        setService(state, action: PayloadAction<string>) {
+            if (action.payload === "Online Service") {
+                state.formThree.onlineService.status =
+                    !state.formThree.onlineService.status;
+            }
+            if (action.payload === "Larger storage") {
+                state.formThree.largerStorage.status =
+                    !state.formThree.largerStorage.status;
+            }
+            if (action.payload === "Customizable Profile") {
+                state.formThree.customizableProfile.status =
+                    !state.formThree.customizableProfile.status;
+            }
+        },
+        setThirdStep(state) {
+            state.progress.third = false;
+            state.progress.fourd = true;
+        },
+        goBackFromThirdForm(state) {
+            state.progress.second = true;
+            state.progress.third = false;
+        },
     },
 });
 
@@ -79,5 +134,9 @@ export const {
     setInputName,
     setInputMail,
     setInputPhone,
+    setSecondStep,
+    setService,
+    setThirdStep,
+    goBackFromThirdForm,
 } = multiStepSlice.actions;
 export default multiStepSlice.reducer;
