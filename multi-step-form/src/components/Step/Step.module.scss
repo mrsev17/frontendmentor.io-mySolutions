@@ -8,8 +8,8 @@
         background-color: transparent;
         border: 1px solid $accent-white;
         border-radius: 50%;
-        width: 32px;
-        height: 32px;
+        width: 33px;
+        height: 33px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -46,5 +46,13 @@
     border: 1px solid $accent-light-sky !important;
     span {
         color: $accent-dark !important;
+    }
+}
+
+@media (max-width: 830px) {
+    .stepWidgetWrapper {
+        .stepWidgetInfo {
+            display: none;
+        }
     }
 }

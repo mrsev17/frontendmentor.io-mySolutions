@@ -1,0 +1,27 @@
+@import "../../globalStyles.module.scss";
+
+.btn {
+    text-transform: capitalize;
+    background-color: $accent-dark;
+    color: $accent-white;
+    padding: 14px 25px 16px 24px;
+    border-radius: 8px;
+    font-weight: $md-weight;
+    transition: 1s ease-in-out;
+    cursor: pointer;
+    font-size: $md-text;
+    &:hover {
+        background-color: $hover-btn;
+    }
+}
+
+.confirmBtn {
+    background-color: $accent-blue !important;
+}
+
+@media (max-width: 830px) {
+    .btn {
+        padding: 12px 16px 12px 16px;
+        font-size: $sm-text;
+    }
+}

@@ -1,27 +1,6 @@
 @import "../../globalStyles.module.scss";
 
-.firstForm {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
-    animation: fadeInForm 1s ease-in;
-    .infoAboutFirstStep {
-        display: flex;
-        flex-direction: column;
-        gap: 11px;
-        margin-bottom: 35px;
-        h2 {
-            font-size: $xl-text;
-            font-weight: $xl-weight;
-            line-height: 37px;
-        }
-        p {
-            font-size: $md-text;
-            line-height: 25px;
-            color: $accent-grey;
-        }
-    }
+.universalForm {
     .firstFormWrapper {
         display: flex;
         flex-direction: column;
@@ -65,23 +44,34 @@
     .nextStepBtn {
         display: flex;
         justify-content: end;
-        button {
-            text-transform: capitalize;
-            background-color: $accent-dark;
-            color: $accent-white;
-            padding: 14px 25px 16px 24px;
-            border-radius: 8px;
-            font-weight: $md-weight;
-            transition: 1s ease-in-out;
-            cursor: pointer;
-            font-size: $md-text;
-            &:hover {
-                background-color: $hover-btn;
-            }
-        }
     }
 }
 
 .wrongInput {
     border: 1px solid $accent-red !important;
+}
+
+@media (max-width: 830px) {
+    .universalForm {
+        .firstFormWrapper {
+            label {
+                span {
+                    font-size: 12px;
+                }
+                input {
+                    font-size: 15px;
+                    line-height: 17px;
+                    padding: 10px 16px 11px 16px;
+                }
+            }
+        }
+        .nextStepBtn {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            padding: 16px;
+            background-color: $accent-white;
+            width: 100%;
+        }
+    }
 }

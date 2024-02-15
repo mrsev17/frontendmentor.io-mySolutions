@@ -14,3 +14,17 @@
         gap: 32px;
     }
 }
+
+@media (max-width: 830px) {
+    .stepsWidget {
+        background: none;
+        min-height: auto;
+        max-width: none;
+        .stepsWidgetWrapper {
+            flex-direction: row;
+            justify-content: center;
+            gap: 16px;
+            padding: 0 0 34px 0;
+        }
+    }
+}

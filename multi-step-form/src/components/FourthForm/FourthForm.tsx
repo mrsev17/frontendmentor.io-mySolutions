@@ -5,6 +5,7 @@ import {
     setThankYouPage,
 } from "../../redux/multiStepSlice/multiStepSlice";
 import s from "./FourthForm.module.scss";
+import { NextBtn } from "components/NextBtn";
 
 export const FourthForm = () => {
     const dispatch = useAppDispatch();
@@ -39,10 +40,12 @@ export const FourthForm = () => {
         }
     };
 
+    const confirm = () => dispatch(setThankYouPage());
+
     return (
-        <form className={s.fourthForm}>
+        <form className={s.universalForm}>
             <div>
-                <div className={s.infoAboutFourthStep}>
+                <div className={s.infoAboutUniversalStep}>
                     <h2>Finishing up</h2>
                     <p>Double-check everything looks OK before confirming.</p>
                 </div>
@@ -104,13 +107,7 @@ export const FourthForm = () => {
                 >
                     Go Back
                 </button>
-                <button
-                    className={`${s.next} ${s.confirmBtn}`}
-                    type="button"
-                    onClick={() => dispatch(setThankYouPage())}
-                >
-                    confirm
-                </button>
+                <NextBtn func={confirm} text="confirm" />
             </div>
         </form>
     );

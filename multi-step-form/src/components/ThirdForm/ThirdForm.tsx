@@ -1,12 +1,12 @@
 import s from "./ThirdForm.module.scss";
 import { CheckBox } from "components/CheckBox";
 import { useAppDispatch, useAppSelector } from "hooks";
-// import { dataService } from "utils/data";
 import {
     setThirdStep,
     goBackFromThirdForm,
     setService,
 } from "../../redux/multiStepSlice/multiStepSlice";
+import { NextBtn } from "components/NextBtn";
 
 interface FormThree {
     onlineService: {
@@ -61,10 +61,14 @@ export const ThirdForm = () => {
         },
     ];
 
+    const nextStep = () => {
+        dispatch(setThirdStep());
+    };
+
     return (
-        <form className={s.thirdForm}>
+        <form className={s.universalForm}>
             <div>
-                <div className={s.infoAboutThirdStep}>
+                <div className={s.infoAboutUniversalStep}>
                     <h2>Pick add-ons</h2>
                     <p>Add-ons help enhance your gaming experience.</p>
                 </div>
@@ -105,13 +109,7 @@ export const ThirdForm = () => {
                 >
                     Go Back
                 </button>
-                <button
-                    className={s.next}
-                    type="button"
-                    onClick={() => dispatch(setThirdStep())}
-                >
-                    next step
-                </button>
+                <NextBtn func={nextStep} text="next step" />
             </div>
         </form>
     );

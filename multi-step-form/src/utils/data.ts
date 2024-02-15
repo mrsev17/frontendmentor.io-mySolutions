@@ -47,21 +47,3 @@ export const widgetData = [
         text: "summary",
     },
 ];
-
-export const dataService = [
-    {
-        serviceName: "Online Service",
-        description: "Access to multiplayer games",
-        price: 1,
-    },
-    {
-        serviceName: "Larger storage",
-        description: "Extra 1TB of cloud save",
-        price: 2,
-    },
-    {
-        serviceName: "Customizable Profile",
-        description: "Custom theme on your profile",
-        price: 2,
-    },
-];

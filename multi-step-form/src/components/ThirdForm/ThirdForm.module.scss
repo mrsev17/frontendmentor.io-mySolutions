@@ -1,28 +1,6 @@
 @import "../../globalStyles.module.scss";
 
-.thirdForm {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
-    width: 100%;
-    animation: fadeInForm 1s ease-in;
-    .infoAboutThirdStep {
-        display: flex;
-        flex-direction: column;
-        gap: 11px;
-        margin-bottom: 35px;
-        h2 {
-            font-size: $xl-text;
-            font-weight: $xl-weight;
-            line-height: 37px;
-        }
-        p {
-            font-size: $md-text;
-            line-height: 25px;
-            color: $accent-grey;
-        }
-    }
+.universalForm {
     .thirdFormWrapper {
         display: flex;
         flex-direction: column;
@@ -99,4 +77,39 @@
 .selectedService {
     border-color: $accent-blue !important;
     background-color: $card-bg !important;
+}
+
+@media (max-width: 830px) {
+    .universalForm {
+        .thirdFormWrapper {
+            gap: 12px;
+            li {
+                gap: 0;
+                padding: 13px 16px 13px 16px;
+                .checkBoxSub {
+                    gap: 16px;
+                    .infoService {
+                        h3 {
+                            font-size: $sm-text;
+                            line-height: 16px;
+                        }
+                        span {
+                            font-size: 12px;
+                        }
+                    }
+                }
+                span {
+                    font-size: 12px;
+                }
+            }
+        }
+        .nextStepBtn {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            background-color: $accent-white;
+            width: 100%;
+            padding: 16px;
+        }
+    }
 }

@@ -26,6 +26,10 @@ $sub-text: 12px;
 $sm-text: 14px;
 $md-text: 16px;
 $xl-text: 32px;
+//
+$media-sm-text: 14px;
+
+$media-xl-text: 24px;
 $sm-weight: 400;
 $md-weight: 500;
 $xl-weight: 700;
@@ -77,5 +81,53 @@ $card-bg: #f8f9ff;
     }
     100% {
         opacity: 1;
+    }
+}
+
+.universalForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    animation: fadeInForm 1s ease-in;
+    .infoAboutUniversalStep {
+        display: flex;
+        flex-direction: column;
+        gap: 11px;
+        margin-bottom: 35px;
+        h2 {
+            font-size: $xl-text;
+            font-weight: $xl-weight;
+            line-height: 37px;
+        }
+        p {
+            font-size: $md-text;
+            line-height: 25px;
+            color: $accent-grey;
+        }
+    }
+}
+
+@media (max-width: 830px) {
+    .d-flex {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0;
+    }
+    .container {
+        background-color: transparent;
+        min-height: auto;
+        padding: 32px 16px 32px 16px;
+    }
+    .universalForm {
+        .infoAboutUniversalStep {
+            margin-bottom: 22px;
+            h2 {
+                font-size: $media-xl-text;
+                font-weight: $xl-weight;
+                line-height: 28px;
+            }
+        }
     }
 }

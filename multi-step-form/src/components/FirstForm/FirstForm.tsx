@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import s from "./FirstForm.module.scss";
 import { useAppDispatch, useAppSelector } from "hooks";
 import {
@@ -7,6 +7,7 @@ import {
     setInputMail,
     setInputPhone,
 } from "../../redux/multiStepSlice/multiStepSlice";
+import { NextBtn } from "components/NextBtn";
 
 export const FirstForm = () => {
     const dispatch = useAppDispatch();
@@ -19,6 +20,7 @@ export const FirstForm = () => {
     const inputPhone: string = useAppSelector(
         (state) => state.multiStep.formOne.phone
     );
+
     const [nameValid, setNameValid] = useState<boolean>(false);
     const [mailValid, setMailValid] = useState<boolean>(false);
     const [phoneValid, setPhoneValid] = useState<boolean>(false);
@@ -51,10 +53,12 @@ export const FirstForm = () => {
         }
     };
 
+    useEffect(() => {}, []);
+
     return (
-        <form className={s.firstForm}>
+        <form className={s.universalForm}>
             <div>
-                <div className={s.infoAboutFirstStep}>
+                <div className={s.infoAboutUniversalStep}>
                     <h2>Personal info</h2>
                     <p>
                         Please provide your name, email address, and phone
@@ -80,6 +84,7 @@ export const FirstForm = () => {
                             value={inputName}
                             onChange={handleName}
                             placeholder="e.g. Stephen King"
+                            maxLength={24}
                         />
                     </label>
                     <label>
@@ -101,6 +106,7 @@ export const FirstForm = () => {
                             value={inputMail}
                             onChange={handleMail}
                             placeholder="e.g. stephenking@lorem.com"
+                            maxLength={24}
                         />
                     </label>
                     <label>
@@ -121,14 +127,13 @@ export const FirstForm = () => {
                             value={inputPhone}
                             onChange={handlePhone}
                             placeholder="e.g. +1 234 567 890"
+                            maxLength={24}
                         />
                     </label>
                 </div>
             </div>
             <div className={s.nextStepBtn}>
-                <button type="button" onClick={startNextStep}>
-                    next step
-                </button>
+                <NextBtn func={startNextStep} text="next step" />
             </div>
         </form>
     );

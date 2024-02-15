@@ -8,6 +8,7 @@ import {
     goBackFromSecondForm,
     setSecondStep,
 } from "../../redux/multiStepSlice/multiStepSlice";
+import { NextBtn } from "components/NextBtn";
 
 export const SecondForm = () => {
     const dispatch = useAppDispatch();
@@ -26,10 +27,13 @@ export const SecondForm = () => {
         setIsToggled(!isToggled);
         dispatch(setBilling(isToggled));
     };
+    const nextStep = () => {
+        dispatch(setSecondStep());
+    };
     return (
-        <form className={s.secondForm}>
+        <form className={s.universalForm}>
             <div>
-                <div className={s.infoAboutSecondStep}>
+                <div className={s.infoAboutUniversalStep}>
                     <h2>Select your plan</h2>
                     <p>You have the option of monthly or yearly billing.</p>
                 </div>
@@ -96,13 +100,7 @@ export const SecondForm = () => {
                 >
                     Go Back
                 </button>
-                <button
-                    className={s.next}
-                    type="button"
-                    onClick={() => dispatch(setSecondStep())}
-                >
-                    next step
-                </button>
+                <NextBtn func={nextStep} text="next step" />
             </div>
         </form>
     );
