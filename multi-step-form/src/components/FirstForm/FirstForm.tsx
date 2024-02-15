@@ -10,11 +10,15 @@ import {
 
 export const FirstForm = () => {
     const dispatch = useAppDispatch();
-    const inputName = useAppSelector(
+    const inputName: string = useAppSelector(
         (state) => state.multiStep.formOne.fullName
     );
-    const inputMail = useAppSelector((state) => state.multiStep.formOne.mail);
-    const inputPhone = useAppSelector((state) => state.multiStep.formOne.phone);
+    const inputMail: string = useAppSelector(
+        (state) => state.multiStep.formOne.mail
+    );
+    const inputPhone: string = useAppSelector(
+        (state) => state.multiStep.formOne.phone
+    );
     const [nameValid, setNameValid] = useState<boolean>(false);
     const [mailValid, setMailValid] = useState<boolean>(false);
     const [phoneValid, setPhoneValid] = useState<boolean>(false);
@@ -29,7 +33,7 @@ export const FirstForm = () => {
         dispatch(setInputPhone(e.target.value));
     };
 
-    const startNextStep = () => {
+    const startNextStep = (): void => {
         if (inputName.length < 1) {
             setNameValid(true);
             setTimeout(() => setNameValid(false), 2500);

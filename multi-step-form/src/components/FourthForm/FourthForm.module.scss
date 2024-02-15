@@ -1,0 +1,142 @@
+@import "../../globalStyles.module.scss";
+
+.fourthForm {
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+    animation: fadeInForm 1s ease-in;
+    .infoAboutFourthStep {
+        display: flex;
+        flex-direction: column;
+        gap: 11px;
+        margin-bottom: 35px;
+        h2 {
+            font-size: $xl-text;
+            font-weight: $xl-weight;
+            line-height: 37px;
+        }
+        p {
+            font-size: $md-text;
+            line-height: 25px;
+            color: $accent-grey;
+        }
+    }
+    .fourthFormWrapper {
+        padding: 16px 24px 16px 24px;
+        background-color: $main-bg;
+        border-radius: 8px;
+
+        .fourthFormMainInfo {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 24px;
+            div {
+                display: flex;
+                flex-direction: column;
+                gap: 7px;
+                h2 {
+                    font-size: $md-text;
+                    font-weight: $md-weight;
+                    line-height: 18px;
+                }
+                button {
+                    background-color: transparent;
+                    text-decoration: underline;
+                    font-size: $sm-text;
+                    line-height: 20px;
+                    display: flex;
+                    color: $accent-grey;
+                    cursor: pointer;
+                }
+            }
+            span {
+                font-size: $sm-text;
+                font-weight: $xl-weight;
+                line-height: 20px;
+                color: $accent-dark;
+            }
+        }
+        .fourthFormDivideLine {
+            height: 1px;
+            width: 100%;
+            background-color: $accent-grey;
+            margin-bottom: 16px;
+            opacity: 0.25;
+        }
+        .fourthFormOptions {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            li {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                .formFourthAddonName {
+                    font-size: $sm-text;
+                    line-height: 20px;
+                    color: $accent-grey;
+                }
+                .formFourthAddonPrice {
+                    color: $accent-dark;
+                    font-size: $sm-text;
+                    line-height: 20px;
+                }
+            }
+        }
+    }
+    .fourthFormTotalInfo {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 16px 24px 16px 24px;
+        .fourthFormTotalTitle {
+            font-size: $sm-text;
+            line-height: 20px;
+            color: $accent-grey;
+        }
+        .fourthFormTotalPrice {
+            color: $accent-blue;
+            font-size: 20px;
+            font-weight: $xl-weight;
+            line-height: 20px;
+        }
+    }
+    .nextStepBtn {
+        display: flex;
+        justify-content: space-between;
+        .next {
+            text-transform: capitalize;
+            background-color: $accent-dark;
+            color: $accent-white;
+            padding: 14px 25px 16px 24px;
+            border-radius: 8px;
+            font-weight: $md-weight;
+            transition: 1s ease-in-out;
+            cursor: pointer;
+            font-size: $md-text;
+            &:hover {
+                background-color: $hover-btn;
+            }
+        }
+        .previous {
+            margin: 0;
+            background-color: transparent;
+            font-weight: $md-weight;
+            line-height: 18px;
+            color: $accent-grey;
+            font-size: $md-text;
+            transition: 1s ease-in-out;
+            cursor: pointer;
+            &:hover {
+                color: $accent-dark;
+            }
+        }
+    }
+}
+
+.confirmBtn {
+    background-color: $accent-blue !important;
+}

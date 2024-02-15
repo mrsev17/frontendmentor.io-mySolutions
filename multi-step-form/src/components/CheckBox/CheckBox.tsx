@@ -11,7 +11,7 @@ export const CheckBox: React.FC<CheckBoxProps> = ({ serviceName }) => {
     const getStatusService = useAppSelector(
         (state) => state.multiStep.formThree
     );
-    const getTargetService = (service: string) => {
+    const getTargetService = (service: string): boolean => {
         if (service === "Online Service") {
             return getStatusService.onlineService.status;
         }
@@ -21,6 +21,7 @@ export const CheckBox: React.FC<CheckBoxProps> = ({ serviceName }) => {
         if (service === "Customizable Profile") {
             return getStatusService.customizableProfile.status;
         }
+        return false;
     };
     return (
         <label className={s.checkbox}>
@@ -28,7 +29,7 @@ export const CheckBox: React.FC<CheckBoxProps> = ({ serviceName }) => {
                 className={s.checkboxChecked ? "checked" : ""}
                 type="checkbox"
                 checked={getTargetService(serviceName)}
-                onChange={() => dispatch(setService(serviceName))}
+                onChange={() => {}}
             />
         </label>
     );

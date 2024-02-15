@@ -1,0 +1,43 @@
+@import "../../globalStyles.module.scss";
+
+.thankYou {
+    // width: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    // width: 80%;
+    animation: fadeInForm 1s ease-in;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    // margin-bottom: 30px;
+    padding-right: 80px;
+    .thankYouWrapper {
+        img {
+            width: 80px;
+            height: 80px;
+            display: block;
+            margin: 0 auto 32px;
+        }
+        h5,
+        p {
+            text-align: center;
+            max-width: 96%;
+            margin: 0 auto;
+        }
+        h5 {
+            font-size: $xl-text;
+            font-weight: $xl-weight;
+            color: $accent-dark;
+            line-height: 37px;
+            margin-bottom: 14px;
+        }
+        p {
+            font-size: $md-text;
+            line-height: 25px;
+            color: $accent-grey;
+        }
+    }
+}

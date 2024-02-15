@@ -11,12 +11,17 @@ import {
 
 export const SecondForm = () => {
     const dispatch = useAppDispatch();
-    const getPlan = useAppSelector((state) => state.multiStep.formTwo.plan);
-    const getBilling = useAppSelector(
+    const getPlan: string = useAppSelector(
+        (state) => state.multiStep.formTwo.plan
+    );
+    const getBilling: string = useAppSelector(
         (state) => state.multiStep.formTwo.option
     );
-    console.log(getBilling);
-    const [isToggled, setIsToggled] = useState(false);
+    const getStatusToogle = useAppSelector(
+        (state) => state.multiStep.formTwo.statusOption
+    );
+
+    const [isToggled, setIsToggled] = useState(getStatusToogle);
     const onToggle = () => {
         setIsToggled(!isToggled);
         dispatch(setBilling(isToggled));
@@ -46,7 +51,12 @@ export const SecondForm = () => {
                                 <img src={card.icon} alt={card.option} />
                                 <div className={s.cardSub}>
                                     <h4>{card.option}</h4>
-                                    <span>{card.value}</span>
+                                    <span>
+                                        $
+                                        {getBilling === "Yearly"
+                                            ? card.value * 10 + "/yr"
+                                            : card.value + "/mo"}
+                                    </span>
                                 </div>
                             </div>
                         );
@@ -64,7 +74,7 @@ export const SecondForm = () => {
                     <label className={s.toggleSwitch}>
                         <input
                             type="checkbox"
-                            checked={isToggled}
+                            checked={getStatusToogle}
                             onChange={onToggle}
                         />
                         <span className={s.switch} />

@@ -1,18 +1,34 @@
 import s from "./ThirdForm.module.scss";
 import { CheckBox } from "components/CheckBox";
 import { useAppDispatch, useAppSelector } from "hooks";
-import { dataService } from "utils/data";
+// import { dataService } from "utils/data";
 import {
     setThirdStep,
     goBackFromThirdForm,
+    setService,
 } from "../../redux/multiStepSlice/multiStepSlice";
+
+interface FormThree {
+    onlineService: {
+        status: boolean;
+        value: number;
+    };
+    largerStorage: {
+        status: boolean;
+        value: number;
+    };
+    customizableProfile: {
+        status: boolean;
+        value: number;
+    };
+}
 
 export const ThirdForm = () => {
     const dispatch = useAppDispatch();
-    const getStatusService = useAppSelector(
+    const getStatusService: FormThree = useAppSelector(
         (state) => state.multiStep.formThree
     );
-    const getTargetService = (service: string) => {
+    const getTargetService = (service: string): boolean => {
         if (service === "Online Service") {
             return getStatusService.onlineService.status;
         }
@@ -22,7 +38,28 @@ export const ThirdForm = () => {
         if (service === "Customizable Profile") {
             return getStatusService.customizableProfile.status;
         }
+        return false;
     };
+
+    const getAddons = useAppSelector((state) => state.multiStep.formThree);
+
+    const dataService = [
+        {
+            serviceName: "Online Service",
+            description: "Access to multiplayer games",
+            price: getAddons.onlineService.value,
+        },
+        {
+            serviceName: "Larger storage",
+            description: "Extra 1TB of cloud save",
+            price: getAddons.largerStorage.value,
+        },
+        {
+            serviceName: "Customizable Profile",
+            description: "Custom theme on your profile",
+            price: getAddons.customizableProfile.value,
+        },
+    ];
 
     return (
         <form className={s.thirdForm}>
@@ -35,6 +72,9 @@ export const ThirdForm = () => {
                     {dataService.map((service, i) => {
                         return (
                             <li
+                                onClick={() =>
+                                    dispatch(setService(service.serviceName))
+                                }
                                 className={
                                     getTargetService(service.serviceName)
                                         ? s.selectedService

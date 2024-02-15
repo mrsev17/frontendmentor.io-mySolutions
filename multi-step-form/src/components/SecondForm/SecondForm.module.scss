@@ -29,6 +29,7 @@
         gap: 18px;
         margin-bottom: 32px;
         .card {
+            cursor: pointer;
             padding: 20px 16px 20px 16px;
             width: 138px;
             background-color: $accent-white;
@@ -57,9 +58,6 @@
                     font-size: $sm-text;
                     line-height: 16px;
                 }
-            }
-            &:hover {
-                box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
             }
         }
     }
@@ -137,7 +135,6 @@
             }
         }
         .previous {
-            margin: 14px 25px 16px 24px;
             background-color: transparent;
             font-weight: $md-weight;
             line-height: 18px;
@@ -155,4 +152,5 @@
 .cardSelected {
     border: 1px solid $accent-blue !important;
     background-color: $card-bg !important;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px !important;
 }

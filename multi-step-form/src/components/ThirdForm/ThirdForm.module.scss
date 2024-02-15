@@ -37,6 +37,7 @@
             border: 1px solid $accent-grey;
             border-radius: 8px;
             transition: 0.3s ease-in;
+            cursor: pointer;
             .checkBoxSub {
                 display: flex;
                 align-items: center;
@@ -81,7 +82,6 @@
             }
         }
         .previous {
-            margin: 14px 25px 16px 24px;
             background-color: transparent;
             font-weight: $md-weight;
             line-height: 18px;

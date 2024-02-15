@@ -5,7 +5,7 @@ import proIcon from "../assets/images/icon-pro.svg";
 export const planData = (plan: any) => [
     {
         option: "Arcade",
-        value: "$9/mo",
+        value: 9,
         icon: arcadeIcon,
         selected() {
             return this.option === plan;
@@ -13,7 +13,7 @@ export const planData = (plan: any) => [
     },
     {
         option: "Advanced",
-        value: "$12/mo",
+        value: 12,
         icon: advancedIcon,
         selected() {
             return this.option === plan;
@@ -21,7 +21,7 @@ export const planData = (plan: any) => [
     },
     {
         option: "Pro",
-        value: "$15/mo",
+        value: 15,
         icon: proIcon,
         selected() {
             return this.option === plan;
