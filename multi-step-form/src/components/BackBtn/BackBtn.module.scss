@@ -1,0 +1,14 @@
+@import "../../globalStyles.module.scss";
+
+.previous {
+    background-color: transparent;
+    font-weight: $md-weight;
+    line-height: 18px;
+    color: $accent-grey;
+    font-size: $md-text;
+    transition: 1s ease-in-out;
+    cursor: pointer;
+    &:hover {
+        color: $accent-dark;
+    }
+}

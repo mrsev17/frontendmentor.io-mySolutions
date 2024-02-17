@@ -4,7 +4,7 @@ import s from "./ThankYou.module.scss";
 import { useAppDispatch } from "hooks";
 import { useEffect } from "react";
 
-export const ThankYou = () => {
+export const ThankYou: React.FC = () => {
     const dispatch = useAppDispatch();
     useEffect(() => {
         setTimeout(() => {

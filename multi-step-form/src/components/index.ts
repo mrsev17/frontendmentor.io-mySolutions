@@ -5,3 +5,5 @@ export * from "./SecondForm";
 export * from "./ThirdForm";
 export * from "./FourthForm";
 export * from "./ThankYou";
+export * from "./NextBtn";
+export * from "./BackBtn";

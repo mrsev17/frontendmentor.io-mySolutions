@@ -1,4 +1,5 @@
 import s from "./ThirdForm.module.scss";
+import { FormThreeService, FormThree } from "utils/types";
 import { CheckBox } from "components/CheckBox";
 import { useAppDispatch, useAppSelector } from "hooks";
 import {
@@ -7,25 +8,11 @@ import {
     setService,
 } from "../../redux/multiStepSlice/multiStepSlice";
 import { NextBtn } from "components/NextBtn";
-
-interface FormThree {
-    onlineService: {
-        status: boolean;
-        value: number;
-    };
-    largerStorage: {
-        status: boolean;
-        value: number;
-    };
-    customizableProfile: {
-        status: boolean;
-        value: number;
-    };
-}
+import { BackBtn } from "components/BackBtn";
 
 export const ThirdForm = () => {
     const dispatch = useAppDispatch();
-    const getStatusService: FormThree = useAppSelector(
+    const getStatusService: FormThreeService = useAppSelector(
         (state) => state.multiStep.formThree
     );
     const getTargetService = (service: string): boolean => {
@@ -41,7 +28,9 @@ export const ThirdForm = () => {
         return false;
     };
 
-    const getAddons = useAppSelector((state) => state.multiStep.formThree);
+    const getAddons: FormThree = useAppSelector(
+        (state) => state.multiStep.formThree
+    );
 
     const dataService = [
         {
@@ -60,11 +49,6 @@ export const ThirdForm = () => {
             price: getAddons.customizableProfile.value,
         },
     ];
-
-    const nextStep = () => {
-        dispatch(setThirdStep());
-    };
-
     return (
         <form className={s.universalForm}>
             <div>
@@ -102,14 +86,11 @@ export const ThirdForm = () => {
                 </ul>
             </div>
             <div className={s.nextStepBtn}>
-                <button
-                    className={s.previous}
-                    type="button"
-                    onClick={() => dispatch(goBackFromThirdForm())}
-                >
-                    Go Back
-                </button>
-                <NextBtn func={nextStep} text="next step" />
+                <BackBtn func={() => dispatch(goBackFromThirdForm())} />
+                <NextBtn
+                    func={() => dispatch(setThirdStep())}
+                    text="next step"
+                />
             </div>
         </form>
     );

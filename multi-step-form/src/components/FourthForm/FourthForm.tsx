@@ -1,47 +1,34 @@
 import { useAppDispatch, useAppSelector } from "hooks";
+import { NextBtn, BackBtn } from "components";
+import { checkAbr, calcFullPrice } from "utils/functions";
 import {
     setBackToSecondFromFourth,
     setGoBackFromFourth,
     setThankYouPage,
 } from "../../redux/multiStepSlice/multiStepSlice";
+import { FormThreeArray, FormThree } from "utils/types";
 import s from "./FourthForm.module.scss";
-import { NextBtn } from "components/NextBtn";
 
-export const FourthForm = () => {
+export const FourthForm: React.FC = () => {
     const dispatch = useAppDispatch();
-    const getPlan = useAppSelector((state) => state.multiStep.formTwo.plan);
-    const getTerm = useAppSelector((state) => state.multiStep.formTwo.option);
-    const getPricePlan = useAppSelector(
+    const getPlan: string = useAppSelector(
+        (state) => state.multiStep.formTwo.plan
+    );
+    const getTerm: string = useAppSelector(
+        (state) => state.multiStep.formTwo.option
+    );
+    const getPricePlan: number = useAppSelector(
         (state) => state.multiStep.formTwo.price
     );
-    const getThirdForm = useAppSelector((state) => state.multiStep.formThree);
-    const formThreeArray = Object.entries(getThirdForm).map(([key, value]) => ({
-        key: key,
-        value: value,
-    }));
-    console.log(formThreeArray);
-    const calcFullPrice = () => {
-        const getPriceForAddons = () => {
-            return formThreeArray.reduce((acc, addon) => {
-                if (addon.value.status) {
-                    acc += addon.value.value;
-                }
-                return acc;
-            }, 0);
-        };
-        return getPriceForAddons() + getPricePlan;
-    };
-    //
-    const checkAbr = (term: string): string => {
-        if (term === "Monthly") {
-            return "mo";
-        } else {
-            return "yr";
-        }
-    };
-
-    const confirm = () => dispatch(setThankYouPage());
-
+    const getThirdForm: FormThree = useAppSelector(
+        (state) => state.multiStep.formThree
+    );
+    const formThreeArray: FormThreeArray[] = Object.entries(getThirdForm).map(
+        ([key, value]) => ({
+            key: key,
+            value: value,
+        })
+    );
     return (
         <form className={s.universalForm}>
             <div>
@@ -95,19 +82,17 @@ export const FourthForm = () => {
                         {checkAbr(getTerm) === "mo" ? "month" : "yearly"})
                     </span>
                     <span className={s.fourthFormTotalPrice}>
-                        +${calcFullPrice()}/{checkAbr(getTerm)}
+                        +${calcFullPrice(getPricePlan, formThreeArray)}/
+                        {checkAbr(getTerm)}
                     </span>
                 </div>
             </div>
             <div className={s.nextStepBtn}>
-                <button
-                    className={s.previous}
-                    type="button"
-                    onClick={() => dispatch(setGoBackFromFourth())}
-                >
-                    Go Back
-                </button>
-                <NextBtn func={confirm} text="confirm" />
+                <BackBtn func={() => dispatch(setGoBackFromFourth())} />
+                <NextBtn
+                    func={() => dispatch(setThankYouPage())}
+                    text="confirm"
+                />
             </div>
         </form>
     );

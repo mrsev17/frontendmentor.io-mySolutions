@@ -1,14 +1,9 @@
-import { useAppSelector, useAppDispatch } from "hooks";
-import { setService } from "../../redux/multiStepSlice/multiStepSlice";
+import { useAppSelector } from "hooks";
+import { CheckBoxProps, FormThree } from "utils/types";
 import s from "./CheckBox.module.scss";
 
-interface CheckBoxProps {
-    serviceName: string;
-}
-
 export const CheckBox: React.FC<CheckBoxProps> = ({ serviceName }) => {
-    const dispatch = useAppDispatch();
-    const getStatusService = useAppSelector(
+    const getStatusService: FormThree = useAppSelector(
         (state) => state.multiStep.formThree
     );
     const getTargetService = (service: string): boolean => {

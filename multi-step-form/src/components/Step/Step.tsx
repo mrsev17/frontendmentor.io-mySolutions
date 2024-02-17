@@ -1,15 +1,9 @@
 import { useAppSelector } from "hooks";
+import { StepProps } from "utils/types";
 import s from "./Step.module.scss";
 
-interface StepProps {
-    step: number;
-    text: string;
-    active: boolean;
-    index: number;
-}
-
 export const Step: React.FC<StepProps> = ({ step, text, active, index }) => {
-    const getThankYou = useAppSelector(
+    const getThankYou: boolean = useAppSelector(
         (state) => state.multiStep.progress.thankYou
     );
     return (

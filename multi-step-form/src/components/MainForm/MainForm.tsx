@@ -16,7 +16,7 @@ interface GetProgressProps {
     thankYou: boolean;
 }
 
-export const MainForm = () => {
+export const MainForm: React.FC = () => {
     const getProgress: GetProgressProps = useAppSelector(
         (state) => state.multiStep.progress
     );

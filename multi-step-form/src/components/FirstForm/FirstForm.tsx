@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import s from "./FirstForm.module.scss";
 import { useAppDispatch, useAppSelector } from "hooks";
 import {
@@ -9,7 +9,10 @@ import {
 } from "../../redux/multiStepSlice/multiStepSlice";
 import { NextBtn } from "components/NextBtn";
 
-export const FirstForm = () => {
+export const FirstForm: React.FC = () => {
+    const [nameValid, setNameValid] = useState<boolean>(false);
+    const [mailValid, setMailValid] = useState<boolean>(false);
+    const [phoneValid, setPhoneValid] = useState<boolean>(false);
     const dispatch = useAppDispatch();
     const inputName: string = useAppSelector(
         (state) => state.multiStep.formOne.fullName
@@ -21,20 +24,15 @@ export const FirstForm = () => {
         (state) => state.multiStep.formOne.phone
     );
 
-    const [nameValid, setNameValid] = useState<boolean>(false);
-    const [mailValid, setMailValid] = useState<boolean>(false);
-    const [phoneValid, setPhoneValid] = useState<boolean>(false);
-
-    const handleName = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const handleName = (e: React.ChangeEvent<HTMLInputElement>): void => {
         dispatch(setInputName(e.target.value));
     };
-    const handleMail = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const handleMail = (e: React.ChangeEvent<HTMLInputElement>): void => {
         dispatch(setInputMail(e.target.value));
     };
-    const handlePhone = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const handlePhone = (e: React.ChangeEvent<HTMLInputElement>): void => {
         dispatch(setInputPhone(e.target.value));
     };
-
     const startNextStep = (): void => {
         if (inputName.length < 1) {
             setNameValid(true);
@@ -52,9 +50,6 @@ export const FirstForm = () => {
             dispatch(setFirstStep());
         }
     };
-
-    useEffect(() => {}, []);
-
     return (
         <form className={s.universalForm}>
             <div>
@@ -85,6 +80,7 @@ export const FirstForm = () => {
                             onChange={handleName}
                             placeholder="e.g. Stephen King"
                             maxLength={24}
+                            autoFocus={false}
                         />
                     </label>
                     <label>
@@ -107,6 +103,7 @@ export const FirstForm = () => {
                             onChange={handleMail}
                             placeholder="e.g. stephenking@lorem.com"
                             maxLength={24}
+                            autoFocus={false}
                         />
                     </label>
                     <label>
@@ -128,6 +125,7 @@ export const FirstForm = () => {
                             onChange={handlePhone}
                             placeholder="e.g. +1 234 567 890"
                             maxLength={24}
+                            autoFocus={false}
                         />
                     </label>
                 </div>

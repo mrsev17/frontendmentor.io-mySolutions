@@ -1,47 +1,5 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
-
-interface MultiStepFormSlice {
-    priceListPlans: {
-        arcade: 9;
-        advanced: 12;
-        pro: 15;
-    };
-    progress: {
-        first: boolean;
-        second: boolean;
-        third: boolean;
-        fourth: boolean;
-        thankYou: boolean;
-    };
-    formOne: {
-        fullName: string;
-        mail: string;
-        phone: string;
-    };
-    formTwo: {
-        plan: string;
-        option: string;
-        price: number;
-        statusOption: boolean;
-    };
-    formThree: {
-        onlineService: {
-            status: boolean;
-            value: number;
-            serviceName: "Online service";
-        };
-        largerStorage: {
-            status: boolean;
-            value: number;
-            serviceName: "Larger storage";
-        };
-        customizableProfile: {
-            status: boolean;
-            value: number;
-            serviceName: "Customizable Profile";
-        };
-    };
-}
+import { MultiStepFormSlice } from "utils/types";
 
 const initialState: MultiStepFormSlice = {
     priceListPlans: {
@@ -90,7 +48,7 @@ const multiStepSlice = createSlice({
     name: "multiStep",
     initialState,
     reducers: {
-        setRestartForm(state) {
+        setRestartForm() {
             return initialState;
         },
         setInputName(state, action: PayloadAction<string>) {
@@ -156,7 +114,6 @@ const multiStepSlice = createSlice({
             state.progress.second = false;
             state.progress.third = true;
         },
-        // Third form
         setService(state, action: PayloadAction<string>) {
             if (action.payload === "Online Service") {
                 state.formThree.onlineService.status =
@@ -179,7 +136,6 @@ const multiStepSlice = createSlice({
             state.progress.second = true;
             state.progress.third = false;
         },
-        // Fourth form
         setBackToSecondFromFourth(state) {
             state.progress.fourth = false;
             state.progress.second = true;

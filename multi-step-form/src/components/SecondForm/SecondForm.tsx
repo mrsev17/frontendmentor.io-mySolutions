@@ -1,5 +1,5 @@
 import { useState } from "react";
-import s from "./SecondForm.module.scss";
+import { NextBtn } from "components/NextBtn";
 import { planData } from "utils/data";
 import { useAppDispatch, useAppSelector } from "hooks";
 import {
@@ -8,9 +8,10 @@ import {
     goBackFromSecondForm,
     setSecondStep,
 } from "../../redux/multiStepSlice/multiStepSlice";
-import { NextBtn } from "components/NextBtn";
+import s from "./SecondForm.module.scss";
+import { BackBtn } from "components/BackBtn";
 
-export const SecondForm = () => {
+export const SecondForm: React.FC = () => {
     const dispatch = useAppDispatch();
     const getPlan: string = useAppSelector(
         (state) => state.multiStep.formTwo.plan
@@ -18,17 +19,13 @@ export const SecondForm = () => {
     const getBilling: string = useAppSelector(
         (state) => state.multiStep.formTwo.option
     );
-    const getStatusToogle = useAppSelector(
+    const getStatusToogle: boolean = useAppSelector(
         (state) => state.multiStep.formTwo.statusOption
     );
-
-    const [isToggled, setIsToggled] = useState(getStatusToogle);
-    const onToggle = () => {
+    const [isToggled, setIsToggled] = useState<boolean>(getStatusToogle);
+    const onToggle = (): void => {
         setIsToggled(!isToggled);
         dispatch(setBilling(isToggled));
-    };
-    const nextStep = () => {
-        dispatch(setSecondStep());
     };
     return (
         <form className={s.universalForm}>
@@ -66,7 +63,6 @@ export const SecondForm = () => {
                         );
                     })}
                 </div>
-
                 <div className={s.optionToggle}>
                     <span
                         className={
@@ -93,14 +89,11 @@ export const SecondForm = () => {
                 </div>
             </div>
             <div className={s.nextStepBtn}>
-                <button
-                    className={s.previous}
-                    type="button"
-                    onClick={() => dispatch(goBackFromSecondForm())}
-                >
-                    Go Back
-                </button>
-                <NextBtn func={nextStep} text="next step" />
+                <BackBtn func={() => dispatch(goBackFromSecondForm())} />
+                <NextBtn
+                    func={() => dispatch(setSecondStep())}
+                    text="next step"
+                />
             </div>
         </form>
     );
