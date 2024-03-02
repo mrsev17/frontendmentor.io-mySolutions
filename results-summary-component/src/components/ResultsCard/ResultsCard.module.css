@@ -8,3 +8,12 @@
     width: 100%;
     height: 512px;
 }
+
+@media (max-width: 767px) {
+    .resultsCard {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+    }
+}

@@ -11,48 +11,74 @@
 }
 .leftPartWrapper h2 {
     font-size: var(--sm-size-font);
-    font-weight: 700;
+    font-weight: var(--md-weight);
     color: var(--accent-blue);
     margin-bottom: 35px;
     line-height: 31px;
 }
 
 .leftPartCircle {
+    background: var(--accent-gradient-circle);
     margin: 0 auto 28px;
     padding: 55px 0 46px 0;
     width: 200px;
     height: 200px;
-    background: var(--accent-gradient-circle);
     border-radius: 50%;
 }
 
 .leftPartCircle h1 {
     font-size: var(--xl-size-font);
-    font-weight: 800;
+    font-weight: var(--xl-weight);
     color: var(--accent-white);
     line-height: 72px;
     margin-bottom: 4px;
 }
 .leftPartCircle span {
     font-size: var(--xs-size-font);
-    font-weight: 700;
-    line-height: 23px;
+    font-weight: var(--md-weight);
     color: var(--accent-blue);
+    line-height: 23px;
+
     opacity: 0.5;
 }
 
 .leftPartWrapper h3 {
     font-size: var(--md-size-font);
-    font-weight: 700;
-    line-height: 42px;
+    font-weight: var(--md-weight);
     color: var(--accent-white);
+    line-height: 42px;
     margin-bottom: 14px;
 }
 .leftPartWrapper p {
     font-size: var(--xs-size-font);
-    font-weight: 500;
+    font-weight: var(--sm-weight);
+    color: var(--accent-blue);
     line-height: 23px;
     max-width: 86%;
     margin: 0 auto;
-    color: var(--accent-blue);
+}
+
+@media (max-width: 767px) {
+    .leftPart {
+        width: 100%;
+        border-radius: 0 0 32px 32px;
+    }
+    .leftPartWrapper {
+        padding: 24px 54px 40px 54px;
+    }
+    .leftPart h2 {
+        margin-bottom: 24px;
+    }
+    .leftPartWrapper h3 {
+        margin-bottom: 6px;
+    }
+    .leftPartCircle {
+        width: 140px;
+        height: 140px;
+        padding: 25px 0 22px 0;
+        margin-bottom: 20px;
+    }
+    .leftPart p {
+        max-width: none;
+    }
 }

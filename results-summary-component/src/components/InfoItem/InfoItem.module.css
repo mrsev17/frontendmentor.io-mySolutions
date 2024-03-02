@@ -20,16 +20,16 @@
 }
 .categoryName {
     font-size: var(--xs-size-font);
-    font-weight: 500;
+    font-weight: var(--sm-weight);
     line-height: 23px;
 }
 
 .infoItem h4 > span:first-child,
 .infoItem h4 > span:last-child {
     font-size: var(--xs-size-font);
-    font-weight: 700;
-    line-height: 23px;
+    font-weight: var(--md-weight);
     color: var(--accent-dark);
+    line-height: 23px;
 }
 
 .infoItem h4 > span:last-child {

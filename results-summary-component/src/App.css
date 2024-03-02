@@ -3,3 +3,10 @@
     place-items: center;
     height: 100vh;
 }
+
+@media (max-width: 767px) {
+    .App {
+        display: block;
+        height: auto;
+    }
+}

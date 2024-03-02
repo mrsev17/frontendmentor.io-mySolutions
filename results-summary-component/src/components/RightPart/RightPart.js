@@ -1,17 +1,7 @@
-import { useState, useEffect } from "react";
-import { getData } from "../../utils/functions";
 import s from "./RightPart.module.css";
 import { InfoItem } from "../InfoItem/InfoItem";
 
-export const RightPart = () => {
-    const [info, setInfo] = useState([]);
-    useEffect(() => {
-        const requestData = async () => {
-            const data = await getData("data.json");
-            setInfo(data);
-        };
-        requestData();
-    }, []);
+export const RightPart = ({ info }) => {
     return (
         <div className={s.rightPart}>
             <h3>Summary</h3>
