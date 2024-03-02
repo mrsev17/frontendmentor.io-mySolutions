@@ -2,4 +2,4 @@ Link to task: https://www.frontendmentor.io/challenges/results-summary-component
 
 For this project i use React
 
-live version:
+live version: results-summary-component-mrsev7.netlify.app
