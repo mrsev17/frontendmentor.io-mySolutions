@@ -22,6 +22,7 @@
 }
 
 :root {
+    --main-bg-blue: #ecf2ff;
     --accent-white: #ffffff;
     --accent-blue: #cac9ff;
     --accent-dark: #303b59;
@@ -34,10 +35,10 @@
     --md-size-font: 32px;
     --xl-size-font: 72px;
     --accent-gradient-bg: linear-gradient(
-        to right,
-        rgb(77, 33, 201),
-        rgba(37, 33, 201, 0),
-        rgba(37, 33, 201, 0)
+        180deg,
+        rgb(119, 85, 255),
+        rgb(105, 67, 255) 0.01%,
+        rgb(47, 44, 233) 100%
     );
     --accent-gradient-circle: linear-gradient(
         180deg,
@@ -45,4 +46,7 @@
         rgba(37, 33, 201, 0) 100%,
         rgba(37, 33, 201, 0) 100%
     );
+}
+
+.container {
 }

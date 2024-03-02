@@ -1,0 +1,58 @@
+@import "../../globalStyles.css";
+
+.leftPart {
+    border-radius: 32px;
+    width: 50%;
+    background: var(--accent-gradient-bg);
+}
+.leftPartWrapper {
+    padding: 38px 54px 55px 54px;
+    text-align: center;
+}
+.leftPartWrapper h2 {
+    font-size: var(--sm-size-font);
+    font-weight: 700;
+    color: var(--accent-blue);
+    margin-bottom: 35px;
+    line-height: 31px;
+}
+
+.leftPartCircle {
+    margin: 0 auto 28px;
+    padding: 55px 0 46px 0;
+    width: 200px;
+    height: 200px;
+    background: var(--accent-gradient-circle);
+    border-radius: 50%;
+}
+
+.leftPartCircle h1 {
+    font-size: var(--xl-size-font);
+    font-weight: 800;
+    color: var(--accent-white);
+    line-height: 72px;
+    margin-bottom: 4px;
+}
+.leftPartCircle span {
+    font-size: var(--xs-size-font);
+    font-weight: 700;
+    line-height: 23px;
+    color: var(--accent-blue);
+    opacity: 0.5;
+}
+
+.leftPartWrapper h3 {
+    font-size: var(--md-size-font);
+    font-weight: 700;
+    line-height: 42px;
+    color: var(--accent-white);
+    margin-bottom: 14px;
+}
+.leftPartWrapper p {
+    font-size: var(--xs-size-font);
+    font-weight: 500;
+    line-height: 23px;
+    max-width: 86%;
+    margin: 0 auto;
+    color: var(--accent-blue);
+}

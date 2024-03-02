@@ -1,9 +1,10 @@
+import { ResultsCard } from "./components/ResultsCard/ResultsCard";
 import "./App.css";
 
 const App = () => {
     return (
         <main className="App">
-            <section className="results-card"></section>
+            <ResultsCard />
         </main>
     );
 };
