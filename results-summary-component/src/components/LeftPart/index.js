@@ -1,1 +1,1 @@
-export * from "./LeftPart.module.css";
+export * from "./LeftPart";

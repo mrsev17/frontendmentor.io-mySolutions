@@ -1,4 +1,4 @@
-import { ResultsCard } from "./components/ResultsCard/ResultsCard";
+import { ResultsCard } from "./components";
 import "./App.css";
 
 const App = () => {

@@ -34,6 +34,9 @@
     --sm-size-font: 24px;
     --md-size-font: 32px;
     --xl-size-font: 72px;
+    --sm-weight: 500;
+    --md-weight: 700;
+    --xl-weight: 800;
     --accent-gradient-bg: linear-gradient(
         180deg,
         rgb(119, 85, 255),
@@ -48,5 +51,11 @@
     );
 }
 
-.container {
+@media (max-width: 767px) {
+    :root {
+        --xs-size-font: 16px;
+        --sm-size-font: 18px;
+        --md-size-font: 24px;
+        --xl-size-font: 56px;
+    }
 }
