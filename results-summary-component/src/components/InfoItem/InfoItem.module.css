@@ -1,0 +1,37 @@
+.infoItem,
+.infoItem > div {
+    display: flex;
+    align-items: center;
+}
+
+.infoItem {
+    padding: 20px 16px 16px 20px;
+    width: 100%;
+    justify-content: space-between;
+    border-radius: 12px;
+}
+
+.infoItem img {
+    width: 20px;
+    height: 20px;
+}
+.infoItem > div:first-child {
+    gap: 12px;
+}
+.categoryName {
+    font-size: var(--xs-size-font);
+    font-weight: 500;
+    line-height: 23px;
+}
+
+.infoItem h4 > span:first-child,
+.infoItem h4 > span:last-child {
+    font-size: var(--xs-size-font);
+    font-weight: 700;
+    line-height: 23px;
+    color: var(--accent-dark);
+}
+
+.infoItem h4 > span:last-child {
+    opacity: 0.5;
+}

@@ -1,0 +1,36 @@
+.rightPart {
+    padding: 38px 40px 46px 40px;
+    width: 50%;
+}
+
+.rightPart h3 {
+    font-size: var(--sm-size-font);
+    font-weight: 700;
+    line-height: 31px;
+    color: var(--accent-dark);
+    margin-bottom: 28px;
+}
+.rightPartInfoList {
+    margin-bottom: 41px;
+    display: flex;
+    gap: 12px;
+    flex-direction: column;
+}
+.rightPart button {
+    display: block;
+    text-align: center;
+    width: 100%;
+    padding: 17px 0 16px 0;
+    border-radius: 128px;
+    font-size: var(--xs-size-font);
+    font-weight: 700;
+    line-height: 23px;
+    color: var(--accent-white);
+    background-color: var(--accent-dark);
+    transition: 0.2s ease-in-out;
+    background-image: none;
+}
+
+.rightPart button:hover {
+    background-image: var(--accent-gradient-bg);
+}
