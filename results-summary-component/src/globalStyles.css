@@ -1,0 +1,48 @@
+@font-face {
+    font-family: "Ubuntu";
+    src: url("./assets/fonts/static/HankenGrotesk-ExtraBold.ttf")
+        format("truetype");
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Ubuntu";
+    src: url("./assets/fonts/static/HankenGrotesk-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Ubuntu";
+    src: url("./assets/fonts/static/HankenGrotesk-Medium.ttf")
+        format("truetype");
+    font-weight: 500;
+    font-style: normal;
+}
+
+:root {
+    --accent-white: #ffffff;
+    --accent-blue: #cac9ff;
+    --accent-dark: #303b59;
+    --bg-reaction: rgba(255, 255, 255, 0.95), rgb(255, 85, 85);
+    --bg-memory: rgba(255, 255, 255, 0.95), rgb(255, 178, 30);
+    --bg-verbal: rgba(255, 255, 255, 0.95), rgb(255, 178, 30);
+    --bg-visual: rgba(255, 255, 255, 0.95), rgb(17, 37, 214);
+    --xs-size-font: 18px;
+    --sm-size-font: 24px;
+    --md-size-font: 32px;
+    --xl-size-font: 72px;
+    --accent-gradient-bg: linear-gradient(
+        to right,
+        rgb(77, 33, 201),
+        rgba(37, 33, 201, 0),
+        rgba(37, 33, 201, 0)
+    );
+    --accent-gradient-circle: linear-gradient(
+        180deg,
+        rgb(77, 33, 201),
+        rgba(37, 33, 201, 0) 100%,
+        rgba(37, 33, 201, 0) 100%
+    );
+}
