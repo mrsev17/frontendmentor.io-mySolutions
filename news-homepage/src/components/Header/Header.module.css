@@ -1,0 +1,14 @@
+.header {
+  margin-top: 89px;
+}
+
+.header .headerWrapper > img {
+  width: 64px;
+  height: 40px;
+}
+
+@media (max-width: 540px) {
+  .header {
+    margin-top: 28px;
+  }
+}
