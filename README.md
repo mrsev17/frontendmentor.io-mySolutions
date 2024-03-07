@@ -14,4 +14,4 @@
 
 8. Recipe page (React) - https://react-recipe-page-mrsev.netlify.app/
 
-9. untitled
+9. News homepage (React, Tailwind) -
