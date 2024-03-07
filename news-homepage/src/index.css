@@ -19,7 +19,7 @@ body {
   font-family: var(--main-font);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #113f67;
+  background-color: var(--accent-almost-white);
 }
 
 code {

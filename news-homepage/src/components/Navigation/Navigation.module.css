@@ -1,0 +1,12 @@
+@import '../../globalStyles.module.css';
+
+.navigation a {
+  font-size: var(--xs-font);
+  color: var(--accent-grey);
+  line-height: 26px;
+  transition: 0.5s ease-in;
+}
+
+.navigation a:hover {
+  color: var(--light-red);
+}
