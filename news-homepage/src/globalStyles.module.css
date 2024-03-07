@@ -1,0 +1,43 @@
+@font-face {
+  font-family: 'Inter';
+  src: url('./assets/fonts/static/Inter-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('./assets/fonts/static/Inter-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: bold;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('./assets/fonts/static/Inter-ExtraBold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: bold;
+}
+
+:root {
+  --main-font: 'Inter', sans-serif;
+  --dark-space-blue: #00001a;
+  --accent-grey: #5e607a;
+  --accent-yellow: #e9aa52;
+  --accent-silver: #c5c6ce;
+  --accent-almost-white: #fffdfa;
+  --light-red: #f15d51;
+  --xs-font: 15px;
+  --sm-font: 18px;
+  --md-forn: 20px;
+  --xl-font: 32px;
+  --xxl-font: 56px;
+  --xs-weight: 400;
+  --xl-weight: 700;
+  --xxl-weight: 800;
+}
+
+.container {
+  max-width: 1110px;
+  width: 100%;
+}
