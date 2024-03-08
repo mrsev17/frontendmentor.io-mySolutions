@@ -1,0 +1,44 @@
+@import '../../globalStyles.module.css';
+
+.newsPanel {
+  background-color: var(--dark-space-blue);
+  padding: 24px 32px 31px;
+  height: 100%;
+}
+
+.newsPanel h2 {
+  font-weight: var(--xl-weight);
+  color: var(--accent-yellow);
+  font-size: 40px;
+}
+
+.newsPanel ul {
+  display: flex;
+  flex-direction: column;
+  gap: 31px;
+}
+
+/* .newsPanel ul li p:last-child {
+  margin-bottom: 0;
+} */
+
+/* .newsPanel a {
+  display: block;
+  font-size: var(--md-font);
+  font-weight: var(--xxl-weight);
+  color: var(--accent-almost-white);
+  line-height: 24px;
+  margin-bottom: 4px;
+}
+
+.newsPanel p {
+  font-size: var(--xs-font);
+  color: var(--accent-grey);
+  margin-bottom: 29px;
+}
+
+.newsBar {
+  width: 302px;
+  height: 1px;
+  background-color: var(--accent-grey);
+} */

@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import { navLinks } from '../../utils/data'
 import styles from './BurgerMenu.module.css'
 

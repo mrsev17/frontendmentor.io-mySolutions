@@ -1,0 +1,25 @@
+.newsItem a {
+  display: block;
+  font-size: var(--md-font);
+  font-weight: var(--xxl-weight);
+  color: var(--accent-almost-white);
+  line-height: 24px;
+  margin-bottom: 4px;
+  transition: 0.5s ease-in;
+}
+
+.newsItem a:hover {
+  color: var(--accent-yellow);
+}
+
+.newsItem p {
+  font-size: var(--xs-font);
+  color: var(--accent-grey);
+  margin-bottom: 29px;
+}
+
+.newsBar {
+  width: 302px;
+  height: 1px;
+  background-color: var(--accent-grey);
+}
