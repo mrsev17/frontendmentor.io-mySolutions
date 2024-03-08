@@ -6,7 +6,7 @@ export const ImportantNews = () => {
   return (
     <section className={styles.importantNews}>
       <div className={global.container}>
-        <ul className="flex justify-between">
+        <ul className="mb-16 lg:mb-0">
           {importNews.map((news, i) => {
             return (
               <li

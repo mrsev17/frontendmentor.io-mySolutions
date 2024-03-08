@@ -23,7 +23,7 @@
   line-height: 24px;
   letter-spacing: 4px;
   padding: 13px 0 11px 0;
-  width: 185px;
+  /* width: 185px; */
   background-color: var(--light-red);
   color: var(--accent-almost-white);
   transition: 0.5s ease-in;
@@ -38,6 +38,28 @@
 }
 
 .bannerRight {
-  max-width: 350px;
+  /* max-width: 350px; */
   width: 100%;
+}
+
+@media (max-width: 1024px) {
+  .banner .bannerLeft img {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .bannerLeftTitle div {
+    max-width: 100%;
+  }
+  .banner .bannerLeftTitle h1 {
+    margin-bottom: 16px;
+  }
+  .banner .bannerLeftTitle p {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 468px) {
+  .banner .bannerLeft img {
+    content: url('../../assets/images/image-web-3-mobile.jpg');
+  }
 }
