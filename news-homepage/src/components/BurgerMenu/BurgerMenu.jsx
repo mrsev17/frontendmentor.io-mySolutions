@@ -3,19 +3,10 @@ import { navLinks } from '../../utils/data'
 import styles from './BurgerMenu.module.css'
 
 export const BurgerMenu = () => {
-  const [styleMenu, setStyleMenu] = useState(false)
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   const openMenu = () => {
-    if (isMenuOpen) {
-      setStyleMenu(!styleMenu)
-      setTimeout(() => {
-        setIsMenuOpen(!isMenuOpen)
-      }, 250)
-    } else if (!isMenuOpen) {
-      setIsMenuOpen(!isMenuOpen)
-      setStyleMenu(!styleMenu)
-    }
+    setIsMenuOpen(!isMenuOpen)
   }
 
   return (
@@ -31,12 +22,10 @@ export const BurgerMenu = () => {
         <div className={styles.burgerMenuBar}></div>
         <div className={styles.burgerMenuBar}></div>
       </div>
-      {isMenuOpen && (
+      {/* {isMenuOpen && (
         <ul
           className={`${isMenuOpen && styles.burgerMenuLinksActive}
-              ${
-                !styleMenu && styles.burgerMenuLinksNotActive
-              } flex flex-col gap-6`}
+            flex flex-col gap-6`}
         >
           {navLinks.map((link, i) => {
             return (
@@ -46,7 +35,7 @@ export const BurgerMenu = () => {
             )
           })}
         </ul>
-      )}
+      )} */}
     </>
   )
 }

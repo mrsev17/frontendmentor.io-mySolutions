@@ -6,6 +6,12 @@ module.exports = {
       screens: {
         sm: '540px',
       },
+      width: {
+        185: '185px',
+      },
+      maxWidth: {
+        350: '350px',
+      },
     },
   },
   plugins: [],

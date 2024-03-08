@@ -34,3 +34,11 @@
   line-height: 26px;
   /* max-width: 80%; */
 }
+
+@media (max-width: 1024px) {
+  .importantNews ul {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+}
