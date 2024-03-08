@@ -1,5 +1,3 @@
-@import '../../globalStyles.module.css';
-
 .burgerMenu {
   cursor: pointer;
   position: relative;

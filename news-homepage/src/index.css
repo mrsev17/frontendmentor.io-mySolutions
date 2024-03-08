@@ -30,3 +30,7 @@ code {
 h1 {
   font-size: 32px;
 }
+
+main {
+  gap: 71px;
+}

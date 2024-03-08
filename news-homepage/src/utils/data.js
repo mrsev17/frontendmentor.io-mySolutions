@@ -1,3 +1,7 @@
+import logoOne from '../assets/images/image-retro-pcs.jpg'
+import logoTwo from '../assets/images/image-top-laptops.jpg'
+import logoThree from '../assets/images/image-gaming-growth.jpg'
+
 export const navLinks = [
   {
     url: '#',
@@ -36,5 +40,26 @@ export const dataNew = [
     title: 'Is VC Funding Drying Up?',
     text: 'Private funding by VC firms is down 50% YOY. We take a look at what that means.',
     url: '#',
+  },
+]
+
+export const importNews = [
+  {
+    picture: logoOne,
+    order: '01',
+    title: 'Reviving Retro PCs',
+    text: 'What happens when old PCs are given modern upgrades?',
+  },
+  {
+    picture: logoTwo,
+    order: '02',
+    title: 'Top 10 Laptops of 2022',
+    text: 'Our best picks for various needs and budgets.',
+  },
+  {
+    picture: logoThree,
+    order: '03',
+    title: 'The Growth of Gaming',
+    text: 'How the pandemic has sparked fresh opportunities.',
   },
 ]
