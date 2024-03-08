@@ -1,5 +1,3 @@
-@import '../../globalStyles.module.css';
-
 .banner .bannerLeft img {
   width: 730px;
   height: 300px;
@@ -15,7 +13,7 @@
 .banner .bannerLeftTitle p {
   font-size: var(--xs-font);
   color: var(--accent-grey);
-  max-width: 78%;
+  max-width: 88%;
   line-height: 26px;
 }
 
@@ -31,6 +29,15 @@
   transition: 0.5s ease-in;
 }
 
+.bannerLeftTitle div {
+  max-width: 50%;
+}
+
 .banner .bannerLeftTitle button:hover {
   background-color: var(--dark-space-blue);
+}
+
+.bannerRight {
+  max-width: 350px;
+  width: 100%;
 }

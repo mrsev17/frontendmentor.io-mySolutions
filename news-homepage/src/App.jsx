@@ -1,12 +1,13 @@
 import './App.css'
-import { Banner, Header } from './components'
+import { Banner, Header, ImportantNews } from './components'
 
 const App = () => {
   return (
     <div className="App">
       <Header />
-      <main>
+      <main className="flex flex-col">
         <Banner />
+        <ImportantNews />
       </main>
     </div>
   )

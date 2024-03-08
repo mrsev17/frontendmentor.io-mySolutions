@@ -1,5 +1,3 @@
-@import '../../globalStyles.module.css';
-
 .navigation a {
   font-size: var(--xs-font);
   color: var(--accent-grey);
