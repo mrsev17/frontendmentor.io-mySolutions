@@ -1,0 +1,36 @@
+@import '../../globalStyles.module.css';
+
+.banner .bannerLeft img {
+  width: 730px;
+  height: 300px;
+}
+
+.banner .bannerLeftTitle h1 {
+  /* max-width: 34%; */
+  font-size: var(--xxl-font);
+  font-weight: var(--xxl-weight);
+  line-height: 56px;
+}
+
+.banner .bannerLeftTitle p {
+  font-size: var(--xs-font);
+  color: var(--accent-grey);
+  max-width: 78%;
+  line-height: 26px;
+}
+
+.banner .bannerLeftTitle button {
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 4px;
+  padding: 13px 0 11px 0;
+  width: 185px;
+  background-color: var(--light-red);
+  color: var(--accent-almost-white);
+  transition: 0.5s ease-in;
+}
+
+.banner .bannerLeftTitle button:hover {
+  background-color: var(--dark-space-blue);
+}
