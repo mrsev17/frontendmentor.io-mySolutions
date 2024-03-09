@@ -22,20 +22,19 @@ export const BurgerMenu = () => {
         <div className={styles.burgerMenuBar}></div>
         <div className={styles.burgerMenuBar}></div>
       </div>
-      {/* {isMenuOpen && (
-        <ul
-          className={`${isMenuOpen && styles.burgerMenuLinksActive}
-            flex flex-col gap-6`}
-        >
-          {navLinks.map((link, i) => {
-            return (
-              <li key={i}>
-                <a href={link.url}>{link.nameLink}</a>
-              </li>
-            )
-          })}
-        </ul>
-      )} */}
+      {isMenuOpen && (
+        <div className={styles.modalOverlay}>
+          <ul className={styles.modalContent}>
+            {navLinks.map((link) => {
+              return (
+                <li key={link.nameLink}>
+                  <a href={link.url}>{link.nameLink}</a>
+                </li>
+              )
+            })}
+          </ul>
+        </div>
+      )}
     </>
   )
 }
