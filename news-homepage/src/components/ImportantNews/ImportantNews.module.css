@@ -32,7 +32,6 @@
   font-size: var(--xs-font);
   color: var(--accent-grey);
   line-height: 26px;
-  /* max-width: 80%; */
 }
 
 @media (max-width: 1024px) {

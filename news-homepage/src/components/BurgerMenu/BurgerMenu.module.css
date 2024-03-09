@@ -1,6 +1,7 @@
 .burgerMenu {
   cursor: pointer;
   position: relative;
+  z-index: 999;
 }
 
 .burgerMenu .burgerMenuBar {
@@ -10,17 +11,17 @@
 }
 
 .burgerMenuActive .burgerMenuBar:nth-child(1) {
-  animation: firstBarActive 2s forwards;
+  animation: firstBarActive 1s forwards;
   position: absolute;
 }
 
 .burgerMenuActive .burgerMenuBar:nth-child(2) {
   position: absolute;
-  animation: secondBarActive 0.5s forwards;
+  animation: secondBarActive 0.25s forwards;
 }
 
 .burgerMenuActive .burgerMenuBar:nth-child(3) {
-  animation: thirdBarActive 2s forwards;
+  animation: thirdBarActive 1s forwards;
 }
 @keyframes thirdBarActive {
   0% {
@@ -52,18 +53,16 @@
   }
 }
 
-/* = = = */
-
 .burgerMenuNotActive .burgerMenuBar:nth-child(1) {
-  animation: firstBarNotActive 1s forwards;
+  animation: firstBarNotActive 0.5s forwards;
 }
 
 .burgerMenuNotActive .burgerMenuBar:nth-child(2) {
-  animation: secondBarNotActive 1s forwards;
+  animation: secondBarNotActive 0.5s forwards;
 }
 
 .burgerMenuNotActive .burgerMenuBar:nth-child(3) {
-  animation: thirdBarNotActive 1s forwards;
+  animation: thirdBarNotActive 0.5s forwards;
 }
 
 @keyframes thirdBarNotActive {
@@ -101,21 +100,13 @@
 .burgerMenuLinksActive {
   position: absolute;
   top: 141px;
-  /* right: 50px; */
-  animation: burgerMenu 1s forwards;
-  /* = = = */
-
+  animation: burgerMenu 0.5s forwards;
   background: antiquewhite;
   z-index: -1;
-  /* padding: 100px; */
-  /* margin-right: -60px;
-  margin-top: -142px; */
 }
 
 .burgerMenuLinksNotActive {
-  /* position: absolute; */
-  /* top: 141px; */
-  animation: burgerOutMenu 1.2s forwards;
+  animation: burgerOutMenu 0.5s forwards;
 }
 
 @keyframes burgerOutMenu {
@@ -131,11 +122,51 @@
 
 @keyframes burgerMenu {
   0% {
-    /* top: 0; */
     right: -100px;
   }
   100% {
-    /* top: 141px; */
     right: 50px;
+  }
+}
+
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modalContent {
+  top: 0;
+  position: absolute;
+  background-color: white;
+  padding: 140px 29px 0 24px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  max-width: 80%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  animation: menuComing 1s forwards;
+}
+
+.modalContent li {
+  padding-right: 170px;
+}
+.modalContent li a {
+  color: var(--dark-space-blue);
+}
+
+@keyframes menuComing {
+  0% {
+    right: -316px;
+  }
+  100% {
+    right: 0;
   }
 }
