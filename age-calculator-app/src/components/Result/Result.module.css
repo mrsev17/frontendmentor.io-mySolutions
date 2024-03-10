@@ -1,0 +1,11 @@
+.result h2 {
+  font-size: var(--output-font);
+  font-weight: var(--extra-bold-weight);
+  line-height: 110%;
+  font-style: italic;
+}
+
+.result span {
+  color: var(--accent-purple);
+  margin-right: 8px;
+}

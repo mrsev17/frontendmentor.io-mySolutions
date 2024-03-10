@@ -48,7 +48,7 @@
   --accent-red: #ff5959;
   --main-family-font: 'Poppins', sans-serif;
   --label-error-font: 14px;
-  --input-fonr: 32px;
+  --input-font: 32px;
   --output-font: 104px;
   --reg-weight: 400;
   --bold-weight: 700;
@@ -60,7 +60,7 @@
 @media (max-width: 1024px) {
   :root {
     --label-error-font: 12px;
-    --input-fonr: 20px;
+    --input-font: 20px;
     --output-font: 56px;
   }
 }

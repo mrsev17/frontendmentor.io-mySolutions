@@ -10,10 +10,10 @@ import {
   REGISTER,
 } from 'redux-persist'
 import storage from 'redux-persist/lib/storage'
-// import multiStepReducer from './multiStepSlice/multiStepSlice'
+import ageCalculator from './ageCalculatorSlice/ageCalculatorSlice'
 
 const rootReducer = combineReducers({
-  // ageCalculator: multiStepReducer,
+  ageCalculator: ageCalculator,
 })
 
 const persistConfig = {
