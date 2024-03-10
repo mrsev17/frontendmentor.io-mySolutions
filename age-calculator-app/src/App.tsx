@@ -1,10 +1,15 @@
+import { InputsWrap, Result, Submit } from './components'
 import './App.css'
 
 const App = () => {
   return (
-    <div className="App">
-      <h1>Age calculator app</h1>
-    </div>
+    <main className="App">
+      <div className="app-wrapper">
+        <InputsWrap />
+        <Submit />
+        <Result />
+      </div>
+    </main>
   )
 }
 

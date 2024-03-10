@@ -1,0 +1,19 @@
+.App {
+  margin: 0 auto;
+  max-width: 840px;
+}
+
+.app-wrapper {
+  padding: 41px;
+  background-color: #ffffff;
+  border-radius: var(--main-border-rad);
+}
+
+@media (max-width: 567px) {
+  .app-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    padding: 48px 24px;
+  }
+}
