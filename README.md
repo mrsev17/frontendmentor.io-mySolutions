@@ -14,4 +14,4 @@
 
 8. Recipe page (React) - https://react-recipe-page-mrsev.netlify.app/
 
-9.
+9. News homepage (React, Tailwind CSS) - https://ubiquitous-selkie-23179e.netlify.app/
