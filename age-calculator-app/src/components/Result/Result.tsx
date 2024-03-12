@@ -1,22 +1,33 @@
 import { useAppSelector } from '../../hooks'
-import { CalculatorResult } from '../../utils/types'
+import { resultData } from '../../utils/functions'
 import styles from './Result.module.css'
 
 export const Result = () => {
-  const getResult: CalculatorResult = useAppSelector(
-    (state) => state.ageCalculator
+  const getResultYears: number | '- -' = useAppSelector(
+    (state) => state.ageCalculator.result.years
+  )
+  const getResultMonths: number | '- -' = useAppSelector(
+    (state) => state.ageCalculator.result.months
+  )
+  const getResultDays: number | '- -' = useAppSelector(
+    (state) => state.ageCalculator.result.days
+  )
+  const getResultData = resultData(
+    getResultYears,
+    getResultMonths,
+    getResultDays
   )
   return (
     <div className={styles.result}>
-      <h2>
-        <span>{getResult.years}</span>year{getResult.years === 1 ? '' : 's'}
-      </h2>
-      <h2>
-        <span>{getResult.months}</span>month{getResult.months === 1 ? '' : 's'}
-      </h2>
-      <h2>
-        <span>{getResult.days}</span>day{getResult.days === 1 ? '' : 's'}
-      </h2>
+      {getResultData.map((result) => {
+        return (
+          <h2 key={result.text}>
+            <span>{result.output}</span>
+            {result.text}
+            {result.output === 1 ? '' : 's'}
+          </h2>
+        )
+      })}
     </div>
   )
 }

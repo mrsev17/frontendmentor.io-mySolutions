@@ -1,52 +1,30 @@
-import { useState } from 'react'
 import {
   setDay,
   setMonth,
   setYear,
 } from '../../redux/ageCalculatorSlice/ageCalculatorSlice'
-import styles from './InputsWrap.module.css'
 import { useAppDispatch, useAppSelector } from '../../hooks'
+import { checkForError } from '../../utils/functions'
+import { Errors, InputsTypes } from '../../utils/types'
+import styles from './InputsWrap.module.css'
 
 export const InputsWrap = () => {
   const dispatch = useAppDispatch()
-
-  const getInputs = useAppSelector((state) => state.ageCalculator.inputs)
-  const getErrors = useAppSelector((state) => state.ageCalculator.errors)
-
-  const dayInputHandler = (e: React.ChangeEvent<HTMLInputElement>): void => {
+  const getInputs: InputsTypes = useAppSelector(
+    (state) => state.ageCalculator.inputs
+  )
+  const getErrors: Errors = useAppSelector(
+    (state) => state.ageCalculator.errors
+  )
+  const inputHandler = (
+    e: React.ChangeEvent<HTMLInputElement>,
+    typeInput: string
+  ) => {
     const input: string = e.target.value
     if (/^\d*$/.test(input)) {
-      dispatch(setDay(input))
-    }
-  }
-
-  const monthInputHandler = (e: React.ChangeEvent<HTMLInputElement>): void => {
-    const input: string = e.target.value
-    if (/^\d*$/.test(input)) {
-      dispatch(setMonth(input))
-    }
-  }
-
-  const yearInputHandler = (e: React.ChangeEvent<HTMLInputElement>): void => {
-    const input: string = e.target.value
-    if (/^\d*$/.test(input)) {
-      dispatch(setYear(input))
-    }
-  }
-
-  interface Errors {
-    years: string
-    months: string
-    days: string
-  }
-
-  const checkForError = (getErrors: Errors) => {
-    if (
-      getErrors.days.length ||
-      getErrors.months.length ||
-      getErrors.years.length
-    ) {
-      return true
+      if (typeInput === 'day') dispatch(setDay(input))
+      if (typeInput === 'month') dispatch(setMonth(input))
+      if (typeInput === 'year') dispatch(setYear(input))
     }
   }
 
@@ -65,7 +43,7 @@ export const InputsWrap = () => {
           id="day"
           value={getInputs.day}
           placeholder="DD"
-          onChange={(e) => dayInputHandler(e)}
+          onChange={(e) => inputHandler(e, 'day')}
           maxLength={2}
         />
         <span>{getErrors.days}</span>
@@ -83,7 +61,7 @@ export const InputsWrap = () => {
           id="month"
           value={getInputs.month}
           placeholder="MM"
-          onChange={(e) => monthInputHandler(e)}
+          onChange={(e) => inputHandler(e, 'month')}
           maxLength={2}
         />
         <span>{getErrors.months}</span>
@@ -101,7 +79,7 @@ export const InputsWrap = () => {
           id="year"
           value={getInputs.year}
           placeholder="YYYY"
-          onChange={(e) => yearInputHandler(e)}
+          onChange={(e) => inputHandler(e, 'year')}
           maxLength={4}
         />
         <span>{getErrors.years}</span>
