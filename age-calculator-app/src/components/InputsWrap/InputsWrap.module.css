@@ -46,6 +46,13 @@
   line-height: 21px;
 }
 
+.makeRedText {
+  color: var(--accent-red) !important;
+}
+.makeRedBorder {
+  border: 1px solid var(--accent-red) !important;
+}
+
 @media (max-width: 1024px) {
   .inputsWrap {
     gap: 16px;

@@ -1,58 +1,111 @@
-import { FormEvent } from 'react'
 import { useState } from 'react'
-import style from './InputsWrap.module.css'
-import { useAppSelector } from '../../hooks'
+import {
+  setDay,
+  setMonth,
+  setYear,
+} from '../../redux/ageCalculatorSlice/ageCalculatorSlice'
+import styles from './InputsWrap.module.css'
+import { useAppDispatch, useAppSelector } from '../../hooks'
 
 export const InputsWrap = () => {
-  // const getInputs = useAppSelector((state) => state.ageCalculator)
-  //
-  const [day, setDay] = useState('')
-  const [month, setMonth] = useState('')
-  const [year, setYear] = useState('')
+  const dispatch = useAppDispatch()
 
-  // const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
-  //   e.preventDefault()
-  //   console.log('Form submitted with values:', day, month, year)
-  // }
+  const getInputs = useAppSelector((state) => state.ageCalculator.inputs)
+  const getErrors = useAppSelector((state) => state.ageCalculator.errors)
+
+  const dayInputHandler = (e: React.ChangeEvent<HTMLInputElement>): void => {
+    const input: string = e.target.value
+    if (/^\d*$/.test(input)) {
+      dispatch(setDay(input))
+    }
+  }
+
+  const monthInputHandler = (e: React.ChangeEvent<HTMLInputElement>): void => {
+    const input: string = e.target.value
+    if (/^\d*$/.test(input)) {
+      dispatch(setMonth(input))
+    }
+  }
+
+  const yearInputHandler = (e: React.ChangeEvent<HTMLInputElement>): void => {
+    const input: string = e.target.value
+    if (/^\d*$/.test(input)) {
+      dispatch(setYear(input))
+    }
+  }
+
+  interface Errors {
+    years: string
+    months: string
+    days: string
+  }
+
+  const checkForError = (getErrors: Errors) => {
+    if (
+      getErrors.days.length ||
+      getErrors.months.length ||
+      getErrors.years.length
+    ) {
+      return true
+    }
+  }
+
   return (
-    <form className={style.inputsWrap}>
-      <div className={style.inputItem}>
-        <label htmlFor="day">Day</label>
+    <form className={styles.inputsWrap}>
+      <div className={styles.inputItem}>
+        <label
+          className={checkForError(getErrors) ? styles.makeRedText : null}
+          htmlFor="day"
+        >
+          Day
+        </label>
         <input
+          className={checkForError(getErrors) ? styles.makeRedBorder : null}
           type="text"
           id="day"
-          value={day}
+          value={getInputs.day}
           placeholder="DD"
-          onChange={(e) => setDay(e.target.value)}
+          onChange={(e) => dayInputHandler(e)}
           maxLength={2}
         />
-        <span>Error</span>
+        <span>{getErrors.days}</span>
       </div>
-      <div className={style.inputItem}>
-        <label htmlFor="month">Month</label>
+      <div className={styles.inputItem}>
+        <label
+          className={checkForError(getErrors) && styles.makeRedText}
+          htmlFor="month"
+        >
+          Month
+        </label>
         <input
+          className={checkForError(getErrors) && styles.makeRedBorder}
           type="text"
           id="month"
-          value={month}
+          value={getInputs.month}
           placeholder="MM"
-          onChange={(e) => setMonth(e.target.value)}
+          onChange={(e) => monthInputHandler(e)}
           maxLength={2}
         />
-        <span>Error</span>
+        <span>{getErrors.months}</span>
       </div>
-      <div className={style.inputItem}>
-        <label htmlFor="year">Year</label>
+      <div className={styles.inputItem}>
+        <label
+          className={checkForError(getErrors) && styles.makeRedText}
+          htmlFor="year"
+        >
+          Year
+        </label>
         <input
+          className={checkForError(getErrors) && styles.makeRedBorder}
           type="text"
           id="year"
-          value={year}
+          value={getInputs.year}
           placeholder="YYYY"
-          onChange={(e) => setYear(e.target.value)}
+          onChange={(e) => yearInputHandler(e)}
           maxLength={4}
         />
-        <span>Error</span>
+        <span>{getErrors.years}</span>
       </div>
-      {/* <button type="submit">Submit</button> */}
     </form>
   )
 }
