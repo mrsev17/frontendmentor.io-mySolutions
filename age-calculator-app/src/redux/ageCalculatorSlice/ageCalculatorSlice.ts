@@ -1,29 +1,13 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit'
-
-const getDaysInMonth = (year: string, month: string) => {
-  return new Date(+year, +month, 0).getDate()
-}
-
-interface Calculator {
-  years: '- -' | number
-  months: '- -' | number
-  days: '- -' | number
-  errors: {
-    years: string
-    months: string
-    days: string
-  }
-  inputs: {
-    day: string
-    month: string
-    year: string
-  }
-}
+import { isPastDate, getDaysInMonth } from '../../utils/functions'
+import { Calculator, Age } from '../../utils/types'
 
 const initialState: Calculator = {
-  years: '- -',
-  months: '- -',
-  days: '- -',
+  result: {
+    years: '- -',
+    months: '- -',
+    days: '- -',
+  },
   errors: {
     years: '',
     months: '',
@@ -54,9 +38,9 @@ const multiStepSlice = createSlice({
     },
     setCalculation(state) {
       const defaultResults = () => {
-        state.years = '- -'
-        state.months = '- -'
-        state.days = '- -'
+        state.result.years = '- -'
+        state.result.months = '- -'
+        state.result.days = '- -'
       }
       // Result
       const calculateAge = (
@@ -65,66 +49,45 @@ const multiStepSlice = createSlice({
         inputYear: number
       ) => {
         const currentDate = new Date()
-        const currentYear = currentDate.getFullYear()
-        const currentMonth = currentDate.getMonth() + 1
-        const currentDay = currentDate.getDate()
-        let ageYears = currentYear - inputYear
-        let ageMonths = currentMonth - inputMonth
-        let ageDays = currentDay - inputDay
+        const currentYear: number = currentDate.getFullYear()
+        const currentMonth: number = currentDate.getMonth() + 1
+        const currentDay: number = currentDate.getDate()
+        let ageYears: number = currentYear - inputYear
+        let ageMonths: number = currentMonth - inputMonth
+        let ageDays: number = currentDay - inputDay
         if (ageMonths < 0 || (ageMonths === 0 && ageDays < 0)) {
           ageYears--
           ageMonths += 12
         }
         if (ageDays < 0) {
-          const daysInLastMonth = new Date(inputYear, inputMonth, 0).getDate()
+          const daysInLastMonth: number = new Date(
+            inputYear,
+            inputMonth,
+            0
+          ).getDate()
           ageDays += daysInLastMonth
           ageMonths--
         }
         return { years: ageYears, months: ageMonths, days: ageDays }
       }
-      const inputDay = +state.inputs.day
-      const inputMonth = +state.inputs.month
-      const inputYear = +state.inputs.year
-
-      const isPastDate = (
-        inputDay: number,
-        inputMonth: number,
-        inputYear: number
-      ) => {
-        const currentDate = new Date()
-        const currentYear = currentDate.getFullYear()
-        const currentMonth = currentDate.getMonth() + 1
-        const currentDay = currentDate.getDate()
-
-        if (inputYear > currentYear) {
-          return false
-        } else if (inputYear < currentYear) {
-          return true
-        } else {
-          if (inputMonth > currentMonth) {
-            return false
-          } else if (inputMonth < currentMonth) {
-            return true
-          } else {
-            return inputDay <= currentDay - 1
-          }
-        }
-      }
+      const inputDay: number = +state.inputs.day
+      const inputMonth: number = +state.inputs.month
+      const inputYear: number = +state.inputs.year
       if (
         isPastDate(+state.inputs.day, +state.inputs.month, +state.inputs.year)
       ) {
-        const age = calculateAge(inputDay, inputMonth, inputYear)
-        console.log(age)
-        state.days = age.days
-        state.months = age.months
-        state.years = age.years
+        const age: Age = calculateAge(inputDay, inputMonth, inputYear)
+        state.result.days = age.days
+        state.result.months = age.months
+        state.result.years = age.years
       } else {
         defaultResults()
       }
       //
-
-      //
-      const checkDays = getDaysInMonth(state.inputs.year, state.inputs.month)
+      const checkDays: number = getDaysInMonth(
+        state.inputs.year,
+        state.inputs.month
+      )
       // Days
       const checkDaysInputs = () => {
         if (checkDays < +state.inputs.day || +state.inputs.day < 1) {
@@ -156,7 +119,7 @@ const multiStepSlice = createSlice({
         state.errors.months = ''
       }
       // Year
-      const currentYear = new Date().getFullYear()
+      const currentYear: number = new Date().getFullYear()
       if (+state.inputs.year > currentYear) {
         state.errors.years = 'Must be a valid year'
         defaultResults()
