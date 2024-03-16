@@ -2,4 +2,4 @@ Link to task: https://www.frontendmentor.io/challenges/age-calculator-app-dF9DFF
 
 For this project i use React, Redux & TypeScript
 
-Live version:
+Live version: https://age-calculator-app-mrsev.netlify.app/

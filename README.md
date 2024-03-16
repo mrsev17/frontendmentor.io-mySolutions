@@ -16,4 +16,4 @@
 
 9. News homepage (React, Tailwind CSS) - https://ubiquitous-selkie-23179e.netlify.app/
 
-10. Untitled Project
+10. Age calculator app (React, Redux, TypeScript) - https://age-calculator-app-mrsev.netlify.app/
