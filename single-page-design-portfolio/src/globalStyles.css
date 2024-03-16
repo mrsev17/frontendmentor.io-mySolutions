@@ -1,0 +1,15 @@
+:root {
+  --heading-l: 56px;
+  --heading-m: 40px;
+  --heading-s: 32px;
+  --regular-text: 18px;
+  --light-purple: #755cde;
+  --accent-orange: #f6a560;
+  --accent-pink: #f39e9e;
+  --accent-red: #eb7565;
+  --accent-mint: #61c4b7;
+  --deep-purple: #552049;
+  --black: #030303;
+  --accent-grey: #7a746e;
+  --accent-cream: #fff7f0;
+}
