@@ -13,3 +13,16 @@
   --accent-grey: #7a746e;
   --accent-cream: #fff7f0;
 }
+
+.container {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1110px;
+  padding: 0 39px 0 39px;
+}
+
+@media (max-width: 567px) {
+  .container {
+    padding: 0 16px 0 16px;
+  }
+}

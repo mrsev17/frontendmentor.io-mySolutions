@@ -1,0 +1,14 @@
+.headerSection {
+  padding-top: 34px;
+}
+
+@media (max-width: 567px) {
+  .headerSection {
+    padding-top: 16px;
+  }
+  .headerSection svg {
+    /* transform: scale(0.5); */
+    /* width: 32px;
+    height: 32px; */
+  }
+}
