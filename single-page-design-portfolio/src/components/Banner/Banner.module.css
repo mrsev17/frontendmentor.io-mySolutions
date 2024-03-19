@@ -1,0 +1,67 @@
+.banner {
+  margin-bottom: 136px;
+}
+.bannerLeftDesign {
+  width: 66%;
+}
+.bannerRight {
+  width: 32%;
+}
+.bannerLeftDesignPurple {
+  max-width: 354px;
+  background-color: var(--light-purple);
+  gap: 94px;
+}
+
+.bannerLeftUIOrange {
+  background-color: var(--accent-orange);
+  max-width: 164px;
+  max-height: 182px;
+  width: 100%;
+}
+
+.bannerLeftUIPink {
+  background-color: var(--accent-pink);
+  max-width: 164px;
+  max-height: 182px;
+}
+
+.bannerLeftUIRed {
+  background-color: var(--accent-red);
+  max-width: 354px;
+}
+
+.bannerRightUpContent {
+  background-color: var(--accent-mint);
+  max-height: 182px;
+  max-width: 354px;
+}
+.bannerRightBottomContent {
+  background-color: var(--deep-purple);
+  max-height: 182px;
+  max-width: 354px;
+}
+.banner h2 {
+  font-size: var(--title-2);
+  line-height: 32px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+@media (max-width: 768px) {
+  .bannerRight,
+  .bannerLeftDesign {
+    width: 100%;
+  }
+}
+
+@media (max-width: 567px) {
+  .bannerLeftDesignPurple,
+  .bannerLeftUIOrange,
+  .bannerLeftUIPink,
+  .bannerLeftUIRed,
+  .bannerRightUpContent,
+  .bannerRightBottomContent {
+    max-width: none;
+  }
+}
