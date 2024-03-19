@@ -1,9 +1,10 @@
 import './App.css'
+import { Header } from './components/Header/Header'
 
 const App = () => {
   return (
     <div className="App">
-      <h1 className="text-3xl font-bold">Hello world!</h1>
+      <Header width={32} height={32} />
     </div>
   )
 }
