@@ -1,0 +1,17 @@
+.bannerTitle {
+  gap: 23px;
+}
+
+.bannerTitle h1 {
+  font-size: var(--heading-l);
+  font-weight: 700;
+  line-height: 71px;
+}
+
+.bannerTitle p {
+  color: var(--accent-grey);
+  font-size: var(--regular-text);
+  font-weight: 500;
+  line-height: 28px;
+  max-width: 75%;
+}
