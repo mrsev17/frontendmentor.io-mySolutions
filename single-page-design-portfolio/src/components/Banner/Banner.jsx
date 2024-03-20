@@ -12,7 +12,7 @@ export const Banner = () => {
   return (
     <section className={`${styles.banner}`}>
       <div
-        className={`${styles.bannerContent} container flex flex-col gap-20 sm:px-4 lg:px-0 lg:max-w-1110 xl:max-w-1110 items-center`}
+        className={`${styles.bannerContent} container flex flex-col gap-8 sm:gap-20 sm:px-4 lg:px-0 lg:max-w-1110 xl:max-w-1110 items-center`}
       >
         <BannerTitle
           title="Design solutions made easy"
@@ -82,7 +82,7 @@ export const Banner = () => {
               </div>
 
               <div
-                className={`${styles.bannerRightBottom} w-full flex justify-end`}
+                className={`${styles.bannerRightBottom} w-full flex justify-start md:justify-end`}
               >
                 <div
                   className={`${styles.bannerRightBottomContent} flex flex-col gap-4 p-6 rounded-lg w-full`}

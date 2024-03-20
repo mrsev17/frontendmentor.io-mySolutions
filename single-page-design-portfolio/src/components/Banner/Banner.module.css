@@ -55,7 +55,10 @@
   }
 }
 
-@media (max-width: 567px) {
+@media (max-width: 568px) {
+  .banner {
+    margin-bottom: 100px;
+  }
   .bannerLeftDesignPurple,
   .bannerLeftUIOrange,
   .bannerLeftUIPink,
