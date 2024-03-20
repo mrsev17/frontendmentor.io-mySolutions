@@ -15,3 +15,14 @@
   line-height: 28px;
   max-width: 75%;
 }
+
+@media (max-width: 768px) {
+  .bannerTitle h1 {
+    font-size: 44px;
+    line-height: 55px;
+  }
+  .bannerTitle p {
+    font-size: 28px;
+    max-width: 100%;
+  }
+}

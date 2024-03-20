@@ -1,5 +1,5 @@
 import './App.css'
-import { Header, Banner } from './components'
+import { Header, Banner, Designer } from './components'
 
 const App = () => {
   return (
@@ -7,6 +7,7 @@ const App = () => {
       <Header width={32} height={32} />
       <main>
         <Banner />
+        <Designer />
       </main>
     </div>
   )
