@@ -1,6 +1,9 @@
 .myWork {
   margin-bottom: 158px;
 }
+.myWork h5 {
+  font-size: var(--heading-s);
+}
 .myWork img {
   border-radius: 10px;
 }
