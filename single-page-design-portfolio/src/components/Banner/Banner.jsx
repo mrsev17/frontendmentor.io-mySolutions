@@ -1,16 +1,15 @@
+import { BannerTitle } from '../BannerTitle'
 import graphDesign from '../../assets/pattern-graphic-design.svg'
 import uiUx from '../../assets/pattern-ui-ux.svg'
 import apppsImg from '../../assets/pattern-apps.svg'
 import ilustrationsImg from '../../assets/pattern-illustrations.svg'
 import photographyImg from '../../assets/pattern-photography.svg'
 import motionGraphImg from '../../assets/pattern-motion-graphics.svg'
-
-import { BannerTitle } from '../BannerTitle'
 import styles from './Banner.module.css'
 
 export const Banner = () => {
   return (
-    <section className={`${styles.banner}`}>
+    <section className={`${styles.banner} px-4`}>
       <div
         className={`${styles.bannerContent} container flex flex-col gap-8 sm:gap-20 sm:px-4 lg:px-0 lg:max-w-1110 xl:max-w-1110 items-center`}
       >
