@@ -14,6 +14,7 @@ export const MyWork = () => {
   const dataSlides = [slide1, slide2, slide3, slide4, slide5]
   return (
     <section className={`${styles.myWork}`}>
+      <h5 className="font-bold text-center mb-8 sm:mb-14 ">My Work</h5>
       <Flickity
         className="Slider"
         elementType="div"
