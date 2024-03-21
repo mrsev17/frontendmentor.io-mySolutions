@@ -19,3 +19,5 @@
 10. Age calculator app (React, Redux, TypeScript) - https://age-calculator-app-mrsev.netlify.app/
 
 11. Single-page design portfolio (React, TypeScript) - https://single-page-design-porfolio-mrsev.netlify.app/
+
+12. Untitled project
