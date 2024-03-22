@@ -1,0 +1,17 @@
+:root {
+  --main-font: 'Overpass', sans-serif;
+  --xl-font: 28px;
+  --md-font: 16px;
+  --xs-font: 15px;
+  --accent-orange: #fc7614;
+  --pure-white: #ffffff;
+  --light-grey: #969fad;
+  --medium-grey: #7c8798;
+  --dark-blue: #262e38;
+  --very-dark-blue: #131518;
+  --bg-card-gradient: radial-gradient(
+    99% 99% at 50% 0%,
+    rgb(35, 42, 52),
+    rgb(24, 30, 39) 100%
+  );
+}

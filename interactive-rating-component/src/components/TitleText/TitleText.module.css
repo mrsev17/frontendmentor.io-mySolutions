@@ -1,0 +1,13 @@
+.titleText {
+  gap: 7px;
+}
+.titleText h1 {
+  line-height: 43px;
+  font-size: 28px;
+}
+
+.titleText p {
+  font-size: var(--xs-font);
+  color: var(--light-grey);
+  line-height: 24px;
+}

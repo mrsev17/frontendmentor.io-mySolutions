@@ -1,0 +1,6 @@
+.circleInfo {
+  background-color: var(--dark-blue);
+}
+.circleInfo span {
+  color: var(--medium-grey);
+}

@@ -1,0 +1,11 @@
+.ratingBtn div,
+.ratingBtn span {
+  transition: 0.4s ease-in-out;
+}
+
+.ratingBtn:hover div {
+  background-color: var(--accent-orange);
+}
+.ratingBtn:hover span {
+  color: white;
+}

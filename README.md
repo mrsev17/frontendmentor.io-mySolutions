@@ -20,4 +20,4 @@
 
 11. Single-page design portfolio (React, TypeScript) - https://single-page-design-porfolio-mrsev.netlify.app/
 
-12. Untitled project
+12. Interactive rating component (React, Redux, TypeScript, Tailwind CSS) -

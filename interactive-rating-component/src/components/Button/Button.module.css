@@ -1,0 +1,13 @@
+.Button {
+  font-size: var(--xs-font);
+  background-color: var(--accent-orange);
+  padding: 13px 0 9px 0;
+  border-radius: 22.5px;
+  line-height: 23px;
+  letter-spacing: 2px;
+  transition: 0.4s ease-in-out;
+}
+
+.Button:hover {
+  color: var(--accent-orange);
+}
