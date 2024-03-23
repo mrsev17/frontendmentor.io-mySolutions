@@ -4,3 +4,9 @@
 .circleInfo span {
   color: var(--medium-grey);
 }
+.activeRating {
+  background-color: var(--accent-orange) !important;
+}
+.activeRating span {
+  color: var(--pure-white);
+}

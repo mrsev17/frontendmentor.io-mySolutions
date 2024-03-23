@@ -1,7 +1,7 @@
 import './App.css'
 import { Card } from './components'
 
-function App() {
+const App: React.FC = () => {
   return (
     <div className="app">
       <main className="h-screen flex justify-center items-center">

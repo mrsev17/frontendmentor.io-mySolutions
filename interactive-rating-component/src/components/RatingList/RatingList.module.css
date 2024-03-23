@@ -4,7 +4,7 @@
 }
 
 .ratingBtn:hover div {
-  background-color: var(--accent-orange);
+  background-color: var(--medium-grey);
 }
 .ratingBtn:hover span {
   color: white;

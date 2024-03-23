@@ -15,3 +15,23 @@
     rgb(24, 30, 39) 100%
   );
 }
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  animation: fadeIn 2s ease-in-out;
+}
+
+@media (max-width: 567px) {
+  :root {
+    --xl-font: 24px;
+    --xs-font: 14px;
+  }
+}

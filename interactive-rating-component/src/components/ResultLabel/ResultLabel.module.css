@@ -1,0 +1,17 @@
+.resultLabel {
+  background-color: var(--dark-blue);
+  border-radius: 22.5px;
+  max-width: 56.6%;
+  margin: 0 auto 36px;
+}
+.resultLabel span {
+  font-size: var(--xs-font);
+  color: var(--accent-orange);
+}
+
+@media (max-width: 567px) {
+  .resultLabel {
+    max-width: 60%;
+    margin: 0 auto 19px;
+  }
+}

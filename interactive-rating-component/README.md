@@ -2,4 +2,4 @@ Link to task: https://www.frontendmentor.io/challenges/interactive-rating-compon
 
 For this project i use React, Redux, TypeScript & Tailwind CSS
 
-live version:
+live version: https://interactive-rating-component-mrsev.netlify.app/
