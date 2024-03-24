@@ -1,0 +1,31 @@
+@font-face {
+  font-family: 'Inter';
+  src: url('./assets/fonts/static/Inter-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('./assets/fonts/static/Inter-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+//
+
+$main-font-family: 'Inter', sans-serif;
+$general-title-size: 64px;
+$secondary-titles-size: 48px;
+$xl-text: 24px;
+$md-text: 20px;
+$sm-text: 16px;
+$xs-text: 14px;
+$accent-blue: #345ff6;
+$accent-dark: #253347;
+$accent-grey: #5e6e85;
+$light-grey: #d8e2e7;
+$pure-white: #ffffff;
+$shadow-card: 16px 32px 56px 0px rgba(143, 174, 207, 0.25);
+$accent-radius: 16px;
+$inputs-radius: 12px;
