@@ -1,0 +1,30 @@
+@import '../../globalStyles.scss';
+
+.means {
+  margin-bottom: 96px;
+  .meansWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 108px;
+    img {
+      max-width: 564px;
+      max-height: 533px;
+    }
+    div {
+      margin-top: 100px;
+      h2 {
+        font-size: $secondary-titles-size;
+        color: $accent-dark;
+        line-height: 110%;
+        font-weight: 600;
+        margin-bottom: 35px;
+      }
+      p {
+        font-size: $sm-text;
+        color: $accent-grey;
+        line-height: 150%;
+      }
+    }
+  }
+}

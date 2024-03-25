@@ -1,9 +1,14 @@
 import './App.scss'
+import { Advices, Means } from './components'
 
 const App: React.FC = () => {
   return (
     <div className="App">
-      <h1>Body Mass Index Calculator</h1>
+      <header></header>
+      <main>
+        <Means />
+        <Advices />
+      </main>
     </div>
   )
 }

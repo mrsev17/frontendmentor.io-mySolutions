@@ -12,8 +12,6 @@
   font-style: normal;
 }
 
-//
-
 $main-font-family: 'Inter', sans-serif;
 $general-title-size: 64px;
 $secondary-titles-size: 48px;
@@ -29,3 +27,17 @@ $pure-white: #ffffff;
 $shadow-card: 16px 32px 56px 0px rgba(143, 174, 207, 0.25);
 $accent-radius: 16px;
 $inputs-radius: 12px;
+
+.container,
+.nested-container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 1392px;
+}
+
+.nested-container {
+  max-width: 1160px;
+}

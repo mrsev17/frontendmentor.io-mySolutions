@@ -1,0 +1,37 @@
+@import '../../globalStyles.scss';
+
+.advices {
+  border-radius: 35px;
+  height: 402px;
+  background: linear-gradient(
+    -45deg,
+    rgb(214, 230, 254) 0%,
+    rgba(214, 252, 254, 0) 100%
+  );
+  .advicesWrapper {
+    padding: 72px 0 96px 0;
+    ul {
+      display: flex;
+      justify-content: space-between;
+      li {
+        max-width: 365px;
+        span {
+          display: inline-block;
+          margin-bottom: 45px;
+        }
+        h4 {
+          margin-bottom: 24px;
+          font-size: $xl-text;
+          color: $accent-dark;
+          font-weight: 600;
+          line-height: 29px;
+        }
+        p {
+          font-size: $xs-text;
+          color: $accent-grey;
+          line-height: 150%;
+        }
+      }
+    }
+  }
+}
