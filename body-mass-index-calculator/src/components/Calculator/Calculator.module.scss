@@ -1,0 +1,132 @@
+@import '../../globalStyles.scss';
+
+.calculator {
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  width: 564px;
+  box-shadow: 16px 32px 56px 0px rgba(143, 174, 207, 0.25);
+  border-radius: $accent-radius;
+  background-color: $pure-white;
+  h2 {
+    color: $accent-grey;
+    font-size: $xl-text;
+    font-weight: 600;
+    line-height: 29px;
+  }
+  .checkboxesWrapper {
+    display: flex;
+    justify-content: space-between;
+    .checkbox {
+      width: 100%;
+      max-width: 208px;
+      label {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        gap: 18px;
+      }
+      input[type='checkbox'] {
+        border-radius: 50%;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        width: 31px;
+        height: 31px;
+        border: 1px solid $light-grey;
+        outline: none;
+        cursor: pointer;
+        -webkit-transition: 0.75s ease-in-out;
+        -o-transition: 0.75s ease-in-out;
+        transition: 0.75s ease-in-out;
+        &:hover {
+          border: 1px solid $accent-blue;
+        }
+        &:checked {
+          background-color: rgba(52, 95, 246, 0.15);
+          border: 1px solid rgba(52, 95, 246, 0.15);
+          position: relative;
+          &:checked::before {
+            content: url('../../assets/images/checkboxmark.svg');
+            color: black;
+            font-size: 1.5em;
+            position: absolute;
+            right: 7px;
+            top: 4px;
+          }
+        }
+      }
+      span {
+        font-weight: 600;
+        color: $accent-dark;
+      }
+    }
+  }
+  .inputsWrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+    .height,
+    .weight {
+      width: 47.6%;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    label {
+      font-size: $xs-text;
+      color: $accent-grey;
+      line-height: 150%;
+    }
+    input {
+      outline: none;
+      padding: 19px 24px;
+      border: 1px solid $light-grey;
+      border-radius: $inputs-radius;
+      font-weight: 600;
+      font-size: $xl-text;
+      line-height: 29px;
+      color: $accent-dark;
+      transition: 0.5s ease-in-out;
+      &::placeholder {
+        font-weight: 600;
+        font-size: $xl-text;
+        color: $light-grey;
+        line-height: 29px;
+      }
+      &:focus-visible {
+        border: 1px solid $accent-blue;
+      }
+    }
+  }
+  .result {
+    height: 130px;
+    background: linear-gradient(
+      90deg,
+      rgb(52, 95, 247),
+      rgb(88, 125, 255) 100%
+    );
+    border-radius: 16px 99px 99px 16px;
+    .resultStart {
+      padding: 32px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      h2 {
+        color: $pure-white;
+        font-weight: $xl-text;
+        font-weight: 600;
+        line-height: 29px;
+      }
+      p {
+        font-size: $xs-text;
+        line-height: 150%;
+        color: $pure-white;
+      }
+    }
+  }
+}

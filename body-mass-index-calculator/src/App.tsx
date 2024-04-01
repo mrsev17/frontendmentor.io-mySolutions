@@ -1,10 +1,14 @@
+import { Advices, Banner, Means } from './components'
+import logoIcon from './assets/images/logo.svg'
 import './App.scss'
-import { Advices, Means } from './components'
 
 const App: React.FC = () => {
   return (
-    <div className="App">
-      <header></header>
+    <div className="app">
+      <header className="nested-container">
+        <img src={logoIcon} alt="Logo" />
+        <Banner />
+      </header>
       <main>
         <Means />
         <Advices />

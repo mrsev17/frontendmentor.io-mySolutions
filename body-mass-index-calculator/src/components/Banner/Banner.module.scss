@@ -1,0 +1,25 @@
+@import '../../globalStyles.scss';
+
+.banner {
+  .bannerWrapper {
+    display: flex;
+    align-items: center;
+    .bannerLeft {
+      display: flex;
+      flex-direction: column;
+      gap: 35px;
+      h1 {
+        font-size: $general-title-size;
+        color: $accent-dark;
+        font-weight: 600;
+        line-height: 110%;
+        max-width: 88%;
+      }
+      p {
+        line-height: 150%;
+        color: $accent-grey;
+        max-width: 78%;
+      }
+    }
+  }
+}
