@@ -1,0 +1,26 @@
+@import '../../globalStyles.scss';
+
+.cardLimitations {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 365px;
+  padding: 32px;
+  border-radius: $accent-radius;
+  box-shadow: 16px 32px 56px 0px rgba(143, 174, 207, 0.25);
+  .cardLimitationsTitle {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    h6 {
+      color: $accent-dark;
+      font-size: $md-text;
+      font-weight: 600;
+      line-height: 24px;
+    }
+  }
+  p {
+    line-height: 150%;
+    color: $accent-grey;
+  }
+}

@@ -1,4 +1,4 @@
-import { Advices, Banner, Means } from './components'
+import { Advices, Banner, Limitations, Means } from './components'
 import logoIcon from './assets/images/logo.svg'
 import './App.scss'
 
@@ -12,6 +12,7 @@ const App: React.FC = () => {
       <main>
         <Means />
         <Advices />
+        <Limitations />
       </main>
     </div>
   )

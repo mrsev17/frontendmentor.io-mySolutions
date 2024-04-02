@@ -20,4 +20,6 @@
 
 11. Single-page design portfolio (React, TypeScript) - https://single-page-design-porfolio-mrsev.netlify.app/
 
-12. Interactive rating component (React, Redux, TypeScript, Tailwind CSS) -
+12. Interactive rating component (React, Redux, TypeScript, Tailwind CSS) - https://interactive-rating-component-mrsev.netlify.app/
+
+13. Body Mass Index calculator (React, Redux, TypeScript, SCSS) - in progress

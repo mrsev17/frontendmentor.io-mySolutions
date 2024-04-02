@@ -1,3 +1,4 @@
+import iconCurve from '../../assets/images/pattern-curved-line-left.svg'
 import meansPic from '../../assets/images/image-man-eating.webp'
 import styles from './Means.module.scss'
 
@@ -5,6 +6,7 @@ export const Means = () => {
   return (
     <section className={`${styles.means} container`}>
       <div className={`${styles.meansWrapper} nested-container`}>
+        <img className={styles.iconCurve} src={iconCurve} alt="Curve Icon" />
         <img src={meansPic} alt="Man eating" />
         <div>
           <h2>What your BMI result means</h2>

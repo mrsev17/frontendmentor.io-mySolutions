@@ -1,0 +1,54 @@
+@import '../../globalStyles.scss';
+
+.limitations {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding-bottom: 120px;
+  .limitationsTitle {
+    display: flex;
+    .limitationsTitleLeft {
+      display: flex;
+      flex-direction: column;
+      gap: 35px;
+      h5 {
+        font-weight: 600;
+        line-height: 110%;
+        font-size: $secondary-titles-size;
+        color: $accent-dark;
+      }
+      p {
+        line-height: 150%;
+        color: $accent-grey;
+        max-width: 564px;
+      }
+    }
+    .limitationsTitleRight {
+      width: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  .limitationsMid {
+    display: flex;
+    gap: 32px;
+    justify-content: end;
+    .limitationsMidCurve {
+      max-width: 365px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      img {
+        margin-left: 32px;
+        width: 94px;
+        height: 122px;
+      }
+    }
+  }
+  .limitationsBottom {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+  }
+}

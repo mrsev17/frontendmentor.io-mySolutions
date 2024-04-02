@@ -21,3 +21,9 @@ export interface BMICalculator {
     recommendation: string
   }
 }
+
+export interface Limitation {
+  img: string
+  title: string
+  text: string
+}
