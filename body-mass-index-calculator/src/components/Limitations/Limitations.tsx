@@ -1,9 +1,23 @@
+import { useState, useEffect } from 'react'
 import styles from './Limitations.module.scss'
 import { CardLimitations } from '../CardLimitations'
 import { limitationsData } from '../../utils/data'
-import iconCurve from '../../assets/images/pattern-curved-line-right.svg'
+import { HighWidthCards } from '../HighWidthCards'
+import { LowWidthCards } from '../LowWidthCards'
 
 export const Limitations = () => {
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth)
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth)
+    }
+    window.addEventListener('resize', handleResize)
+    return () => {
+      window.removeEventListener('resize', handleResize)
+    }
+  }, [])
+
   return (
     <section className="nested-container">
       <div className={styles.limitations}>
@@ -17,41 +31,17 @@ export const Limitations = () => {
               may not be beneficial to use.
             </p>
           </div>
-          <div className={styles.limitationsTitleRight}>
-            <CardLimitations
-              title={limitationsData[0].title}
-              text={limitationsData[0].text}
-              img={limitationsData[0].img}
-            />
-          </div>
+          {windowWidth < 992 ? null : (
+            <div className={styles.limitationsTitleRight}>
+              <CardLimitations
+                title={limitationsData[0].title}
+                text={limitationsData[0].text}
+                img={limitationsData[0].img}
+              />
+            </div>
+          )}
         </div>
-        <div className={styles.limitationsMid}>
-          <div className={styles.limitationsMidCurve}>
-            <img src={iconCurve} alt="Curve" />
-          </div>
-          <CardLimitations
-            title={limitationsData[1].title}
-            text={limitationsData[1].text}
-            img={limitationsData[1].img}
-          />
-          <CardLimitations
-            title={limitationsData[2].title}
-            text={limitationsData[2].text}
-            img={limitationsData[2].img}
-          />
-        </div>
-        <div className={styles.limitationsBottom}>
-          <CardLimitations
-            title={limitationsData[3].title}
-            text={limitationsData[3].text}
-            img={limitationsData[3].img}
-          />
-          <CardLimitations
-            title={limitationsData[4].title}
-            text={limitationsData[4].text}
-            img={limitationsData[4].img}
-          />
-        </div>
+        {windowWidth < 992 ? <LowWidthCards /> : <HighWidthCards />}
       </div>
     </section>
   )

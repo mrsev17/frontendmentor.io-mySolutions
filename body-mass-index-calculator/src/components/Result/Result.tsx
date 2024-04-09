@@ -37,8 +37,8 @@ export const Result = () => {
               <h3>{select.bmi}</h3>
             </div>
             <p>
-              Your BMI suggests you’re a {select.msg}
-              weight. Your ideal weight is
+              Your BMI suggests you’re a {select.msg}&#160; weight. Your ideal
+              weight is
               <strong> {select.recom}</strong>.
             </p>
           </div>

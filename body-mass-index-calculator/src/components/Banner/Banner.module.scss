@@ -23,3 +23,51 @@
     }
   }
 }
+
+@media (max-width: 992px) {
+  .banner {
+    .bannerWrapper {
+      flex-direction: column;
+      gap: 40px;
+      .bannerLeft {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        h1 {
+          text-align: center;
+          margin: 0 auto;
+          max-width: 42%;
+          font-size: 48px;
+        }
+        p {
+          text-align: center;
+          margin: 0 auto;
+          max-width: 75%;
+        }
+      }
+      .bannerRight {
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 24px;
+      }
+    }
+  }
+}
+
+@media (max-width: 567px) {
+  .banner {
+    .bannerWrapper {
+      gap: 48px;
+      .bannerLeft {
+        h1,
+        p {
+          max-width: 88%;
+        }
+      }
+      .bannerRight {
+        width: 100%;
+        margin: 0 auto;
+      }
+    }
+  }
+}

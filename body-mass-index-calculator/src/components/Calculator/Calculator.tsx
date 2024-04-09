@@ -10,7 +10,7 @@ import {
 import { useAppDispatch, useAppSelector } from '../../hooks'
 import styles from './Calculator.module.scss'
 import { InputCalc } from '../InputCalc'
-import { Result } from '../Reesult'
+import { Result } from '../Result'
 
 export const Calculator = () => {
   const getState = useAppSelector((state) => state.bodyMassIndex)

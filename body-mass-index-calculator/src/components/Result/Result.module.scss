@@ -46,3 +46,17 @@
     }
   }
 }
+
+@media (max-width: 567px) {
+  .result {
+    border-radius: $accent-radius;
+    .resultMetric {
+      flex-direction: column;
+      align-items: baseline !important;
+      gap: 24px;
+      p {
+        width: 100% !important;
+      }
+    }
+  }
+}

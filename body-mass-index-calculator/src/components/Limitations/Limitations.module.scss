@@ -30,25 +30,34 @@
       justify-content: center;
     }
   }
-  .limitationsMid {
-    display: flex;
-    gap: 32px;
-    justify-content: end;
-    .limitationsMidCurve {
-      max-width: 365px;
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      img {
-        margin-left: 32px;
-        width: 94px;
-        height: 122px;
+}
+
+@media (max-width: 992px) {
+  .limitations {
+    .limitationsTitle {
+      flex-direction: column;
+      align-items: center;
+      .limitationsTitleLeft {
+        h5,
+        p {
+          text-align: center;
+        }
+        h5 {
+          font-size: 32px;
+        }
       }
     }
   }
-  .limitationsBottom {
-    display: flex;
-    justify-content: center;
-    gap: 32px;
+}
+
+@media (max-width: 567px) {
+  .limitations {
+    padding-bottom: 96px;
+    .limitationsTitle {
+      p {
+        max-width: 90% !important;
+        margin: 0 auto;
+      }
+    }
   }
 }

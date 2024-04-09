@@ -27,8 +27,10 @@ export const Advices = () => {
             return (
               <li key={advice.title}>
                 <span>{advice.icon}</span>
-                <h4>{advice.title}</h4>
-                <p>{advice.text}</p>
+                <div>
+                  <h4>{advice.title}</h4>
+                  <p>{advice.text}</p>
+                </div>
               </li>
             )
           })}
