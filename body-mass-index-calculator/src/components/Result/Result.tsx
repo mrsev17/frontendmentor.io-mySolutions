@@ -3,6 +3,7 @@ import styles from './Result.module.scss'
 
 export const Result = () => {
   const getState = useAppSelector((state) => state.bodyMassIndex)
+
   const currentBmi = (option: 'metric' | 'imperial') => {
     if (option === 'metric') {
       return {
@@ -19,7 +20,9 @@ export const Result = () => {
       }
     }
   }
+
   const select = currentBmi(getState.units)
+
   return (
     <div className={styles.result}>
       <div className={styles.resultStart}>

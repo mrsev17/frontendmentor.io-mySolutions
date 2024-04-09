@@ -22,4 +22,6 @@
 
 12. Interactive rating component (React, Redux, TypeScript, Tailwind CSS) - https://interactive-rating-component-mrsev.netlify.app/
 
-13. Body Mass Index calculator (React, Redux, TypeScript, SCSS) - in progress
+13. Body Mass Index calculator (React, Redux, TypeScript, SCSS) - https://body-mass-index-calculator-ayd2.vercel.app/
+
+14. Untitled project
