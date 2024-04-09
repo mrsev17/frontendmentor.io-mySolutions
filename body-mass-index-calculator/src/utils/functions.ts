@@ -1,6 +1,6 @@
 import { BMICalculator } from './interfaces'
 
-export const calculateBMI = (state: BMICalculator): void => {
+export const calculateMetricBMI = (state: BMICalculator): void => {
   if (
     state.units === 'metric' &&
     state.metric.height > 100 &&
@@ -26,5 +26,48 @@ export const calculateBMI = (state: BMICalculator): void => {
   } else if (state.metric.height === 0 || state.metric.weight === 0) {
     state.metric.message = ''
     state.metric.bmi = 0
+  }
+}
+
+export const calculateImperialBMI = (state: BMICalculator): void => {
+  if (
+    state.units === 'imperial' &&
+    state.imperial.height.ft > 3 &&
+    state.imperial.height.in > 5 &&
+    state.imperial.weight.st > 3 &&
+    state.imperial.weight.lbs > 3
+  ) {
+    const heightInInches: number =
+      state.imperial.height.ft * 12 + state.imperial.height.in
+    const weightInPounds: number =
+      state.imperial.weight.st * 14 + state.imperial.weight.lbs
+
+    const getBMIImperial: number = +(
+      (weightInPounds / (heightInInches * heightInInches)) *
+      703
+    ).toFixed(1)
+    state.imperial.bmi = getBMIImperial
+
+    if (getBMIImperial < 18.5) {
+      state.imperial.message = 'underweight'
+      state.imperial.recommendation = 'more than 9 st 6 lbs'
+    } else if (getBMIImperial >= 18.5 && getBMIImperial <= 24.9) {
+      state.imperial.message = 'healthy'
+      state.imperial.recommendation = 'between 9 st 6 lbs - 12 st 10 lbs'
+    } else if (getBMIImperial >= 25 && getBMIImperial <= 29.9) {
+      state.imperial.message = 'overweight'
+      state.imperial.recommendation = 'between 12 st 10 lbs - 15 st 4 lbs'
+    } else {
+      state.imperial.message = 'obese'
+      state.imperial.recommendation = 'less than 15 st 4 lbs'
+    }
+  } else if (
+    state.imperial.height.ft === 0 ||
+    state.imperial.height.in === 0 ||
+    state.imperial.weight.st === 0 ||
+    state.imperial.weight.lbs === 0
+  ) {
+    state.imperial.message = ''
+    state.imperial.bmi = 0
   }
 }
