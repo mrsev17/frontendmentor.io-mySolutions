@@ -24,4 +24,6 @@
 
 13. Body Mass Index calculator (React, Redux, TypeScript, SCSS) - https://body-mass-index-calculator-ayd2.vercel.app/
 
-14. Untitled project
+14. GitHub user search app (React, Redux, TypeScript, SCSS) - https://github-user-search-app-sage-five.vercel.app/
+
+15. Untitled project
