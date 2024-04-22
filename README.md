@@ -27,3 +27,5 @@
 14. GitHub user search app (React, Redux, TypeScript, SCSS) - https://github-user-search-app-sage-five.vercel.app/
 
 15. Product preview card component (React, Tailwind CSS) - https://product-preview-card-component-three-cyan.vercel.app/
+
+16. Stats preview card component (React, Tailwind CSS) - https://stats-preview-card-component-sable-ten.vercel.app/
