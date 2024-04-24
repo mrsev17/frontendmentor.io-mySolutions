@@ -5,8 +5,9 @@ interface InputTipProps {
   label: string
   placeholder: string
   value: string
-  onChange: () => void
+  onChange: (e: React.ChangeEvent<HTMLInputElement>) => void
   className?: string
+  error: string
 }
 
 export const InputTip = ({
@@ -15,18 +16,10 @@ export const InputTip = ({
   placeholder,
   value,
   onChange,
+  error,
 }: InputTipProps) => {
-  const [text, setText] = useState<string>('')
-  const [error, setError] = useState<boolean>(false)
+  // const [error, setError] = useState<boolean>(false)
   const inputErrorStyle = error ? 'border-error' : 'border-transparent'
-
-  const inputHandle = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const inputValue = e.target.value
-    const sanitizedValue = inputValue.replace(/[^0-9.]/g, '')
-    if (sanitizedValue.length < 4) {
-      setText(sanitizedValue)
-    }
-  }
 
   return (
     <div className="flex flex-col gap-1.5">
@@ -43,9 +36,10 @@ export const InputTip = ({
           name={label}
           type="text"
           placeholder={placeholder}
-          value={text}
-          onChange={inputHandle}
+          value={value}
+          onChange={onChange}
           autoComplete="off"
+          maxLength={12}
         />
         <span className="absolute transform -translate-y-1/2 left-[19px] top-1/2">
           {children}

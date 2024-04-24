@@ -2,4 +2,4 @@ Link to task: https://www.frontendmentor.io/challenges/tip-calculator-app-ugJNGb
 
 For this project i use React, Redux, TypeScript & Tailwind CSS
 
-Live version:
+Live version: https://tip-calculator-app-xi-five.vercel.app/

@@ -29,3 +29,5 @@
 15. Product preview card component (React, Tailwind CSS) - https://product-preview-card-component-three-cyan.vercel.app/
 
 16. Stats preview card component (React, Tailwind CSS) - https://stats-preview-card-component-sable-ten.vercel.app/
+
+17. Tip calculator app (React, Redux, TypeScript & Tailwind CSS) - https://tip-calculator-app-xi-five.vercel.app/
