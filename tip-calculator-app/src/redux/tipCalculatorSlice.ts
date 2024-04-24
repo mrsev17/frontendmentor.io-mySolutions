@@ -1,11 +1,27 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit'
 
 interface InitialState {
-  selectTip: number
+  bill: number
+  numberOfPeople: number
+  selectTip: {
+    value: number
+    custom: string
+    error: string
+  }
+  tipAmount: number
+  total: number
 }
 
 const initialState: InitialState = {
-  selectTip: 0,
+  bill: 0,
+  numberOfPeople: 0,
+  selectTip: {
+    value: 0,
+    custom: '',
+    error: '',
+  },
+  tipAmount: 0,
+  total: 0,
 }
 
 const tipCalculator = createSlice({
@@ -13,7 +29,10 @@ const tipCalculator = createSlice({
   initialState,
   reducers: {
     setTip(state, action: PayloadAction<number>) {
-      state.selectTip = action.payload
+      state.selectTip.value = action.payload
+    },
+    setBill(state, action: PayloadAction<string>) {
+      state.bill = +action.payload
     },
   },
 })

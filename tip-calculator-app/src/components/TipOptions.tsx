@@ -12,7 +12,7 @@ export const TipOptions = () => {
       </div>
 
       <div className="grid">
-        <ul className="grid grid-cols-3 gap-3.5">
+        <ul className="grid grid-cols-3 gap-3.5 max-lg:grid-cols-2">
           {tipOptions.map((tip, i) => {
             return <TipBtn key={tip} value={tip} />
           })}

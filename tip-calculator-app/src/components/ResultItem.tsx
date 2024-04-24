@@ -10,7 +10,9 @@ export const ResultItem = ({ title, value }: ResultItemProps) => {
         <span className="text-white leading-6">{title}</span>
         <span className="text-sub leading-[19px]">/ person</span>
       </div>
-      <span className="text-48 text-lightMint leading-[71px]">${value}</span>
+      <span className="text-48 max-lg:text-32 text-lightMint leading-[71px]">
+        ${value}
+      </span>
     </div>
   )
 }

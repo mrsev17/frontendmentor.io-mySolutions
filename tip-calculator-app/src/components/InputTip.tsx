@@ -17,7 +17,7 @@ export const InputTip = ({
   onChange,
 }: InputTipProps) => {
   const [text, setText] = useState<string>('')
-  const [error, setError] = useState<boolean>(true)
+  const [error, setError] = useState<boolean>(false)
   const inputErrorStyle = error ? 'border-error' : 'border-transparent'
 
   const inputHandle = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -45,6 +45,7 @@ export const InputTip = ({
           placeholder={placeholder}
           value={text}
           onChange={inputHandle}
+          autoComplete="off"
         />
         <span className="absolute transform -translate-y-1/2 left-[19px] top-1/2">
           {children}

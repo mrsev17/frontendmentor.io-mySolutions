@@ -16,6 +16,7 @@ module.exports = {
         13: '0.8125rem',
         20: '1.25rem',
         24: '1.5rem',
+        32: '2rem',
         48: '3rem',
       },
       borderRadius: {
@@ -25,6 +26,9 @@ module.exports = {
       },
       boxShadow: {
         accent: '0px 32px 43px 0px rgba(79, 166, 175, 0.2)',
+      },
+      screens: {
+        lg: '992px',
       },
     },
   },
