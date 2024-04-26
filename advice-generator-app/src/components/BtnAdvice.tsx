@@ -7,6 +7,7 @@ export const BtnAdvice = () => {
   return (
     <button
       onClick={() => dispatch(fetchAdvice())}
+      aria-label="fetch-advice"
       className="absolute left-1/2 bottom-[-32px] transform -translate-x-1/2 w-16 h-16 bg-neonGreen flex flex-col justify-center items-center rounded-full hover:shadow-custom transition duration-500"
     >
       <IconDice />
