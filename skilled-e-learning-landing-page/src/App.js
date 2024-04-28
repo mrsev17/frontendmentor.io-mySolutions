@@ -1,12 +1,14 @@
+import { Courses, Footer, Header } from './components'
 import './App.css'
-import { Container, Header } from './components'
 
 const App = () => {
   return (
     <div className="App">
-      <Container className="max-w-[1440px] w-full h-[320px] m-auto">
+      <div className="max-w-main w-full m-auto overflow-hidden relative min-h-[820px]">
         <Header />
-      </Container>
+        <Courses />
+      </div>
+      <Footer />
     </div>
   )
 }

@@ -1,3 +1,7 @@
 export * from './Container'
 export * from './Header'
 export * from './Button'
+export * from './Footer'
+export * from './BannerContent'
+export * from './Course'
+export * from './Courses'

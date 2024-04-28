@@ -4,13 +4,27 @@ module.exports = {
     extend: {
       fontSize: {
         18: '1.125rem',
+        24: '1.5rem',
+        32: '2rem',
+        56: '3.5rem',
       },
       colors: {
         deepDark: '#13183F',
         lilac: '#666CA3',
+        lightGrey: '#83869A',
+        pink: '#F74780',
+        lightPink: '#FFA7C3',
       },
       borderRadius: {
         btn: '1.75rem',
+        card: '0.9375rem',
+      },
+      maxWidth: {
+        main: '1440px',
+        content: '1110px',
+      },
+      boxShadow: {
+        card: '0px 25px 50px 0px rgba(6, 22, 141, 0.04);',
       },
       backgroundImage: (theme) => ({
         'gradient-btn-banner':
