@@ -13,7 +13,7 @@ export const Button = ({ text, purpose }) => {
 
   return (
     <button
-      className={`${defaultClasses()} text-1 text-white font-bold leading-7 pb-4 pt-[19px] max-w-[167px] w-full rounded-btn transition duration-500`}
+      className={`${defaultClasses()} text-1 text-white font-bold leading-7 pb-4 iphone:pb-[11px] pt-[19px] iphone:pt-[9px] max-w-[167px] iphone:max-w-[140px] w-full rounded-btn transition duration-500`}
     >
       {text}
     </button>

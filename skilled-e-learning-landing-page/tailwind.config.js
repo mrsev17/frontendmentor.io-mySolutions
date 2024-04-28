@@ -3,9 +3,11 @@ module.exports = {
   theme: {
     extend: {
       fontSize: {
+        16: '1rem',
         18: '1.125rem',
         24: '1.5rem',
         32: '2rem',
+        40: '2.5rem',
         56: '3.5rem',
       },
       colors: {
@@ -26,11 +28,17 @@ module.exports = {
       boxShadow: {
         card: '0px 25px 50px 0px rgba(6, 22, 141, 0.04);',
       },
+      screens: {
+        tablet: { max: '768px' },
+        iphone: { max: '567px' },
+      },
       backgroundImage: (theme) => ({
         'gradient-btn-banner':
           'linear-gradient(180deg, rgba(255, 111, 72), rgba(240, 42, 166) 100%)',
         'gradient-btn-footer':
           'linear-gradient(180.00deg, rgb(72, 81, 255) -54.317%,rgb(240, 42, 166) 100%);',
+        custom:
+          'linear-gradient(180.00deg, rgb(255, 255, 255),rgb(240, 241, 255) 100%);',
       }),
     },
   },

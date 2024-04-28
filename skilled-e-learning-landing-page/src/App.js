@@ -4,10 +4,8 @@ import './App.css'
 const App = () => {
   return (
     <div className="App">
-      <div className="max-w-main w-full m-auto overflow-hidden relative min-h-[820px]">
-        <Header />
-        <Courses />
-      </div>
+      <Header />
+      <Courses />
       <Footer />
     </div>
   )

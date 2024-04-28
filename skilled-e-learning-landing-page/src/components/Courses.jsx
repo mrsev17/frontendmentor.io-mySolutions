@@ -36,23 +36,25 @@ const coursesData = [
 
 export const Courses = () => {
   return (
-    <ul className="max-w-content w-full m-auto grid grid-cols-3 gap-[30px] gap-y-[60px] mb-[140px]">
-      <div className="w-[350px] h-[322px] bg-gradient-btn-banner rounded-[15px] pt-16 pl-8">
-        <h2 className="text-32 text-white font-extrabold leading-10 max-w-[80%]">
-          Check out our most popular courses!
-        </h2>
-      </div>
-      {coursesData.map((course) => {
-        return (
-          <Course
-            key={course.title}
-            icon={course.icon}
-            title={course.title}
-            text={course.text}
-            link={course.link}
-          />
-        )
-      })}
-    </ul>
+    <section className="bg-custom w-full m-auto overflow-hidden relative min-h-[820px] pb-[86px] iphone:pb-20 tablet:px-[39px] tablet:min-h-[520px] iphone:px-4">
+      <ul className="pt-10 max-w-content w-full m-auto grid grid-cols-3 gap-[30px] gap-y-[60px] tablet:grid-cols-2 iphone:grid-cols-1">
+        <div className="w-[350px] h-[322px] bg-gradient-btn-banner rounded-[15px] pt-16 iphone:pt-6 pl-8  tablet:h-[259px] tablet:w-[340px] iphone:w-full iphone:max-h-[120px]">
+          <h2 className="text-32 text-white font-extrabold leading-10 max-w-[80%] tablet:text-24 tablet:leading-8">
+            Check out our most popular courses!
+          </h2>
+        </div>
+        {coursesData.map((course) => {
+          return (
+            <Course
+              key={course.title}
+              icon={course.icon}
+              title={course.title}
+              text={course.text}
+              link={course.link}
+            />
+          )
+        })}
+      </ul>
+    </section>
   )
 }
