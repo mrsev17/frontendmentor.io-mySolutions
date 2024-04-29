@@ -20,16 +20,18 @@
 
 11. Interactive rating component (React, Redux, TypeScript, Tailwind CSS) - https://interactive-rating-component-mrsev.netlify.app/
 
-12. Product preview card component (React, Tailwind CSS) - https://product-preview-card-component-three-cyan.vercel.app/
+12. Skilled e-learning landing page (React, Tailwind CSS) - https://skilled-elearning-landing-page-rosy.vercel.app/
 
-13. Results summary component (React) - https://results-summary-component-mrsev7.netlify.app/
+13. Product preview card component (React, Tailwind CSS) - https://product-preview-card-component-three-cyan.vercel.app/
 
-14. Workit landing page (React) - https://workit-landing-page-mrsev.netlify.app/
+14. Results summary component (React) - https://results-summary-component-mrsev7.netlify.app/
 
-15. FAQ accordion (React) - https://faq-accordion-mrsev.netlify.app/
+15. Workit landing page (React) - https://workit-landing-page-mrsev.netlify.app/
 
-16. Blog preview card (React) - https://blog-preview-card-mrsev17.netlify.app/
+16. FAQ accordion (React) - https://faq-accordion-mrsev.netlify.app/
 
-17. Social links profile (React) - https://social-links-profile-mrsev.netlify.app/
+17. Blog preview card (React) - https://blog-preview-card-mrsev17.netlify.app/
 
-18. Recipe page (React) - https://react-recipe-page-mrsev.netlify.app/
+18. Social links profile (React) - https://social-links-profile-mrsev.netlify.app/
+
+19. Recipe page (React) - https://react-recipe-page-mrsev.netlify.app/

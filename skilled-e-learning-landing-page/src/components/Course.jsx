@@ -1,6 +1,6 @@
 export const Course = ({ icon, title, text, link }) => {
   return (
-    <li className="w-[350px] h-[322px] shadow-card rounded-[15px] pt-16 pl-8 relative tablet:h-[259px] tablet:w-[340px] iphone:w-full pb-10">
+    <li className="w-[350px] h-[322px] bg-white shadow-card rounded-[15px] pt-16 pl-8 relative tablet:h-[259px] tablet:w-[340px] iphone:w-full pb-10">
       <div className="absolute top-[-28px]">{icon}</div>
       <div className="flex flex-col gap-6 justify-between h-full tablet:gap-4">
         <h3 className="text-24 text-deepDark font-extrabold leading-[30px] tablet:text-20 tablet:leading-[25px]">

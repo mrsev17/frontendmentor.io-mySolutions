@@ -38,14 +38,14 @@ export const BannerContent = () => {
       <div className="w-6/12 iphone:w-full iphone:flex iphone:justify-center">
         {screenWidth > 768 && (
           <img
-            className="max-w-[992px] max-h-[936px] absolute top-[-120px] right-[-300px]"
+            className="max-w-[992px] max-h-[936px] absolute top-[-120px] right-[-300px] z-[-1]"
             src={BannerHero}
             alt="Hero"
           />
         )}
         {screenWidth > 567 && screenWidth < 769 && (
           <img
-            className="max-w-[640px] max-h-[640px] absolute top-[30px] right-[-200px]"
+            className="max-w-[640px] max-h-[640px] absolute top-[30px] right-[-200px] z-[-1]"
             src={BannerHeroTablet}
             alt="Hero"
           />
