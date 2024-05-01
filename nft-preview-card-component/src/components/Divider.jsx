@@ -1,3 +1,3 @@
 export const Divider = () => {
-  return <div className="h-px w-full bg-veryDarkBlue opacity-25 mb-4"></div>
+  return <div className="h-px w-full bg-veryDarkBlue mb-4"></div>
 }
