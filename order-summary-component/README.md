@@ -2,4 +2,4 @@ Link to task: https://www.frontendmentor.io/challenges/order-summary-component-Q
 
 For this project i use React & Tailwind CSS
 
-Live version:
+Live version: https://order-summary-component-six-theta.vercel.app/

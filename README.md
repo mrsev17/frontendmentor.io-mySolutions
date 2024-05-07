@@ -20,22 +20,24 @@
 
 11. Stats preview card component (React, Tailwind CSS) - https://stats-preview-card-component-sable-ten.vercel.app/
 
-12. NFT preview card component (React, Tailwind CSS) - https://nft-preview-card-component-tau-rosy.vercel.app/
+12. Order summary component (React & Tailwind) - https://order-summary-component-six-theta.vercel.app/
 
-13. Interactive rating component (React, Redux, TypeScript, Tailwind CSS) - https://interactive-rating-component-mrsev.netlify.app/
+13. NFT preview card component (React, Tailwind CSS) - https://nft-preview-card-component-tau-rosy.vercel.app/
 
-14. Skilled e-learning landing page (React, Tailwind CSS) - https://skilled-elearning-landing-page-rosy.vercel.app/
+14. Interactive rating component (React, Redux, TypeScript, Tailwind CSS) - https://interactive-rating-component-mrsev.netlify.app/
 
-15. Product preview card component (React, Tailwind CSS) - https://product-preview-card-component-three-cyan.vercel.app/
+15. Skilled e-learning landing page (React, Tailwind CSS) - https://skilled-elearning-landing-page-rosy.vercel.app/
 
-16. Results summary component (React) - https://results-summary-component-mrsev7.netlify.app/
+16. Product preview card component (React, Tailwind CSS) - https://product-preview-card-component-three-cyan.vercel.app/
 
-17. Workit landing page (React) - https://workit-landing-page-mrsev.netlify.app/
+17. Results summary component (React) - https://results-summary-component-mrsev7.netlify.app/
 
-18. FAQ accordion (React) - https://faq-accordion-mrsev.netlify.app/
+18. Workit landing page (React) - https://workit-landing-page-mrsev.netlify.app/
 
-19. Blog preview card (React) - https://blog-preview-card-mrsev17.netlify.app/
+19. FAQ accordion (React) - https://faq-accordion-mrsev.netlify.app/
 
-20. Social links profile (React) - https://social-links-profile-mrsev.netlify.app/
+20. Blog preview card (React) - https://blog-preview-card-mrsev17.netlify.app/
 
-21. Recipe page (React) - https://react-recipe-page-mrsev.netlify.app/
+21. Social links profile (React) - https://social-links-profile-mrsev.netlify.app/
+
+22. Recipe page (React) - https://react-recipe-page-mrsev.netlify.app/
