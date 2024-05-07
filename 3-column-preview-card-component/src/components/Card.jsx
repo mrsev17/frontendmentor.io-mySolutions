@@ -17,7 +17,7 @@ export const Card = ({ icon, title, text, link, index }) => {
       <h2 className="font-bsd font-bold leading-10 uppercase text-[2.5rem] mb-[25px] text-[#F2F2F2]">
         {title}
       </h2>
-      <p className="font-ld leading-6 text-[15px] mb-[83px] max-sm:mb-[25px] text-[#F2F2F2]">
+      <p className="font-ld leading-6 text-[15px] mb-[103px] max-sm:mb-[25px] text-[#F2F2F2]">
         {text}
       </p>
       <a
