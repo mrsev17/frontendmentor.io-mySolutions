@@ -1,18 +1,14 @@
-import { Header } from './components/Header'
-import { PremiumEq } from './components/PremiumEq'
+import { Footer, Header, Premium } from './components'
 import { BgPatternOne } from './components/SVGs/BgPatternOne'
 
 const App = () => {
   return (
-    <div className="bg-hero-pattern bg-50-25 min-h-[1832px]">
-      <div className="max-w-[1440px] mx-auto pt-[62px] pb-[91px] relative">
-        <div className="max-w-[1110px] mx-auto">
-          <Header />
-          <PremiumEq />
-        </div>
-        <div className="absolute top-[-40px] right-0 z-[-1]">
-          <BgPatternOne />
-        </div>
+    <div className="bg-hero-pattern bg-50-25 iphone:bg-main-mobile iphone:bg-20-20">
+      <div className="max-w-main mx-auto pt-[62px] iphone:pt-10 pb-[91px] iphone:pb-20 relative z-20 overflow-hidden">
+        <Header />
+        <Premium />
+        <Footer />
+        <BgPatternOne />
       </div>
     </div>
   )

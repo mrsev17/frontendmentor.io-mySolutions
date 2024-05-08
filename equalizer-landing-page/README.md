@@ -2,4 +2,4 @@ Link to task: https://www.frontendmentor.io/challenges/equalizer-landing-page-7V
 
 For this project i use React & Tailwind CSS
 
-Live version:
+Live version: https://equalizer-landing-page-gray.vercel.app/

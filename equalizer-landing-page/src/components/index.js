@@ -1,3 +1,5 @@
 export * from './Header'
 export * from './BannerInfo'
 export * from './PremiumEq'
+export * from './Premium'
+export * from './Footer'
