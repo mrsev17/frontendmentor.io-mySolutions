@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Red Hat Display';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url(./assets/fonts/RedHatDisplay-Black.ttf) format('ttf');
+}
+@font-face {
+  font-family: 'Red Hat Display';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(./assets/fonts/RedHatDisplay-Medium.ttf) format('ttf');
+}
+
+body {
+  font-family: 'Red Hat Display', sans-serif;
+  background-color: #fafafa;
+}
