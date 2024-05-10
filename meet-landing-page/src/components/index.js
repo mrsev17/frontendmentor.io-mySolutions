@@ -1,1 +1,5 @@
 export * from './Header'
+export * from './Step'
+export * from './Gallery'
+export * from './Modern'
+export * from './Footer'

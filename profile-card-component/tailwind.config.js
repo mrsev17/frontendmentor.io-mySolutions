@@ -11,6 +11,20 @@ module.exports = {
       maxWidth: {
         main: '350px',
       },
+      backgroundImage: {
+        'pattern-top': "url('/src/assets/bg-pattern-top.svg')",
+        'pattern-bottom': "url('/src/assets/bg-pattern-bottom.svg')",
+      },
+      backgroundPosition: {
+        '10-200': '-10% -200px',
+        '140-500': '140% 500px',
+        '40-60': '-40% -60px',
+        '0-500': '0 500px',
+      },
+      backgroundSize: {
+        '49%': '49%',
+        '60%': '60%',
+      },
       fontSize: {
         18: '1.125rem',
         14: '0.875rem',

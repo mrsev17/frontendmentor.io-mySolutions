@@ -16,8 +16,3 @@
   font-display: swap;
   src: url(./assets/fonts/RedHatDisplay-Medium.ttf) format('ttf');
 }
-
-body {
-  font-family: 'Red Hat Display', sans-serif;
-  background-color: #fafafa;
-}
