@@ -3,16 +3,15 @@ import BgPattern from './assets/images/desktop/bg-pattern-dots.svg'
 
 const App = () => {
   return (
-    <div className="bg-dark h-screen">
-      <div className="max-w-content h-[718px] relative mx-auto">
+    <div className="flex justify-center bg-dark h-screen relative tablet:bg-tablet-hero tablet:bg-no-repeat tablet:bg-tablet-pos">
+      <div className="max-w-content w-full h-[718px] px-[39px] relative tablet:static ">
         <img
-          className="absolute bottom-[-105px] right-0 z-10"
+          className="absolute bottom-[-105px] tablet:bottom-[0] tablet:left-[39px] right-0 z-10"
           src={BgPattern}
           alt=""
         />
-
         <div className="flex justify-center overflow-hidden">
-          <div className="max-w-content w-full mt-[102px] min-h-[668px] flex flex-col justify-between relative">
+          <div className="max-w-content w-full mt-[102px] tablet:mt-[50px] min-h-[668px] tablet:min-h-[720px] flex flex-col justify-between relative">
             <Header />
             <BackgroundImg />
             <MainContent />

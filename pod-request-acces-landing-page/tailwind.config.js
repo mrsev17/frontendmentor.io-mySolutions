@@ -21,22 +21,26 @@ module.exports = {
         content: '1275px',
       },
       backgroundImage: {
-        'desktop-hero': "url('/src/assets/images/desktop/image-host.jpg')",
-        'footer-tablet': "url('/src/assets/images/tablet/image-footer.jpg')",
+        'tablet-hero': "url('/src/assets/images/tablet/image-host.jpg')",
         'footer-mobile': "url('/src/assets/images/mobile/image-footer.jpg')",
+      },
+      backgroundPosition: {
+        'tablet-pos': '100% 0',
       },
       screens: {
         tablet: { max: '768px' },
-        iphone: { max: '567px' },
+        mobile: { max: '567px' },
       },
       fontSize: {
         52: '3.25rem',
+        48: '3rem',
         18: '1.125rem',
         14: '0.875rem',
         12: '0.75rem',
       },
       lineHeight: {
         62: '3.875rem',
+        56: '3.5rem',
         14: '0.875rem',
       },
     },
