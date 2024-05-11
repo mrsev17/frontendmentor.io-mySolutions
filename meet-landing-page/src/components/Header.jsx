@@ -1,17 +1,13 @@
 import { Logo } from './Logo'
 import { Btn } from './Btn'
 import { Banner } from './Banner'
-
-const bannerInfo = {
-  title: 'Group Chat for Everyone',
-  text: '  Meet makes it easy to connect with others face-to-face virtually and collaborate across any device.',
-}
+import { bannerInfo } from '../data/data'
 
 export const Header = () => {
   return (
-    <>
+    <div className="mb-[117px]">
       <Logo className="m-auto mt-20 mb-[61px] tablet:mt-12" />
-      <header className="max-w-main m-auto overflow-hidden flex flex-col items-center mb-[110px] iphone:mb-16">
+      <header className="max-w-main m-auto overflow-hidden flex flex-col items-center iphone:mb-16">
         <Banner title={bannerInfo.title} text={bannerInfo.text} />
         <div className="flex justify-center gap-4 w-full iphone:flex-col iphone:items-center">
           <Btn
@@ -26,6 +22,6 @@ export const Header = () => {
           />
         </div>
       </header>
-    </>
+    </div>
   )
 }
