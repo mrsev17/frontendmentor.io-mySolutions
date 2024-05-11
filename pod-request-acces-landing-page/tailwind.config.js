@@ -28,6 +28,7 @@ module.exports = {
         'tablet-pos': '100% 0',
       },
       screens: {
+        lg: '769px',
         tablet: { max: '768px' },
         mobile: { max: '567px' },
       },

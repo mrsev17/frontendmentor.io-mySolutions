@@ -4,7 +4,7 @@ export const BackgroundImg = () => {
   return (
     <div className="relative tablet:hidden">
       <img
-        className="absolute right-[-165px] top-[-26px]"
+        className="absolute right-0 top-[-80px]"
         src={HeroImg}
         alt="Hero Background"
       />

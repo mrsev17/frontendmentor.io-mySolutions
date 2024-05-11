@@ -7,7 +7,7 @@ const companiesData = [Spotify, Apple, Google, Pocket]
 
 export const Companies = () => {
   return (
-    <ul className="flex justify-between items-center max-w-[540px]">
+    <ul className="flex justify-between items-center max-w-[540px] opacity-50">
       {companiesData.map((company, i) => {
         return (
           <li key={i}>
