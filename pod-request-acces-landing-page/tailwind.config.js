@@ -22,7 +22,7 @@ module.exports = {
       },
       backgroundImage: {
         'tablet-hero': "url('/src/assets/images/tablet/image-host.jpg')",
-        'footer-mobile': "url('/src/assets/images/mobile/image-footer.jpg')",
+        'mobile-hero': "url('/src/assets/images/mobile/image-host.jpg')",
       },
       backgroundPosition: {
         'tablet-pos': '100% 0',
@@ -34,6 +34,8 @@ module.exports = {
       fontSize: {
         52: '3.25rem',
         48: '3rem',
+        38: '2.375rem',
+        26: '1.625rem',
         18: '1.125rem',
         14: '0.875rem',
         12: '0.75rem',
@@ -41,6 +43,7 @@ module.exports = {
       lineHeight: {
         62: '3.875rem',
         56: '3.5rem',
+        38: '2.375rem',
         14: '0.875rem',
       },
     },

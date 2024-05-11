@@ -2,4 +2,4 @@ Link to task: https://www.frontendmentor.io/challenges/pod-request-access-landin
 
 For this project i use React & Tailwind CSS
 
-Live version:
+Live version: https://pod-request-acces-landing-page-gamma.vercel.app/

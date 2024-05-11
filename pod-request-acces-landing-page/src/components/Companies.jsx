@@ -11,7 +11,11 @@ export const Companies = () => {
       {companiesData.map((company, i) => {
         return (
           <li key={i}>
-            <img src={company} alt={`Company ${i + 1}`} />
+            <img
+              className="mobile:max-w-[72px]"
+              src={company}
+              alt={`Company ${i + 1}`}
+            />
           </li>
         )
       })}
