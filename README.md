@@ -1,3 +1,6 @@
+
+![desktop-preview](https://github.com/mrsev17/frontendmentor.io-mySolutions/assets/99737269/e691deb9-0176-4e66-90ac-19cb356ae2ad)
+
 1. Multi-step-form (React, Redux, TypeScript) - https://multi-step-form-mrsev17.netlify.app/
 
 2. Password generator app (React, Redux, TypeScript) - https://password-generator-app-mrsev17.netlify.app/
