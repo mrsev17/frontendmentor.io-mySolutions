@@ -16,36 +16,38 @@
 
 9. Body Mass Index calculator (React, Redux, TypeScript, SCSS) - https://body-mass-index-calculator-ayd2.vercel.app/
 
-10. Profile card component (React & Tailwind CSS) - https://profile-card-component-henna-five.vercel.app/
+10. Social proof section (React & Tailwind CSS) - https://social-proof-section-pied-one.vercel.app/
 
-11. Pod request access landing page (React & Tailwind CSS) - https://pod-request-acces-landing-page-gamma.vercel.app/
+11. Profile card component (React & Tailwind CSS) - https://profile-card-component-henna-five.vercel.app/
 
-12. 3-column preview card component (React, Tailwind CSS) - https://3-column-preview-card-component-flame-nine.vercel.app/
+12. Pod request access landing page (React & Tailwind CSS) - https://pod-request-acces-landing-page-gamma.vercel.app/
 
-13. Meet landing page (React, Tailwind CSS) - https://meet-landing-page-red.vercel.app/
+13. 3-column preview card component (React, Tailwind CSS) - https://3-column-preview-card-component-flame-nine.vercel.app/
 
-14. Stats preview card component (React, Tailwind CSS) - https://stats-preview-card-component-sable-ten.vercel.app/
+14. Meet landing page (React, Tailwind CSS) - https://meet-landing-page-red.vercel.app/
 
-15. Order summary component (React & Tailwind CSS) - https://order-summary-component-six-theta.vercel.app/
+15. Stats preview card component (React, Tailwind CSS) - https://stats-preview-card-component-sable-ten.vercel.app/
 
-16. Equalizer landing page (React & Tailwind CSS) - https://equalizer-landing-page-gray.vercel.app/
+16. Order summary component (React & Tailwind CSS) - https://order-summary-component-six-theta.vercel.app/
 
-17. NFT preview card component (React, Tailwind CSS) - https://nft-preview-card-component-tau-rosy.vercel.app/
+17. Equalizer landing page (React & Tailwind CSS) - https://equalizer-landing-page-gray.vercel.app/
 
-18. Interactive rating component (React, Redux, TypeScript, Tailwind CSS) - https://interactive-rating-component-mrsev.netlify.app/
+18. NFT preview card component (React, Tailwind CSS) - https://nft-preview-card-component-tau-rosy.vercel.app/
 
-19. Skilled e-learning landing page (React, Tailwind CSS) - https://skilled-elearning-landing-page-rosy.vercel.app/
+19. Interactive rating component (React, Redux, TypeScript, Tailwind CSS) - https://interactive-rating-component-mrsev.netlify.app/
 
-20. Product preview card component (React, Tailwind CSS) - https://product-preview-card-component-three-cyan.vercel.app/
+20. Skilled e-learning landing page (React, Tailwind CSS) - https://skilled-elearning-landing-page-rosy.vercel.app/
 
-21. Results summary component (React) - https://results-summary-component-mrsev7.netlify.app/
+21. Product preview card component (React, Tailwind CSS) - https://product-preview-card-component-three-cyan.vercel.app/
 
-22. Workit landing page (React) - https://workit-landing-page-mrsev.netlify.app/
+22. Results summary component (React) - https://results-summary-component-mrsev7.netlify.app/
 
-23. FAQ accordion (React) - https://faq-accordion-mrsev.netlify.app/
+23. Workit landing page (React) - https://workit-landing-page-mrsev.netlify.app/
 
-24. Blog preview card (React) - https://blog-preview-card-mrsev17.netlify.app/
+24. FAQ accordion (React) - https://faq-accordion-mrsev.netlify.app/
 
-25. Social links profile (React) - https://social-links-profile-mrsev.netlify.app/
+25. Blog preview card (React) - https://blog-preview-card-mrsev17.netlify.app/
 
-26. Recipe page (React) - https://react-recipe-page-mrsev.netlify.app/
+26. Social links profile (React) - https://social-links-profile-mrsev.netlify.app/
+
+27. Recipe page (React) - https://react-recipe-page-mrsev.netlify.app/
