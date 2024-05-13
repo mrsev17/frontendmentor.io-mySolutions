@@ -15,7 +15,9 @@ export const ReviewItem = ({ image, user, review, className }) => {
             </span>
           </div>
         </div>
-        <p className="text-white text-17 font-medium leading-22">{review}</p>
+        <blockquote className="text-white text-17 font-medium leading-22">
+          {review}
+        </blockquote>
       </div>
     </div>
   )
