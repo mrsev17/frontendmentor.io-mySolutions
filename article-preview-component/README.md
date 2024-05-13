@@ -4,4 +4,4 @@ Link to task: https://www.frontendmentor.io/challenges/article-preview-component
 
 For this project i use React & Tailwind CSS
 
-Live version:
+Live version: https://article-preview-component-seven-beta.vercel.app/
