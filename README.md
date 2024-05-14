@@ -1,4 +1,3 @@
-
 ![desktop-preview](https://github.com/mrsev17/frontendmentor.io-mySolutions/assets/99737269/e691deb9-0176-4e66-90ac-19cb356ae2ad)
 
 1. Multi-step-form (React, Redux, TypeScript) - https://multi-step-form-mrsev17.netlify.app/
@@ -34,6 +33,8 @@
 ![preview](https://github.com/mrsev17/frontendmentor.io-mySolutions/assets/99737269/606c8106-420c-4b94-8531-470a4748a292)
 
 9. Body Mass Index calculator (React, Redux, TypeScript, SCSS) - https://body-mass-index-calculator-ayd2.vercel.app/
+
+10. Article preview component (React & Tailwind CSS) - https://article-preview-component-seven-beta.vercel.app/
 
 ![desktop-preview](https://github.com/mrsev17/frontendmentor.io-mySolutions/assets/99737269/c45eda29-712a-4f55-8ed9-b86fc49d8dcd)
 
