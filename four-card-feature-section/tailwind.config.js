@@ -4,31 +4,41 @@ module.exports = {
   content: ['./src/**/*.{js,jsx,ts,tsx}'],
   theme: {
     extend: {
-      // fontFamily: {
-      //   sans: ['Manrope', ...defaultTheme.fontFamily.sans],
-      // },
-      // fontSize: {
-      //   20: '1.25rem',
-      //   16: '1rem',
-      //   13: '0.8125rem',
-      // },
-      // lineHeight: {
-      //   24: '1.5rem',
-      // },
-      // maxWidth: {
-      //   main: '1440px',
-      //   content: '730px',
-      // },
-      // screens: {
-      //   tablet: { max: '768px' },
-      //   mobile: { max: '567px' },
-      // },
-      // colors: {
-      //   'dark-xs': '#48556A',
-      //   'dark-md': '#6E8098',
-      //   'dark-lg': '#9DAEC2',
-      //   sky: '#ECF2F8',
-      // },
+      fontFamily: {
+        sans: ['Poppins', ...defaultTheme.fontFamily.sans],
+      },
+      fontSize: {
+        36: '2.25rem',
+        24: '1.5rem',
+        20: '1.25rem',
+        15: '0.9375rem',
+        13: '0.8125rem',
+      },
+      lineHeight: {
+        54: '3.375rem',
+        30: '1.875rem',
+        25: '1.5625rem',
+      },
+      maxWidth: {
+        main: '1440px',
+        content: '1110px',
+        card: '350px',
+      },
+      screens: {
+        tablet: { max: '992px' },
+        mobile: { max: '567px' },
+      },
+      colors: {
+        red: '#EA5454',
+        green: '#44D3D2',
+        orange: '#FCAE4A',
+        blue: '#549EF2',
+        black: '#4D4F62',
+        app: '#FAFAFA',
+      },
+      boxShadow: {
+        card: '0px 15px 30px -11px rgba(131, 166, 210, 0.5)',
+      },
     },
   },
   plugins: [],

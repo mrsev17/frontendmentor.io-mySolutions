@@ -4,4 +4,4 @@ Link to task: https://www.frontendmentor.io/challenges/four-card-feature-section
 
 For this project i use React & Tailwind CSS
 
-Live version:
+Live version: https://four-card-feature-section-sooty-psi.vercel.app/
