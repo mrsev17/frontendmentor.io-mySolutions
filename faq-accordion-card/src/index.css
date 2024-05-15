@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: 'Kumbh Sans';
+    font-weight: 700;
+    src: url('./assets/fonts/KumbhSans-Bold.ttf');
+  }
+  @font-face {
+    font-family: 'Kumbh Sans';
+    font-weight: 400;
+    src: url('./assets/fonts/KumbhSans-Regular.ttf');
+  }
+}
+
+/* = = = = = = = */
+
+input {
+  display: none;
+}
+
+label {
+  color: black;
+  display: block;
+  padding: 8px 22px 16px 0;
+  margin: 0 0 1px 0;
+  cursor: pointer;
+  transition: ease 0.5s;
+  border-bottom: 1px solid #e8e8ea;
+}
+
+label:hover {
+  color: #f47b56;
+}
+
+.content {
+  padding: 16px 0;
+  margin: 0 0 1px 0;
+  border-radius: 3px;
+}
+
+input + label + .content {
+  display: none;
+}
+
+input:checked + label + .content {
+  display: block;
+}
