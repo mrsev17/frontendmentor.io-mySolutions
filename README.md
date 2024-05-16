@@ -34,6 +34,8 @@
 
 9. Body Mass Index calculator (React, Redux, TypeScript, SCSS) - https://body-mass-index-calculator-ayd2.vercel.app/
 
+![desktop-preview](https://github.com/mrsev17/frontendmentor.io-mySolutions/assets/99737269/c00837bd-fe5c-46fb-a3d6-db7ff4514455)
+
 10. Article preview component (React & Tailwind CSS) - https://article-preview-component-seven-beta.vercel.app/
 
 ![desktop-preview](https://github.com/mrsev17/frontendmentor.io-mySolutions/assets/99737269/c45eda29-712a-4f55-8ed9-b86fc49d8dcd)
