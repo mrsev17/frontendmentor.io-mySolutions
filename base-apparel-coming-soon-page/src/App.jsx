@@ -1,8 +1,8 @@
 import { ReactComponent as Logo } from './assets/images/logo.svg'
-import HeroDesktop from './assets/images/hero-desktop.jpg'
-import HeroMobile from './assets/images/hero-mobile.jpg'
 import { Email } from './components/Email'
 import { MainInfo } from './components/MainInfo'
+import HeroDesktop from './assets/images/hero-desktop.jpg'
+import HeroMobile from './assets/images/hero-mobile.jpg'
 
 const App = () => {
   return (
