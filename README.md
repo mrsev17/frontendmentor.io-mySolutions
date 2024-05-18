@@ -38,7 +38,7 @@
 
 10. Single price grid component (React & Tailwind CSS) - https://single-price-grid-component-one-pi.vercel.app/
 
-![preview](/intro-component-with-sign-up-form/public/desktop-preview.jpg)
+![preview](./intro-component-with-sign-up-form/public/desktop-preview.jpg)
 
 11. Intro component with sign-up form (React & Tailwind CSS) - https://intro-component-with-sign-up-form-ten-self.vercel.app/
 
