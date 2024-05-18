@@ -34,7 +34,7 @@
 
 9. Body Mass Index calculator (React, Redux, TypeScript, SCSS) - https://body-mass-index-calculator-ayd2.vercel.app/
 
-![preview](./single-price-grid-component/build/desktop-preview.jpg)
+![desktop-preview](https://github.com/mrsev17/frontendmentor.io-mySolutions/assets/99737269/df9c5610-9778-49ef-a602-7956bd823d49)
 
 10. Single price grid component (React & Tailwind CSS) - https://single-price-grid-component-one-pi.vercel.app/
 
