@@ -36,7 +36,17 @@
 
 ![desktop-preview](https://github.com/mrsev17/frontendmentor.io-mySolutions/assets/99737269/f16219c6-7d89-4a2b-b7e7-5f6e52ba76a6)
 
-10. Four card feature section (React & Tailwind CSS) - https://four-card-feature-section-sooty-psi.vercel.app/
+![preview](/intro-component-with-sign-up-form/public/desktop-preview.jpg)
+
+10. Intro component with sign-up form (React & Tailwind CSS) - https://intro-component-with-sign-up-form-ten-self.vercel.app/
+
+![preview](/base-apparel-coming-soon-page/public/desktop-preview.jpg)
+
+11. Base Apparel coming soon page (React & Tailwind CSS) - https://base-apparel-coming-soon-page-topaz.vercel.app/
+
+![preview](/four-card-feature-section/src/assets/images/desktop-preview.jpg)
+
+12. Four card feature section (React & Tailwind CSS) - https://four-card-feature-section-sooty-psi.vercel.app/
 
 ![desktop-preview](https://github.com/mrsev17/frontendmentor.io-mySolutions/assets/99737269/c00837bd-fe5c-46fb-a3d6-db7ff4514455)
 

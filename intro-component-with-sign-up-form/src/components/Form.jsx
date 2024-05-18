@@ -50,7 +50,7 @@ export const Form = () => {
         thereafter
       </p>
       <form
-        className="max-w-[560px] w-full h-full bg-white flex flex-col items-center rounded-[10px] shadow-custom p-10"
+        className="max-w-[560px] w-full h-full bg-white flex flex-col items-center rounded-[10px] shadow-custom p-10 tablet:p-6"
         onSubmit={handleSubmit}
       >
         <div className="max-w-[460px] w-full flex flex-col gap-5">
