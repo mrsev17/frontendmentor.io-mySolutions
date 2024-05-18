@@ -9,7 +9,7 @@ export const Input = ({
   error,
 }) => {
   return (
-    <div className="flex flex-col gap-[6px]">
+    <div className={`flex flex-col`}>
       <div className="relative">
         <input
           onChange={handleInputChange}
@@ -23,11 +23,13 @@ export const Input = ({
         />
         {error && <Error className="absolute right-[27px] top-[16px]" />}
       </div>
-      <div className="w-full flex justify-end">
-        <span className="text-salmon text-11 font-medium leading-17">
-          {error}
-        </span>
-      </div>
+      {error && (
+        <div className="w-full flex justify-end">
+          <span className="text-salmon text-11 font-medium leading-17">
+            {error}
+          </span>
+        </div>
+      )}
     </div>
   )
 }

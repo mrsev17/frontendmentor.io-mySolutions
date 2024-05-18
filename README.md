@@ -34,8 +34,6 @@
 
 9. Body Mass Index calculator (React, Redux, TypeScript, SCSS) - https://body-mass-index-calculator-ayd2.vercel.app/
 
-![desktop-preview](https://github.com/mrsev17/frontendmentor.io-mySolutions/assets/99737269/f16219c6-7d89-4a2b-b7e7-5f6e52ba76a6)
-
 ![preview](/intro-component-with-sign-up-form/public/desktop-preview.jpg)
 
 10. Intro component with sign-up form (React & Tailwind CSS) - https://intro-component-with-sign-up-form-ten-self.vercel.app/

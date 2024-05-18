@@ -45,7 +45,7 @@ export const Form = () => {
 
   return (
     <div className="max-w-[540px] w-full flex flex-col items-center gap-6">
-      <p className="text-15 py-[17px] w-full bg-purple text-center text-white rounded-[10px] shadow-custom">
+      <p className="text-15 py-[19px] w-full bg-purple text-center text-white rounded-[10px] shadow-custom">
         <strong className="medium">Try it free 7 days</strong> then $20/mo.
         thereafter
       </p>

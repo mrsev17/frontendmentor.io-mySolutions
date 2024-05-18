@@ -2,7 +2,7 @@ export const Submit = () => {
   return (
     <div className="flex flex-col gap-2">
       <button
-        className="py-[15px] text-15 font-semibold w-full bg-green text-white rounded-[5px] hover:bg-mint transition duration-500"
+        className="py-[17px] text-15 font-semibold w-full bg-green text-white rounded-[5px] hover:bg-mint transition duration-500"
         type="submit"
       >
         CLAIM YOUR FREE TRIAL
