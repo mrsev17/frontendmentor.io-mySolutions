@@ -36,6 +36,7 @@ module.exports = {
       },
       boxShadow: {
         custom: '0px 10px 10px 0px rgba(0, 0, 0, 0.1)',
+        card: ' 0px 15px 30px 0px rgba(0, 81, 171, 0.15)',
       },
     },
   },
