@@ -34,98 +34,106 @@
 
 9. Body Mass Index calculator (React, Redux, TypeScript, SCSS) - https://body-mass-index-calculator-ayd2.vercel.app/
 
+![preview](./huddle-landing-page-with-a-single-introductory-section/public/desktop-preview.jpg)
+
+10. Huddle landing page with a single introductory section (React & Tailwind CSS) - https://huddle-landing-page-with-a-single-introductory-section-lac-five.vercel.app/
+
+![preview](./ping-single-column-coming-soon-page/public/desktop-preview.jpg)
+
+11. Ping single column coming soon page (React & Tailwind CSS) - https://ping-single-column-coming-soon-page-five-phi.vercel.app/
+
 ![desktop-preview](https://github.com/mrsev17/frontendmentor.io-mySolutions/assets/99737269/df9c5610-9778-49ef-a602-7956bd823d49)
 
-10. Single price grid component (React & Tailwind CSS) - https://single-price-grid-component-one-pi.vercel.app/
+12. Single price grid component (React & Tailwind CSS) - https://single-price-grid-component-one-pi.vercel.app/
 
 ![preview](./intro-component-with-sign-up-form/public/desktop-preview.jpg)
 
-11. Intro component with sign-up form (React & Tailwind CSS) - https://intro-component-with-sign-up-form-ten-self.vercel.app/
+13. Intro component with sign-up form (React & Tailwind CSS) - https://intro-component-with-sign-up-form-ten-self.vercel.app/
 
 ![preview](/base-apparel-coming-soon-page/public/desktop-preview.jpg)
 
-12. Base Apparel coming soon page (React & Tailwind CSS) - https://base-apparel-coming-soon-page-topaz.vercel.app/
+14. Base Apparel coming soon page (React & Tailwind CSS) - https://base-apparel-coming-soon-page-topaz.vercel.app/
 
 ![preview](/four-card-feature-section/src/assets/images/desktop-preview.jpg)
 
-13. Four card feature section (React & Tailwind CSS) - https://four-card-feature-section-sooty-psi.vercel.app/
+15. Four card feature section (React & Tailwind CSS) - https://four-card-feature-section-sooty-psi.vercel.app/
 
 ![desktop-preview](https://github.com/mrsev17/frontendmentor.io-mySolutions/assets/99737269/c00837bd-fe5c-46fb-a3d6-db7ff4514455)
 
-14. Article preview component (React & Tailwind CSS) - https://article-preview-component-seven-beta.vercel.app/
+16. Article preview component (React & Tailwind CSS) - https://article-preview-component-seven-beta.vercel.app/
 
 ![desktop-preview](https://github.com/mrsev17/frontendmentor.io-mySolutions/assets/99737269/c45eda29-712a-4f55-8ed9-b86fc49d8dcd)
 
-15. Social proof section (React & Tailwind CSS) - https://social-proof-section-pied-one.vercel.app/
+17. Social proof section (React & Tailwind CSS) - https://social-proof-section-pied-one.vercel.app/
 
 ![desktop-preview](https://github.com/mrsev17/frontendmentor.io-mySolutions/assets/99737269/95bb5410-a605-4f55-813b-eff602571fcb)
 
-16. FAQ accordion card (React & Tailwind CSS) - https://faq-accordion-card-lemon-seven.vercel.app/
+18. FAQ accordion card (React & Tailwind CSS) - https://faq-accordion-card-lemon-seven.vercel.app/
 
 ![desktop-preview](https://github.com/mrsev17/frontendmentor.io-mySolutions/assets/99737269/616bd5d6-adf9-4f3e-9191-16c2d8c83ae3)
 
-17. Profile card component (React & Tailwind CSS) - https://profile-card-component-henna-five.vercel.app/
+19. Profile card component (React & Tailwind CSS) - https://profile-card-component-henna-five.vercel.app/
 
 ![preview](https://github.com/mrsev17/frontendmentor.io-mySolutions/assets/99737269/de3a1779-6af7-46b2-b801-7d3352353ceb)
 
-18. Pod request access landing page (React & Tailwind CSS) - https://pod-request-acces-landing-page-gamma.vercel.app/
+20. Pod request access landing page (React & Tailwind CSS) - https://pod-request-acces-landing-page-gamma.vercel.app/
 
 ![desktop-preview](https://github.com/mrsev17/frontendmentor.io-mySolutions/assets/99737269/cb59a3b8-533b-4f01-af85-ca111a17fc66)
 
-19. 3-column preview card component (React, Tailwind CSS) - https://3-column-preview-card-component-flame-nine.vercel.app/
+21. 3-column preview card component (React, Tailwind CSS) - https://3-column-preview-card-component-flame-nine.vercel.app/
 
 ![preview](https://github.com/mrsev17/frontendmentor.io-mySolutions/assets/99737269/6aee85e9-cdba-4ad8-8189-00268aa720fa)
 
-20. Meet landing page (React, Tailwind CSS) - https://meet-landing-page-red.vercel.app/
+22. Meet landing page (React, Tailwind CSS) - https://meet-landing-page-red.vercel.app/
 
 ![desktop-preview](https://github.com/mrsev17/frontendmentor.io-mySolutions/assets/99737269/2256e035-76fd-4df0-b393-6c484785d2bc)
 
-21. Stats preview card component (React, Tailwind CSS) - https://stats-preview-card-component-sable-ten.vercel.app/
+23. Stats preview card component (React, Tailwind CSS) - https://stats-preview-card-component-sable-ten.vercel.app/
 
 ![desktop-preview](https://github.com/mrsev17/frontendmentor.io-mySolutions/assets/99737269/0e779475-0230-4086-90f3-263b85719b25)
 
-22. Order summary component (React & Tailwind CSS) - https://order-summary-component-six-theta.vercel.app/
+24. Order summary component (React & Tailwind CSS) - https://order-summary-component-six-theta.vercel.app/
 
 ![preview](https://github.com/mrsev17/frontendmentor.io-mySolutions/assets/99737269/6cb67e2d-03c0-44f1-b460-92bdd9cd96f6)
 
-23. Equalizer landing page (React & Tailwind CSS) - https://equalizer-landing-page-gray.vercel.app/
+25. Equalizer landing page (React & Tailwind CSS) - https://equalizer-landing-page-gray.vercel.app/
 
 ![desktop-preview](https://github.com/mrsev17/frontendmentor.io-mySolutions/assets/99737269/b2847906-b56b-4ca9-89c5-2d500428d304)
 
-24. NFT preview card component (React, Tailwind CSS) - https://nft-preview-card-component-tau-rosy.vercel.app/
+26. NFT preview card component (React, Tailwind CSS) - https://nft-preview-card-component-tau-rosy.vercel.app/
 
 ![desktop-preview](https://github.com/mrsev17/frontendmentor.io-mySolutions/assets/99737269/47b30f91-f898-4915-bfdb-1432ab4dfb51)
 
-25. Interactive rating component (React, Redux, TypeScript, Tailwind CSS) - https://interactive-rating-component-mrsev.netlify.app/
+27. Interactive rating component (React, Redux, TypeScript, Tailwind CSS) - https://interactive-rating-component-mrsev.netlify.app/
 
 ![preview](https://github.com/mrsev17/frontendmentor.io-mySolutions/assets/99737269/01a7f7ee-b43b-430e-b5fb-64cb9008e6c7)
 
-26. Skilled e-learning landing page (React, Tailwind CSS) - https://skilled-elearning-landing-page-rosy.vercel.app/
+28. Skilled e-learning landing page (React, Tailwind CSS) - https://skilled-elearning-landing-page-rosy.vercel.app/
 
 ![desktop-preview](https://github.com/mrsev17/frontendmentor.io-mySolutions/assets/99737269/c8d8c2d7-361b-4605-9256-d0db25cf9eaa)
 
-27. Product preview card component (React, Tailwind CSS) - https://product-preview-card-component-three-cyan.vercel.app/
+29. Product preview card component (React, Tailwind CSS) - https://product-preview-card-component-three-cyan.vercel.app/
 
 ![desktop-preview](https://github.com/mrsev17/frontendmentor.io-mySolutions/assets/99737269/1579b02f-2fc6-49b1-8e7c-d1bd2eaf103c)
 
-28. Results summary component (React) - https://results-summary-component-mrsev7.netlify.app/
+30. Results summary component (React) - https://results-summary-component-mrsev7.netlify.app/
 
 ![preview](https://github.com/mrsev17/frontendmentor.io-mySolutions/assets/99737269/e7fc6912-fa50-4f42-9193-b9cefadaea79)
 
-29. Workit landing page (React) - https://workit-landing-page-mrsev.netlify.app/
+31. Workit landing page (React) - https://workit-landing-page-mrsev.netlify.app/
 
 ![desktop-preview](https://github.com/mrsev17/frontendmentor.io-mySolutions/assets/99737269/0664863a-d61a-4c70-be91-c0910a708910)
 
-30. FAQ accordion (React) - https://faq-accordion-mrsev.netlify.app/
+32. FAQ accordion (React) - https://faq-accordion-mrsev.netlify.app/
 
 ![desktop-preview](https://github.com/mrsev17/frontendmentor.io-mySolutions/assets/99737269/ae34b899-d2a3-49c2-b2a1-b340b88306bb)
 
-31. Blog preview card (React) - https://blog-preview-card-mrsev17.netlify.app/
+33. Blog preview card (React) - https://blog-preview-card-mrsev17.netlify.app/
 
 ![desktop-preview](https://github.com/mrsev17/frontendmentor.io-mySolutions/assets/99737269/1c2926d1-19ae-468c-83bc-4dfb47658b6d)
 
-32. Social links profile (React) - https://social-links-profile-mrsev.netlify.app/
+34. Social links profile (React) - https://social-links-profile-mrsev.netlify.app/
 
 ![desktop-preview](https://github.com/mrsev17/frontendmentor.io-mySolutions/assets/99737269/23b932a2-0101-4d1d-a316-c17266f6371b)
 
-33. Recipe page (React) - https://react-recipe-page-mrsev.netlify.app/
+35. Recipe page (React) - https://react-recipe-page-mrsev.netlify.app/
