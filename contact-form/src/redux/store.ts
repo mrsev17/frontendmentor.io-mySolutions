@@ -1,4 +1,3 @@
-//
 import { configureStore, combineReducers } from '@reduxjs/toolkit'
 import {
   persistStore,
@@ -11,14 +10,14 @@ import {
   REGISTER,
 } from 'redux-persist'
 import storage from 'redux-persist/lib/storage'
-// import passwordReducer from './passwordSlice/passwordSlice'
+import formReducer from './formSlice'
 
 const rootReducer = combineReducers({
-  // password: passwordReducer,
+  form: formReducer,
 })
 
 const persistConfig = {
-  key: 'password-generator-app',
+  key: 'contact-form',
   storage,
 }
 

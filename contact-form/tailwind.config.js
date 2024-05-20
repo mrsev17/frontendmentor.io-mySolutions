@@ -19,6 +19,10 @@ module.exports = {
         32: '2rem',
         18: '1.125rem',
       },
+      lineHeight: {
+        100: '100%',
+        150: '150%',
+      },
       maxWidth: {
         main: '1440px',
         content: '736px',
@@ -27,6 +31,9 @@ module.exports = {
         tablet: { max: '992px' },
         mobile: { max: '567px' },
       },
+      // backgroundImage: {
+      //   'btn-hov': 'linear-gradient(rgba(0, 0, 0, 0.5), rgba(12, 125, 105, 1))',
+      // },
     },
   },
   plugins: [],

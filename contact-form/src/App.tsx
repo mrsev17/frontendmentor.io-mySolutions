@@ -1,9 +1,9 @@
+import { Form } from './components'
+
 const App = () => {
   return (
-    <div className="">
-      <h1 className="text-[44px] text-grey">
-        Lorem ipsum dolor sit amet consectetuer adipiscing
-      </h1>
+    <div className="h-screen flex flex-col justify-center items-center bg-salad">
+      <Form />
     </div>
   )
 }

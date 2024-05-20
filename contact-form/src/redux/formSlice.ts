@@ -1,35 +1,42 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit'
-// import { generatePassword } from 'utils/functions'
 
-// interface PasswordOptions {
-//   includeUppercaseLetters: boolean
-//   includeLowerCaseLetters: boolean
-//   includeNumbers: boolean
-//   includeSymbols: boolean
-// }
-
-// interface Password {
-//   result: string
-//   length: number
-//   strength: number
-//   passwordOptions: PasswordOptions
-// }
-
-const initialState = {
-  result: '',
-  length: 0,
-  strength: 0,
+interface Form {
+  formData: {
+    firstName: string
+    lastName: string
+    email: string
+    message: string
+  }
 }
 
-const passwordSlice = createSlice({
-  name: 'password',
+const initialState: Form = {
+  formData: {
+    firstName: '',
+    lastName: '',
+    email: '',
+    message: '',
+  },
+}
+
+const formSlice = createSlice({
+  name: 'form',
   initialState,
   reducers: {
-    setLengthPassword(state, action: PayloadAction<number>) {
-      state.length = action.payload
+    setFirstName(state, action: PayloadAction<string>) {
+      state.formData.firstName = action.payload
+    },
+    setLastName(state, action: PayloadAction<string>) {
+      state.formData.lastName = action.payload
+    },
+    setEmail(state, action: PayloadAction<string>) {
+      state.formData.email = action.payload
+    },
+    setMessage(state, action: PayloadAction<string>) {
+      state.formData.message = action.payload
     },
   },
 })
 
-export const {} = passwordSlice.actions
-export default passwordSlice.reducer
+export const { setFirstName, setLastName, setEmail, setMessage } =
+  formSlice.actions
+export default formSlice.reducer
