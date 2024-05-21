@@ -22,7 +22,7 @@ export const Input = ({ value, onChange, htmlFor, target }: InputProps) => {
         onChange={onChange}
         className={`${
           error ? 'border-red' : null
-        } cursor-pointer outline-none border border-mid-grey rounded-lg py-3 px-5 focus:border-green hover:border-green transition duration-500`}
+        } cursor-pointer outline-none border border-mid-grey rounded-lg py-3 px-5 focus:border-green hover:border-green transition duration-500 h-[51px]`}
       />
       {error && (
         <span className="leading-150 text-red">This field is required</span>

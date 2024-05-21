@@ -1,11 +1,15 @@
 import { useAppDispatch, useAppSelector } from '../hooks/hooks'
+import { Input } from './Input'
+import { Message } from './Message'
+import { QueryType } from './QueryType'
 import {
   setFirstName,
   setLastName,
   setEmail,
   setMessage,
+  setConsent,
 } from '../redux/formSlice'
-import { Input } from './Input'
+import { Submit } from './Submit'
 
 export const Form = () => {
   const dispatch = useAppDispatch()
@@ -23,12 +27,12 @@ export const Form = () => {
     dispatch(setEmail(e.target.value))
   }
 
-  const changeMessage = (e: React.ChangeEvent<HTMLInputElement>) => {
+  const changeText = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
     dispatch(setMessage(e.target.value))
   }
 
   return (
-    <section className="max-w-content w-full h-[773px] rounded-2xl bg-white p-10">
+    <section className="max-w-content w-full rounded-2xl bg-white p-10">
       <h1 className="text-32 font-bold leading-100 text-grey mb-8">
         Contact Us
       </h1>
@@ -54,17 +58,13 @@ export const Form = () => {
             htmlFor="email"
             onChange={(e) => changeEmail(e)}
           />
-          {/* <textarea
-            value={text}
-            onChange={handleChange}
-            placeholder="Enter your text here..."
-          /> */}
+          <QueryType />
+          <Message value={getForm.formData.message} onChange={changeText} />
         </div>
-        <div>
-          <button className="text-18 leading-150 font-bold py-4 bg-green text-white w-full rounded-lg transition duration-500 hover:bg-[#03402E]">
-            Submit
-          </button>
-        </div>
+        <Submit
+          check={getForm.formData.consentContact}
+          onChange={() => dispatch(setConsent())}
+        />
       </form>
     </section>
   )

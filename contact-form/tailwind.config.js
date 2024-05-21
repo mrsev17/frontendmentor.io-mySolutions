@@ -31,9 +31,6 @@ module.exports = {
         tablet: { max: '992px' },
         mobile: { max: '567px' },
       },
-      // backgroundImage: {
-      //   'btn-hov': 'linear-gradient(rgba(0, 0, 0, 0.5), rgba(12, 125, 105, 1))',
-      // },
     },
   },
   plugins: [],

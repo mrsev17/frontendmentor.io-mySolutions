@@ -6,6 +6,8 @@ interface Form {
     lastName: string
     email: string
     message: string
+    queryType: string
+    consentContact: boolean
   }
 }
 
@@ -15,6 +17,8 @@ const initialState: Form = {
     lastName: '',
     email: '',
     message: '',
+    queryType: '',
+    consentContact: false,
   },
 }
 
@@ -34,9 +38,21 @@ const formSlice = createSlice({
     setMessage(state, action: PayloadAction<string>) {
       state.formData.message = action.payload
     },
+    setQueryType(state, action: PayloadAction<string>) {
+      state.formData.queryType = action.payload
+    },
+    setConsent(state) {
+      state.formData.consentContact = !state.formData.consentContact
+    },
   },
 })
 
-export const { setFirstName, setLastName, setEmail, setMessage } =
-  formSlice.actions
+export const {
+  setFirstName,
+  setLastName,
+  setEmail,
+  setMessage,
+  setQueryType,
+  setConsent,
+} = formSlice.actions
 export default formSlice.reducer
