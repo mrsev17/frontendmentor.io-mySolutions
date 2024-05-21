@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import { CustomOption } from './CustomOption'
 import { useAppDispatch, useAppSelector } from '../hooks/hooks'
 import { setQueryType } from '../redux/formSlice'
@@ -6,7 +5,9 @@ import { setQueryType } from '../redux/formSlice'
 export const QueryType: React.FC = () => {
   const dispatch = useAppDispatch()
   const getQueryType = useAppSelector((state) => state.form.formData.queryType)
-  const [error, setError] = useState<boolean>(false)
+  const getQueryError = useAppSelector(
+    (state) => state.form.formErrors.errors.queryTypeError
+  )
 
   return (
     <div className="flex justify-between gap-4 flex-col">
@@ -29,7 +30,7 @@ export const QueryType: React.FC = () => {
           setSelectedOption={() => dispatch(setQueryType('option2'))}
         />
       </div>
-      {error && (
+      {getQueryError && (
         <span className="leading-150 text-red">Please select a query type</span>
       )}
     </div>

@@ -1,5 +1,5 @@
-import { useState } from 'react'
 import { ReactComponent as IconCheck } from '../assets/images/icon-checkbox-check.svg'
+import { useAppSelector } from '../hooks/hooks'
 
 interface SubmitProps {
   check: boolean
@@ -7,7 +7,10 @@ interface SubmitProps {
 }
 
 export const Submit = ({ check, onChange }: SubmitProps) => {
-  const [error, setError] = useState<boolean>(false)
+  const getConsentError = useAppSelector(
+    (state) => state.form.formErrors.errors.consentContactError
+  )
+
   return (
     <div className="flex flex-col gap-[46px]">
       <div className="flex flex-col gap-2">
@@ -27,8 +30,8 @@ export const Submit = ({ check, onChange }: SubmitProps) => {
               name="consent"
               type="checkbox"
               checked={check}
-              onChange={onChange}
-              className="absolute left-[-9999px]"
+              onChange={() => onChange}
+              className=""
             />
           </label>
           <span id="customCheck" className="text-grey leading-[2px]">
@@ -36,14 +39,16 @@ export const Submit = ({ check, onChange }: SubmitProps) => {
             <span className="text-green">*</span>
           </span>
         </div>
-        {error && (
+        {getConsentError && (
           <span className="text-red">
             To submit this form, please consent to being contacted
           </span>
         )}
       </div>
-
-      <button className="text-18 leading-150 font-bold py-4 bg-green text-white w-full rounded-lg transition duration-500 hover:bg-[#03402E]">
+      <button
+        type="submit"
+        className="text-18 leading-150 font-bold py-4 bg-green text-white w-full rounded-lg transition duration-500 hover:bg-[#03402E]"
+      >
         Submit
       </button>
     </div>
