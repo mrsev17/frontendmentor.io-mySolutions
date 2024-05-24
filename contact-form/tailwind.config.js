@@ -31,7 +31,18 @@ module.exports = {
         tablet: { max: '992px' },
         mobile: { max: '567px' },
       },
+      animation: {
+        notificationIn: 'notificationIn 3.00s ease-in-out',
+      },
+      keyframes: {
+        notificationIn: {
+          '0%': { opacity: '1' },
+          '50%': { opacity: '1' },
+          '75%': { opacity: '1' },
+          '0%': { opacity: '0' },
+        },
+      },
     },
   },
-  plugins: [],
+  plugins: [require('@tailwindcss/forms')],
 }

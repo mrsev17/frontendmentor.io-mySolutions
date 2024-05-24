@@ -8,17 +8,16 @@ export interface FormData {
 }
 
 export interface FormErrors {
-  errors: {
-    firstNameError: string
-    lastNameError: string
-    emailError: string
-    messageError: string
-    queryTypeError: string
-    consentContactError: string
-  }
+  firstNameError: string
+  lastNameError: string
+  emailError: string
+  messageError: string
+  queryTypeError: string
+  consentContactError: string
 }
 
 export interface Form {
   formData: FormData
   formErrors: FormErrors
+  success: boolean
 }

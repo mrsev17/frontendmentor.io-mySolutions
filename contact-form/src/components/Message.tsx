@@ -7,7 +7,7 @@ interface MessageProps {
 
 export const Message = ({ value, onChange }: MessageProps) => {
   const getMessageError = useAppSelector(
-    (state) => state.form.formErrors.errors.messageError
+    (state) => state.form.formErrors.messageError
   )
   return (
     <div className="flex flex-col gap-2">

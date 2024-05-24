@@ -6,7 +6,7 @@ export const QueryType: React.FC = () => {
   const dispatch = useAppDispatch()
   const getQueryType = useAppSelector((state) => state.form.formData.queryType)
   const getQueryError = useAppSelector(
-    (state) => state.form.formErrors.errors.queryTypeError
+    (state) => state.form.formErrors.queryTypeError
   )
 
   return (
@@ -14,7 +14,7 @@ export const QueryType: React.FC = () => {
       <span className="flex gap-2 text-grey leading-150">
         Query Type <span className="text-green">*</span>
       </span>
-      <div className="flex gap-4">
+      <div className="flex gap-4 mobile:flex-col">
         <CustomOption
           id="option1"
           value="option1"

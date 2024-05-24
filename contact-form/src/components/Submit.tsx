@@ -8,7 +8,7 @@ interface SubmitProps {
 
 export const Submit = ({ check, onChange }: SubmitProps) => {
   const getConsentError = useAppSelector(
-    (state) => state.form.formErrors.errors.consentContactError
+    (state) => state.form.formErrors.consentContactError
   )
 
   return (
@@ -18,23 +18,22 @@ export const Submit = ({ check, onChange }: SubmitProps) => {
           className="flex items-center gap-3 cursor-pointer"
           onClick={onChange}
         >
+          <input
+            id="consent"
+            name="consent"
+            checked={check}
+            onChange={() => onChange}
+            type="checkbox"
+            className="h-[18px] w-[18px] focus:ring-[1px] focus:ring-green outline-none rounded-[2px] text-green border-mid-grey"
+          />
           <label
             htmlFor="consent"
-            className={`${
-              check ? '!border-green' : ''
-            } h-[18px] w-[18px] border border-mid-grey rounded-[4px] flex flex-col justify-center items-center`}
+            className="flex items-center cursor-pointer"
+          ></label>
+          <span
+            id="customCheck"
+            className="text-grey leading-[2px] mobile:leading-150"
           >
-            <IconCheck className={`${check ? 'block' : 'hidden'}`} />
-            <input
-              id="consent"
-              name="consent"
-              type="checkbox"
-              checked={check}
-              onChange={() => onChange}
-              className=""
-            />
-          </label>
-          <span id="customCheck" className="text-grey leading-[2px]">
             I consent to being contacted by the team{' '}
             <span className="text-green">*</span>
           </span>
@@ -47,7 +46,7 @@ export const Submit = ({ check, onChange }: SubmitProps) => {
       </div>
       <button
         type="submit"
-        className="text-18 leading-150 font-bold py-4 bg-green text-white w-full rounded-lg transition duration-500 hover:bg-[#03402E]"
+        className="text-18 leading-150 font-bold py-4 bg-green text-white w-full rounded-lg transition duration-500 hover:bg-[#03402E] outline-grey"
       >
         Submit
       </button>

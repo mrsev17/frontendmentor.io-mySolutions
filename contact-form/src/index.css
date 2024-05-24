@@ -13,4 +13,34 @@
     font-weight: 400;
     src: url('./assets/fonts/Karla-VariableFont_wght.ttf');
   }
+  [type='text'],
+  [type='email'],
+  [type='url'],
+  [type='password'],
+  [type='number'],
+  [type='date'],
+  [type='datetime-local'],
+  [type='month'],
+  [type='search'],
+  [type='tel'],
+  [type='time'],
+  [type='week'],
+  [multiple],
+  textarea,
+  select {
+    @apply w-full border-gray-300 rounded-lg shadow-sm focus:border-green focus:ring-green focus:border-[1px];
+  }
+  [type='checkbox'],
+  [type='radio'] {
+    @apply border-transparent rounded text-green focus:ring-green;
+  }
+  [type='radio']:checked:focus,
+  [type='radio']:checked {
+    @apply !bg-transparent !bg-none focus:!ring-green !border-transparent !outline-none;
+  }
+  [type='radio']:focus {
+    @apply bg-green border-none outline-none;
+    --tw-ring-offset-width: 1px;
+    --tw-ring-offset-color: green;
+  }
 }

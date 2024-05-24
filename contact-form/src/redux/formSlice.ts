@@ -1,6 +1,5 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit'
-import { errors } from '../data/errors'
-import { validateEmail } from '../data/funcs'
+import { validateFormData } from '../data/funcs'
 import { Form } from '../data/types'
 
 const initialState: Form = {
@@ -13,21 +12,26 @@ const initialState: Form = {
     consentContact: false,
   },
   formErrors: {
-    errors: {
-      firstNameError: '',
-      lastNameError: '',
-      emailError: '',
-      messageError: '',
-      queryTypeError: '',
-      consentContactError: '',
-    },
+    firstNameError: '',
+    lastNameError: '',
+    emailError: '',
+    messageError: '',
+    queryTypeError: '',
+    consentContactError: '',
   },
+  success: false,
 }
 
 const formSlice = createSlice({
   name: 'form',
   initialState,
   reducers: {
+    setReloadForm() {
+      return initialState
+    },
+    setSuccess(state) {
+      state.success = !state.success
+    },
     setFirstName(state, action: PayloadAction<string>) {
       state.formData.firstName = action.payload
     },
@@ -47,53 +51,20 @@ const formSlice = createSlice({
       state.formData.consentContact = !state.formData.consentContact
     },
     setSubmitForm(state) {
-      if (state.formData.firstName.length < 1) {
-        state.formErrors.errors.firstNameError = errors.firstNameError
-      } else {
-        state.formErrors.errors.firstNameError = ''
-      }
-      if (state.formData.lastName.length < 1) {
-        state.formErrors.errors.lastNameError = errors.lastNameError
-      } else {
-        state.formErrors.errors.lastNameError = ''
-      }
-      if (!validateEmail(state.formData.email)) {
-        state.formErrors.errors.emailError = errors.emailError
-      } else {
-        state.formErrors.errors.emailError = ''
-      }
-      if (!state.formData.queryType) {
-        state.formErrors.errors.queryTypeError = errors.queryTypeError
-      } else {
-        state.formErrors.errors.queryTypeError = ''
-      }
-      if (state.formData.message.length < 1) {
-        state.formErrors.errors.messageError = errors.messageError
-      } else {
-        state.formErrors.errors.messageError = ''
-      }
-      if (!state.formData.consentContact) {
-        state.formErrors.errors.consentContactError = errors.consentContactError
-      } else {
-        state.formErrors.errors.consentContactError = ''
-      }
+      const validationErrors = validateFormData(state.formData)
+      state.formErrors = validationErrors
       if (
-        !state.formErrors.errors.firstNameError &&
-        !state.formErrors.errors.lastNameError &&
-        !state.formErrors.errors.emailError &&
-        !state.formErrors.errors.queryTypeError &&
-        !state.formErrors.errors.messageError &&
-        !state.formErrors.errors.consentContactError
+        !state.formErrors.firstNameError &&
+        !state.formErrors.lastNameError &&
+        !state.formErrors.emailError &&
+        !state.formErrors.queryTypeError &&
+        !state.formErrors.messageError &&
+        !state.formErrors.consentContactError
       ) {
-        const data = [
-          state.formData.firstName,
-          state.formData.lastName,
-          state.formData.email,
-          state.formData.queryType,
-          state.formData.message,
-          state.formData.consentContact,
-        ]
+        const data = { ...state.formData }
+        state.success = !state.success
         console.log('Form submited', data)
+        Object.assign(state, { ...initialState, success: true })
       }
     },
   },
@@ -107,5 +78,7 @@ export const {
   setQueryType,
   setConsent,
   setSubmitForm,
+  setReloadForm,
+  setSuccess,
 } = formSlice.actions
 export default formSlice.reducer

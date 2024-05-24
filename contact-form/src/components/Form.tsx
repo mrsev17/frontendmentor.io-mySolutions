@@ -15,7 +15,7 @@ import {
 export const Form = () => {
   const dispatch = useAppDispatch()
   const getForm = useAppSelector((state) => state.form.formData)
-  const getErrors = useAppSelector((state) => state.form.formErrors.errors)
+  const getErrors = useAppSelector((state) => state.form.formErrors)
 
   const changeFirstName = (e: React.ChangeEvent<HTMLInputElement>) => {
     dispatch(setFirstName(e.target.value))
@@ -39,13 +39,13 @@ export const Form = () => {
   }
 
   return (
-    <section className="max-w-content w-full rounded-2xl bg-white p-10">
+    <section className="max-w-content w-full rounded-2xl bg-white p-10 tablet:max-w-[92%] mobile:p-6">
       <h1 className="text-32 font-bold leading-100 text-grey mb-8">
         Contact Us
       </h1>
       <form onSubmit={formSubmitHandle} className="flex flex-col gap-10">
         <div className="flex flex-col gap-6">
-          <div className="flex justify-between gap-4">
+          <div className="flex justify-between gap-4 mobile:flex-col">
             <Input
               value={getForm.firstName}
               target="First Name"
